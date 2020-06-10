@@ -1,11 +1,11 @@
 # Physics interactive tool with Desmo Graphing Calculator
 
 ### Content Table
+
 - [Content Table](#content-table)
 - [Wave Reflection](#wave-reflection)
 - [Standing wave](#standing-wave)
 - [Young's double slits experiment](#youngs-double-slits-experiment)
-
 
 ### Wave Reflection
 [Link to the tool](https://www.desmos.com/calculator/zuvlio9uem)
@@ -37,6 +37,7 @@ How to use:
 
 ### Young's double slits experiment
 [Link to the tool](https://www.desmos.com/calculator/ckfzjx1oo5)
+
 Demonstrate:
 - How interference occurs.
 
