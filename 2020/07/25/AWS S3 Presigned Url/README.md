@@ -3,7 +3,7 @@
 ---
 ##### Created date: 2020-07-25
 
-##### Modified Date: 2020-07-25
+##### Modified Date: 2020-08-01
 
 ##### Word Count: 4000 (25 mins reading)
 
@@ -27,7 +27,7 @@
   - [Step 3.c: Code for config and `aws.properties`](#step-3c-code-for-config-and-awsproperties)
   - [Step 3.d: Code for data transfer object (dto)](#step-3d-code-for-data-transfer-object-dto)
   - [Step 4: Test for AWS config set up](#step-4-test-for-aws-config-set-up)
-- [Set up Frontend (BooStrap & Axios)](#set-up-frontend-boostrap--axios)
+- [Set up Frontend (BootStrap & Axios)](#set-up-frontend-bootstrap--axios)
   - [Step 1: Set up HTML and style (including CDN for BootStrap and Axios)](#step-1-set-up-html-and-style-including-cdn-for-bootstrap-and-axios)
   - [Step 2: Enable file name display change](#step-2-enable-file-name-display-change)
   - [Step 3: Modify the submit button](#step-3-modify-the-submit-button)
@@ -496,7 +496,7 @@ Once completed this step, run your SpringBoot application on `localhost:8080`. T
 
 
 
-## Set up Frontend (BooStrap & Axios)
+## Set up Frontend (BootStrap & Axios)
 
 For quick demostration, I used [BootStrap](https://getbootstrap.com/) and [Axios](https://github.com/axios/axios).
 
