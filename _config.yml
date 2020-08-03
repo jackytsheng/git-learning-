@@ -95,9 +95,9 @@ analytics:
 author:
   name             : "Jiajin Zheng"
   avatar           : "/assets/images/square-profile.png"
-  bio              : "Love Cat,Code & Coffee.\n Passion in Programming, Physics, Piano"
+  bio              : "Love Cat,Code & Coffee. Passion in Programming, Physics, Piano"
   location         : "Melbourne,Victoria"
-  email            : "jackytsheng@gmail.com"
+  email            : # "jackytsheng@gmail.com"
   links:
     # - label: "Email"
     #   icon: "fas fa-envelope-square"
@@ -115,7 +115,7 @@ author:
       icon: "fab fa-github"
       url: "https://github.com/jackytsheng"
     - label: "Linkedin"
-      icon: "fab fa-linkedin "
+      icon: "fab fa-linkedin"
       url: "https://www.linkedin.com/in/jacky-jiajin-zheng-76a64b164/"
     # - label: "Instagram"
     #   icon: "fab fa-instagram"
@@ -140,7 +140,7 @@ footer:
       icon: "fab fa-github"
       url: "https://github.com/jackytsheng"
     - label: "Linkedin"
-      icon: "fab fa-linkedin fa-fw"
+      icon: "fab fa-linkedin"
       url: "https://www.linkedin.com/in/jacky-jiajin-zheng-76a64b164/"
 
 
