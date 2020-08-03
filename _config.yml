@@ -21,7 +21,7 @@ title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Jiajin Zheng Blog"
 description              : "📚 Jiajin Zheng personal blog"
-url                      : # the subpath of your site, e.g. "/blog"
+url                      : "https://blog.jiajinzheng.com"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "jackytsheng.github.io/personal-blog"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"

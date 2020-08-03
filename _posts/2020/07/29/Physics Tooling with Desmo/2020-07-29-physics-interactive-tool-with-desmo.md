@@ -1,4 +1,3 @@
-# Physics interactive tool with Desmo Graphing Calculator
 
 ### Content Table
 
@@ -6,6 +5,8 @@
 - [Wave Reflection](#wave-reflection)
 - [Standing wave](#standing-wave)
 - [Young's double slits experiment](#youngs-double-slits-experiment)
+- [Light Refraction](#light-refraction)
+- [Interference simulation by Phta](#interference-simulation-by-phta)
 
 ### Wave Reflection
 [Link to the tool](https://www.desmos.com/calculator/zuvlio9uem)

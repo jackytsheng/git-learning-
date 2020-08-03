@@ -1,12 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.7">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-08-04T02:05:44+10:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Jiajin Zheng Blog</title><subtitle>📚 Jiajin Zheng personal blog</subtitle><author><name>Jiajin Zheng</name><email>jackytsheng@gmail.com</email></author><entry><title type="html">Physics Tooling With Desmo</title><link href="http://localhost:4000/physics-tooling-with-desmo/" rel="alternate" type="text/html" title="Physics Tooling With Desmo" /><published>2020-07-29T00:00:00+10:00</published><updated>2020-07-29T00:00:00+10:00</updated><id>http://localhost:4000/physics-tooling-with-desmo</id><content type="html" xml:base="http://localhost:4000/physics-tooling-with-desmo/">&lt;h1 id=&quot;physics-interactive-tool-with-desmo-graphing-calculator&quot;&gt;Physics interactive tool with Desmo Graphing Calculator&lt;/h1&gt;
-
-&lt;h3 id=&quot;content-table&quot;&gt;Content Table&lt;/h3&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.7">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-08-04T02:17:17+10:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Jiajin Zheng Blog</title><subtitle>📚 Jiajin Zheng personal blog</subtitle><author><name>Jiajin Zheng</name><email>jackytsheng@gmail.com</email></author><entry><title type="html">Physics Interactive Tool With Desmo</title><link href="http://localhost:4000/physics-interactive-tool-with-desmo/" rel="alternate" type="text/html" title="Physics Interactive Tool With Desmo" /><published>2020-07-29T00:00:00+10:00</published><updated>2020-07-29T00:00:00+10:00</updated><id>http://localhost:4000/physics-interactive-tool-with-desmo</id><content type="html" xml:base="http://localhost:4000/physics-interactive-tool-with-desmo/">&lt;h3 id=&quot;content-table&quot;&gt;Content Table&lt;/h3&gt;
 
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;#content-table&quot;&gt;Content Table&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;#wave-reflection&quot;&gt;Wave Reflection&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;#standing-wave&quot;&gt;Standing wave&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;#youngs-double-slits-experiment&quot;&gt;Young’s double slits experiment&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#light-refraction&quot;&gt;Light Refraction&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#interference-simulation-by-phta&quot;&gt;Interference simulation by Phta&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h3 id=&quot;wave-reflection&quot;&gt;Wave Reflection&lt;/h3&gt;
@@ -78,9 +78,7 @@
 
 &lt;h3 id=&quot;interference-simulation-by-phta&quot;&gt;Interference simulation by Phta&lt;/h3&gt;
 
-&lt;p&gt;&lt;a href=&quot;/assets/html/wave-interference_en.html&quot;&gt;Link to the tool&lt;/a&gt;&lt;/p&gt;</content><author><name>Jiajin Zheng</name><email>jackytsheng@gmail.com</email></author><summary type="html">Physics interactive tool with Desmo Graphing Calculator</summary></entry><entry><title type="html">Aws S3 Presigned Url</title><link href="http://localhost:4000/aws-s3-presigned-url/" rel="alternate" type="text/html" title="Aws S3 Presigned Url" /><published>2020-07-25T00:00:00+10:00</published><updated>2020-07-25T00:00:00+10:00</updated><id>http://localhost:4000/aws-s3-presigned-url</id><content type="html" xml:base="http://localhost:4000/aws-s3-presigned-url/">&lt;h1 id=&quot;uploadingdownloading-file-with-aws-s3-presigned-url-using-axios-and-springboot&quot;&gt;Uploading/Downloading file with AWS S3 Presigned url using Axios and SpringBoot&lt;/h1&gt;
-
-&lt;h5 id=&quot;tag-aws-s3-iam-springboot-java-javascript-axios&quot;&gt;Tag: #AWS #S3 #IAM #SpringBoot #Java #Javascript #Axios&lt;/h5&gt;
+&lt;p&gt;&lt;a href=&quot;/assets/html/wave-interference_en.html&quot;&gt;Link to the tool&lt;/a&gt;&lt;/p&gt;</content><author><name>Jiajin Zheng</name><email>jackytsheng@gmail.com</email></author><summary type="html">Content Table</summary></entry><entry><title type="html">Aws S3 Presigned Url With Java Springboot</title><link href="http://localhost:4000/aws-s3-presigned-url-with-java-springboot/" rel="alternate" type="text/html" title="Aws S3 Presigned Url With Java Springboot" /><published>2020-07-25T00:00:00+10:00</published><updated>2020-07-25T00:00:00+10:00</updated><id>http://localhost:4000/aws-s3-presigned-url-with-java-springboot</id><content type="html" xml:base="http://localhost:4000/aws-s3-presigned-url-with-java-springboot/">&lt;p&gt;Tag: #AWS #S3 #IAM #SpringBoot #Java #Javascript #Axios&lt;/p&gt;
 
 &lt;h2 id=&quot;content-summary&quot;&gt;Content Summary&lt;/h2&gt;
 &lt;ul&gt;
@@ -857,8 +855,7 @@ public class AWSConfigTest {
 
 &lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
 
-&lt;p&gt;This is a simple implementation using pre signed url for file transferring. Backend is always required for protecting credentials, but using presigned url approach can offload backend if file gets relatively large and file transfer frequently.&lt;/p&gt;</content><author><name>Jiajin Zheng</name><email>jackytsheng@gmail.com</email></author><summary type="html">Uploading/Downloading file with AWS S3 Presigned url using Axios and SpringBoot</summary></entry><entry><title type="html">Learning Git And Github</title><link href="http://localhost:4000/learning-git-and-github/" rel="alternate" type="text/html" title="Learning Git And Github" /><published>2020-04-17T00:00:00+10:00</published><updated>2020-04-17T00:00:00+10:00</updated><id>http://localhost:4000/learning-git-and-github</id><content type="html" xml:base="http://localhost:4000/learning-git-and-github/">&lt;h1 id=&quot;git-learning&quot;&gt;git-learning&lt;/h1&gt;
-&lt;p&gt;This doc is for tracking the testing that i have done to solidify my understanding with git and github.&lt;/p&gt;
+&lt;p&gt;This is a simple implementation using pre signed url for file transferring. Backend is always required for protecting credentials, but using presigned url approach can offload backend if file gets relatively large and file transfer frequently.&lt;/p&gt;</content><author><name>Jiajin Zheng</name><email>jackytsheng@gmail.com</email></author><summary type="html">Tag: #AWS #S3 #IAM #SpringBoot #Java #Javascript #Axios</summary></entry><entry><title type="html">Learning Git And Github</title><link href="http://localhost:4000/learning-git-and-github/" rel="alternate" type="text/html" title="Learning Git And Github" /><published>2020-04-17T00:00:00+10:00</published><updated>2020-04-17T00:00:00+10:00</updated><id>http://localhost:4000/learning-git-and-github</id><content type="html" xml:base="http://localhost:4000/learning-git-and-github/">&lt;p&gt;This doc is for tracking the testing that i have done to solidify my understanding with git and github.&lt;/p&gt;
 
 &lt;h2 id=&quot;git-basic&quot;&gt;Git basic&lt;/h2&gt;
 
@@ -1068,4 +1065,4 @@ In this method, I first &lt;code class=&quot;language-plaintext highlighter-roug
 
 &lt;ul&gt;
   &lt;li&gt;I would have got the commit history in this order “m1” , “m2” , “m3”, “f1” , “f2” .&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>Jiajin Zheng</name><email>jackytsheng@gmail.com</email></author><summary type="html">git-learning This doc is for tracking the testing that i have done to solidify my understanding with git and github.</summary></entry></feed>
+&lt;/ul&gt;</content><author><name>Jiajin Zheng</name><email>jackytsheng@gmail.com</email></author><summary type="html">This doc is for tracking the testing that i have done to solidify my understanding with git and github.</summary></entry></feed>

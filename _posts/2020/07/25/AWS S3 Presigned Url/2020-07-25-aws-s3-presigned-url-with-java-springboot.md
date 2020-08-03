@@ -1,6 +1,5 @@
-# Uploading/Downloading file with AWS S3 Presigned url using Axios and SpringBoot
 
-##### Tag: \#AWS \#S3 \#IAM \#SpringBoot \#Java \#Javascript \#Axios
+Tag: \#AWS \#S3 \#IAM \#SpringBoot \#Java \#Javascript \#Axios
 
 ## Content Summary
 - [Content Summary](#content-summary)
