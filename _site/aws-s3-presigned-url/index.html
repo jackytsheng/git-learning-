@@ -1,0 +1,1262 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.19.3 by Michael Rose
+  Copyright 2013-2019 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>Aws S3 Presigned Url - Jiajin Zheng Blog</title>
+<meta name="description" content="Uploading/Downloading file with AWS S3 Presigned url using Axios and SpringBoot">
+
+
+  <meta name="author" content="Jiajin Zheng">
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_AU">
+<meta property="og:site_name" content="Jiajin Zheng Blog">
+<meta property="og:title" content="Aws S3 Presigned Url">
+<meta property="og:url" content="http://localhost:4000/aws-s3-presigned-url/">
+
+
+  <meta property="og:description" content="Uploading/Downloading file with AWS S3 Presigned url using Axios and SpringBoot">
+
+
+
+
+
+
+
+  <meta property="article:published_time" content="2020-07-25T00:00:00+10:00">
+
+
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="http://localhost:4000/aws-s3-presigned-url/">
+
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "Person",
+      "name": "Jiajin Zheng Blog",
+      "url": "http://localhost:4000/"
+    
+  }
+</script>
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+<link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Jiajin Zheng Blog Feed">
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css">
+
+<!--[if IE]>
+  <style>
+    /* old IE unsupported flexbox fixes */
+    .greedy-nav .site-title {
+      padding-right: 3em;
+    }
+    .greedy-nav button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+    }
+  </style>
+<![endif]-->
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single">
+    <nav class="skip-links">
+  <h2 class="screen-reader-text">Skip links</h2>
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+        <a class="site-title" href="/">
+          Jiajin Zheng Blog
+          
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="https://jiajinzheng.com">Personal Website</a>
+            </li></ul>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+
+
+<div itemscope itemtype="https://schema.org/Person">
+
+  
+    <div class="author__avatar">
+      
+        <img src="/assets/images/square-profile.png" alt="Jiajin Zheng" itemprop="image">
+      
+    </div>
+  
+
+  <div class="author__content">
+    
+      <h3 class="author__name" itemprop="name">Jiajin Zheng</h3>
+    
+    
+      <div class="author__bio" itemprop="description">
+        <p>Love Cat,Code &amp; Coffee.
+ Passion in Programming, Physics, Piano</p>
+
+      </div>
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Follow</button>
+    <ul class="author__urls social-icons">
+      
+        <li itemprop="homeLocation" itemscope itemtype="https://schema.org/Place">
+          <i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i> <span itemprop="name">Melbourne,Victoria</span>
+        </li>
+      
+
+      
+        
+          
+            <li><a href="https://jiajinzheng.com" rel="nofollow noopener noreferrer"><i class="fas fa-link" aria-hidden="true"></i><span class="label">Personal Website</span></a></li>
+          
+        
+          
+            <li><a href="https://twitter.com/Jiajin_Zheng" rel="nofollow noopener noreferrer"><i class="fab fa-twitter-square" aria-hidden="true"></i><span class="label">Twitter</span></a></li>
+          
+        
+          
+            <li><a href="https://github.com/jackytsheng" rel="nofollow noopener noreferrer"><i class="fab fa-github" aria-hidden="true"></i><span class="label">GitHub</span></a></li>
+          
+        
+          
+            <li><a href="https://www.linkedin.com/in/jacky-jiajin-zheng-76a64b164/" rel="nofollow noopener noreferrer"><i class="fab fa-linkedin " aria-hidden="true"></i><span class="label">Linkedin</span></a></li>
+          
+        
+      
+
+      
+
+      
+        <li>
+          <a href="mailto:jackytsheng@gmail.com">
+            <meta itemprop="email" content="jackytsheng@gmail.com" />
+            <i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i><span class="label">Email</span>
+          </a>
+        </li>
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      <!--
+  <li>
+    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs" rel="nofollow noopener noreferrer">
+      <i class="fas fa-fw" aria-hidden="true"></i> Custom Social Profile Link
+    </a>
+  </li>
+-->
+    </ul>
+  </div>
+</div>
+
+  
+  </div>
+
+
+
+  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Aws S3 Presigned Url">
+    <meta itemprop="description" content="Uploading/Downloading file with AWS S3 Presigned url using Axios and SpringBoot">
+    <meta itemprop="datePublished" content="2020-07-25T00:00:00+10:00">
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title" itemprop="headline">Aws S3 Presigned Url
+</h1>
+          
+            <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  18 minute read
+
+</p>
+          
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        
+        <h1 id="uploadingdownloading-file-with-aws-s3-presigned-url-using-axios-and-springboot">Uploading/Downloading file with AWS S3 Presigned url using Axios and SpringBoot</h1>
+
+<h5 id="tag-aws-s3-iam-springboot-java-javascript-axios">Tag: #AWS #S3 #IAM #SpringBoot #Java #Javascript #Axios</h5>
+
+<h2 id="content-summary">Content Summary</h2>
+<ul>
+  <li><a href="#content-summary">Content Summary</a></li>
+  <li><a href="#about-this-blog">About this blog</a>
+    <ul>
+      <li><a href="#what-is-presigned-url-">What is presigned URL ?</a></li>
+    </ul>
+  </li>
+  <li><a href="#set-up-aws-iam--s3-bucket">Set up AWS IAM + S3 Bucket</a>
+    <ul>
+      <li><a href="#step-1-create-an-iam-user">Step 1: Create an IAM user</a></li>
+      <li><a href="#step-2-create-a-s3-bucket">Step 2: Create a S3 Bucket</a></li>
+    </ul>
+  </li>
+  <li><a href="#set-up-java--spring-boot">Set up Java + Spring Boot</a>
+    <ul>
+      <li><a href="#step-1-use-spring-initializr-to-set-up-spring-boot-project">Step 1: Use Spring initializr to set up spring boot project</a></li>
+      <li><a href="#step-2-add-java-sdk">Step 2: Add java-sdk</a></li>
+      <li><a href="#step-3-setup-sontroller-service-and-config-structure">Step 3: Setup sontroller, service and config structure</a></li>
+      <li><a href="#step-3a-code-for-controller">Step 3.a: Code for controller</a></li>
+      <li><a href="#step-3b-code-for-service">Step 3.b: Code for service</a></li>
+      <li><a href="#step-3c-code-for-config-and-awsproperties">Step 3.c: Code for config and <code class="language-plaintext highlighter-rouge">aws.properties</code></a></li>
+      <li><a href="#step-3d-code-for-data-transfer-object-dto">Step 3.d: Code for data transfer object (dto)</a></li>
+      <li><a href="#step-4-test-for-aws-config-set-up">Step 4: Test for AWS config set up</a></li>
+    </ul>
+  </li>
+  <li><a href="#set-up-frontend-bootstrap--axios">Set up Frontend (BootStrap &amp; Axios)</a>
+    <ul>
+      <li><a href="#step-1-set-up-html-and-style-including-cdn-for-bootstrap-and-axios">Step 1: Set up HTML and style (including CDN for BootStrap and Axios)</a></li>
+      <li><a href="#step-2-enable-file-name-display-change">Step 2: Enable file name display change</a></li>
+      <li><a href="#step-3-modify-the-submit-button">Step 3: Modify the submit button</a></li>
+      <li><a href="#step-4a-upload-functionality">Step 4.a: Upload functionality</a></li>
+      <li><a href="#step-4b-testing-for-file-upload">Step 4.b: Testing for file upload</a></li>
+      <li><a href="#step-4c-display-clickable-link-for-download">Step 4.c: Display clickable link for download</a></li>
+      <li><a href="#step-5-downloading-file-from-aws-s3">Step 5: Downloading file from AWS S3</a></li>
+    </ul>
+  </li>
+  <li><a href="#conclusion">Conclusion</a></li>
+</ul>
+
+<h2 id="about-this-blog">About this blog</h2>
+<p>This blog is about how to set up <strong>presigned url</strong> for <strong>getting and uploading to AWS S3</strong> with Java SpringBoot and Axios.</p>
+
+<p>I was once working on a school management project where I needed to upload student assignment to AWS S3 for storage, the assignment is then downloaded for marking by the teacher. If you guys are interested, project link is <a href="">here</a>.</p>
+
+<p>Front end was built with React and I first implemented of browser uploading, then my Secret key and Access key were exposed (because i uploaded to github, public repository). I received tones of warning from AWS (Phone call &amp; emails) that required me to take action in re-securing my account. So the whole idea of uploading directly from browser doesn’t work because user would have access the Secret/Access key if its store at the client site. But I still don’t want to upload file from the sever, as it just seem very unnecessary. Therefore, I implemented the <a href="https://docs.aws.amazon.com/AmazonS3/latest/dev/PresignedUrlUploadObject.html">AWS S3 Presigned URL</a>. Although this can be achieved in a lots different ways, the project I worked on uses Java &amp; SpringBoot for backend, so I tried to build it with Java. However, I couldn’t find any good resource out there that step through this process clearly. So I decided to write a blog about how to create a presigned URL for uploading to AWS S3 and getting object from AWS S3 using Java &amp; SpringBoot. For the front, this is a simple API calling (put, get), So I am just going to use Axios library.</p>
+
+<h3 id="what-is-presigned-url-">What is presigned URL ?</h3>
+
+<p><img src="/assets/images/2020-07-25/img/Presigned-Url.png" alt="presigned imag" /></p>
+
+<p>Long story short, instead of</p>
+<ol>
+  <li>Sending the file to the backend from client</li>
+  <li>then, upload the file to S3 from backend.</li>
+</ol>
+
+<p>it’s now</p>
+<ol>
+  <li>Request the backend to return a <strong>Pre Signed Url</strong> to the client</li>
+  <li>then, upload file directly from client’s browser.</li>
+</ol>
+
+<p>In theory this could be so much quicker, as file doesn’t have to be transferred as many times.</p>
+
+<h2 id="set-up-aws-iam--s3-bucket">Set up AWS IAM + S3 Bucket</h2>
+
+<p>In order to upload to AWS S3, we first need to have few thing done with AWS. If you don’t already have an AWS account, you need to sign up first, there are lots of free tier services we can use.</p>
+
+<h3 id="step-1-create-an-iam-user">Step 1: Create an IAM user</h3>
+
+<h4 id="1-once-log-in-under-find-services-type-in-iam">1. Once log in under find services, type in <strong>IAM</strong>.</h4>
+<p><img src="/assets/images/2020-07-25/img/IAM.png" alt="users" /></p>
+
+<h4 id="2-in-dashboard-click-users-then-add-user">2. In Dashboard, click users, then add user.</h4>
+<p><img src="/assets/images/2020-07-25/img/users.png" alt="users" /></p>
+
+<h4 id="3-type-the-name-for-user-then-tick-programmatic-access">3. Type the name for user, then tick <strong>Programmatic access</strong>.</h4>
+
+<p><img src="/assets/images/2020-07-25/img/aws-s3.png" alt="users" /></p>
+
+<p>Here I call my IAM user <strong>aws-s3</strong> for demo purpose.
+  Note: Programmatic access allow using Access key and Secret key to access AWS without needing to go to AWS website and login. Click <strong>Next Permissions</strong>.
+  This creates ‘Rule’ for this IAM user, because we want it to access AWS S3 service, so we need to let AWS know that this IAM can access AWS</p>
+
+<h4 id="4-full-access-of-aws-s3">4. Full access of AWS S3.</h4>
+
+<p><img src="/assets/images/2020-07-25/img/aws-fullaccess.png" alt="AWS-FULL-ACCESS" /></p>
+
+<p>Click <strong>Attach existing policies directly</strong> , then type <strong>S3</strong>. Tick the <strong>AmazonS3FullAccess</strong>, This uses existing ‘rules’ that AWS has set, Full access means ‘This IAM can access everything about this S3 service’. Once select Click <strong>Next: Tags</strong></p>
+
+<h4 id="4a-create-custom-policy">4.a Create custom policy.</h4>
+
+<p>If you don’t want to git this IAM too much ‘power’ in accessing your AWS S3, you can limit it by creating <strong>customise policy</strong>, Click <strong>Create Policy</strong></p>
+
+<h4 id="4b-selecting-the-aws-s3-actions-that-our-iam-can-take">4.b Selecting the AWS S3 actions that our IAM can take.</h4>
+
+<p><img src="/assets/images/2020-07-25/img/aws-custom.png" alt="AWS-CUSTOM" />
+  Click <strong>choose a service</strong>, then find <strong>S3</strong>.
+  Select the action you want your IAM to have access to, Here I simply select <strong>PutObject and GetObject</strong>
+  As that’s what I only need. You could also further restricted what S3 Bucket your IAM have access to,
+  But because we haven’t have a specific bucket yet, just click <strong>all resources</strong>.</p>
+
+<p><img src="/assets/images/2020-07-25/img/aws-reviewpolicy.png" alt="aws-reviewpolicy" />
+  Then click <strong>review policy</strong> and give it a name. Here I call mine, aws-s3-policy. Click <strong>Create Policy</strong></p>
+
+<p>Note: you could also type in JSON policy, if that’s what you are more familiar with. After selection JSON policy would also be generated, that looks like this.</p>
+
+<pre><code class="language-JSON">  {
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "VisualEditor0",
+            "Effect": "Allow",
+            "Action": [
+                "s3:PutObject",
+                "s3:GetObject"
+            ],
+            "Resource": "*"
+        }
+    ]
+}
+</code></pre>
+
+<h4 id="4c-choose-customised-policy-for-the-iam">4.c Choose customised policy for the IAM.</h4>
+
+<p><img src="/assets/images/2020-07-25/img/aws-reviewpolicy.png" alt="aws-selectCustomise" />
+Navigate back to the <strong>IAM Add User</strong> page. In the search bar, Type the name that you have created for the customised policy, select that and click <strong>Next: Tags.</strong></p>
+
+<h4 id="5-create-user-and-save-your-keys-important">5. Create User and Save your keys (IMPORTANT).</h4>
+
+<p>Keep clicking <strong>Next</strong> and at the end click <strong>Create User</strong>.</p>
+
+<p><img src="/assets/images/2020-07-25/img/aws-keys.png" alt="aws-keys" />
+Then you can see your <strong>Access key ID</strong> and <strong>Secret access key</strong>, these are the keys we need later, save them some where. <strong>This is a very very very important step</strong>, as if you don’t save your keys now, you can never find it back.</p>
+
+<p>Note: Notice there is also a link in the success message, <code class="language-plaintext highlighter-rouge">https://664593066150.signin.aws.amazon.com/console</code>, this would be the link where this IAM user uses to sign in.</p>
+
+<h4 id="6-copy-the-user-arn">6. Copy the User ARN.</h4>
+
+<p>Before we move on to create our S3, one more thing we need to do, that is to copy the user ARN that we will later need for the bucket policy.</p>
+
+<p><img src="/assets/images/2020-07-25/img/aws-userarn.png" alt="aws-userarn" />
+Navigate back to the IAM User page, click the IAM user that you have just created, and copy the ARN.</p>
+
+<h3 id="step-2-create-a-s3-bucket">Step 2: Create a S3 Bucket</h3>
+
+<p>Next we will need to create a S3 bucket where we use to store file at. It’s optional to create the S3 bucket prior to the creation of IAM user.</p>
+
+<h4 id="1a-find-aws-s3-and-create-s3">1.a Find AWS S3 and Create S3.</h4>
+
+<p><img src="/assets/images/2020-07-25/img/s3-find.png" alt="s3-find" />
+Under the <strong>services</strong> drop down at the nav bar, type S3. And Click <strong>Create Bucket</strong>.</p>
+
+<p><img src="/assets/images/2020-07-25/img/s3-create.png" alt="s3-create" />
+Fill the name,here I call my bucket <strong>presigned-s3-demo</strong>. If it’s a general name like “demo” or “test”, it is highly likely that these names would already be registered by others.</p>
+
+<p>Next, select a region that’s close to your geographic location, or client’s location. I choose <strong>Asian pacific(sydney)</strong> because I live in Australia.</p>
+
+<p><img src="/assets/images/2020-07-25/img/s3-block.png" alt="s3-block" />
+Then, skip the configure options, and make sure the bucket <strong>blocks all public access</strong>. This is the whole point about this blog right ? If we would like it to be wide open for public, why bother having a key.</p>
+
+<p>Click <strong>Next</strong>, then Click Create <strong>bucket</strong></p>
+
+<h4 id="1b-create-a-sub-folder-optional">1.b Create a sub folder (Optional).</h4>
+
+<p>You may not want to store everything right under the root directory of the bucket right ?</p>
+
+<p>You could create subfolder. Files inside bucket are called <strong>Objects</strong>, to operate, it like just like CRUD operation. All you need is the <strong>Object key</strong>, and its just basically the <strong>sub directory</strong> (if you have one) + <strong>file name</strong> , a valid object key could be like this eg: <strong>object key: “assignment/student_assignment1”</strong>.</p>
+
+<p><img src="/assets/images/2020-07-25/img/s3-subfolder.png" alt="s3-subfolder" />
+So I am going to create a sub folder now call “<strong>assignment</strong>”.</p>
+
+<h4 id="2-s3-bucket-policy">2. S3 Bucket Policy</h4>
+
+<p>Just like IAM policy, S3 Bucket can also have policy.
+Under <strong>Permissions</strong>, click <strong>Bucket policy</strong>.</p>
+
+<p><img src="/assets/images/2020-07-25/img/s3-bucketpolicy.png" alt="s3-bucketpolicy" /></p>
+
+<p>Below is a policy for reference:</p>
+<ol>
+  <li>You need to paste your own <strong>IAM ARN</strong> that you just copied before.</li>
+  <li>Copy your bucket ARN and paste it under the <strong>Resource</strong>. you can find bucket ARN as highlighted in the img above. 
+Once done, click <strong>save</strong>.</li>
+</ol>
+
+<pre><code class="language-JSON">{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "AddCannedAcl",
+            "Effect": "Allow",
+            "Principal": {
+                "AWS": "&lt;your IAM user ARN&gt;"
+            },
+            "Action": "s3:*",
+            "Resource": "&lt;your S3 bucket ARN&gt;/*",
+            "Condition": {
+                "StringEquals": {
+                    "s3:x-amz-acl": "public-read"
+                }
+            }
+        }
+    ]
+}
+</code></pre>
+
+<p>Note: for the “Action”:”s3:*” you can be more specific, <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/list_amazons3.html">find out more here.</a></p>
+
+<h4 id="3-cors-configuration">3. CORS Configuration.</h4>
+
+<p>Before we go on and build anything, we need to also configure the <strong>CORS</strong>. Otherwise, it would stop us from visiting from a different domain. CORS is a nightmare that every new web developer will encounter. Click <strong>CORS Configuration</strong> next to <strong>Bucket Policy</strong>.</p>
+
+<p><img src="/assets/images/2020-07-25/img/s3-cors.png" alt="s3-cors" />
+Your configuration should look like above img. Below are the configuration you could refer.</p>
+
+<div class="language-xml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;?xml version="1.0" encoding="UTF-8"?&gt;</span>
+<span class="nt">&lt;CORSConfiguration</span> <span class="na">xmlns=</span><span class="s">"http://s3.amazonaws.com/doc/2006-03-01/"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;CORSRule&gt;</span>
+    <span class="nt">&lt;AllowedOrigin&gt;</span>*<span class="nt">&lt;/AllowedOrigin&gt;</span>
+    <span class="nt">&lt;AllowedMethod&gt;</span>GET<span class="nt">&lt;/AllowedMethod&gt;</span>
+    <span class="nt">&lt;AllowedMethod&gt;</span>PUT<span class="nt">&lt;/AllowedMethod&gt;</span>
+    <span class="nt">&lt;MaxAgeSeconds&gt;</span>9000<span class="nt">&lt;/MaxAgeSeconds&gt;</span>
+    <span class="nt">&lt;AllowedHeader&gt;</span>*<span class="nt">&lt;/AllowedHeader&gt;</span>
+<span class="nt">&lt;/CORSRule&gt;</span>
+<span class="nt">&lt;/CORSConfiguration&gt;</span>
+
+</code></pre></div></div>
+
+<p>Note: Here we are just using the <strong>GET and PUT</strong> method. But you <strong>must</strong> include what method you will use with <code class="language-plaintext highlighter-rouge">&lt;AllowedMethod&gt; &lt;/AllowedMethod&gt;</code> under the CORS Configuration. I spent hour in debugging, and realising that i just forgot to specify the method.</p>
+
+<h2 id="set-up-java--spring-boot">Set up Java + Spring Boot</h2>
+
+<h3 id="step-1-use-spring-initializr-to-set-up-spring-boot-project">Step 1: Use Spring initializr to set up spring boot project</h3>
+
+<p><a href="https://start.spring.io/">Link to Spring initializr.</a></p>
+
+<p><img src="/assets/images/2020-07-25/img/spring-initzr.png" alt="spring-initzr" /></p>
+
+<p>Add <strong>Lombok</strong> and <strong>Spring Web</strong> to dependency, it should do for this simple task.</p>
+
+<h3 id="step-2-add-java-sdk">Step 2: Add java-sdk</h3>
+
+<p>Inside the <code class="language-plaintext highlighter-rouge">pom.xml</code> , add the following dependency.</p>
+
+<p><img src="/assets/images/2020-07-25/img/spring-dependency.png" alt="spring-dependency" /></p>
+
+<div class="language-xml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;dependency&gt;</span>
+	<span class="nt">&lt;groupId&gt;</span>com.amazonaws<span class="nt">&lt;/groupId&gt;</span>
+	<span class="nt">&lt;artifactId&gt;</span>aws-java-sdk<span class="nt">&lt;/artifactId&gt;</span>
+	<span class="nt">&lt;version&gt;</span>1.11.163<span class="nt">&lt;/version&gt;</span>
+<span class="nt">&lt;/dependency&gt;</span>
+</code></pre></div></div>
+
+<h3 id="step-3-setup-sontroller-service-and-config-structure">Step 3: Setup sontroller, service and config structure</h3>
+
+<p>I created the folder and .java files as followed. For testing purpose, you don’t necessarily.</p>
+
+<p><img src="/assets/images/2020-07-25/img/spring-structure.png" alt="spring-structure" /></p>
+
+<h3 id="step-3a-code-for-controller">Step 3.a: Code for controller</h3>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+<span class="nd">@CrossOrigin</span>
+<span class="nd">@RestController</span>
+<span class="nd">@RequestMapping</span><span class="o">(</span><span class="s">"/aws"</span><span class="o">)</span>
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">AWSController</span> <span class="o">{</span>
+
+    <span class="nd">@Autowired</span>
+    <span class="nc">AWSPresignService</span> <span class="n">awsPresignService</span><span class="o">;</span>
+
+    <span class="nd">@PutMapping</span>
+    <span class="nd">@ResponseStatus</span><span class="o">(</span><span class="n">value</span> <span class="o">=</span> <span class="nc">HttpStatus</span><span class="o">.</span><span class="na">OK</span><span class="o">)</span>
+    <span class="kd">public</span> <span class="nc">AWSPutResponseDto</span> <span class="nf">uploadFile</span><span class="o">(</span><span class="nd">@RequestBody</span> <span class="nc">AWSPutRequestDto</span> <span class="n">request</span><span class="o">){</span>
+        <span class="k">return</span> <span class="n">awsPresignService</span><span class="o">.</span><span class="na">preSignedUploadUrl</span><span class="o">(</span><span class="n">request</span><span class="o">);</span>
+    <span class="o">}</span>
+    <span class="nd">@GetMapping</span>
+    <span class="nd">@ResponseStatus</span><span class="o">(</span><span class="n">value</span> <span class="o">=</span> <span class="nc">HttpStatus</span><span class="o">.</span><span class="na">OK</span><span class="o">)</span>
+    <span class="kd">public</span> <span class="nc">AWSGetResponseDto</span> <span class="nf">getFile</span><span class="o">(</span><span class="nd">@RequestParam</span><span class="o">(</span><span class="n">required</span> <span class="o">=</span> <span class="kc">true</span><span class="o">)</span> <span class="nc">String</span> <span class="n">objectKey</span><span class="o">){</span>
+        <span class="k">return</span> <span class="n">awsPresignService</span><span class="o">.</span><span class="na">preSignedGetUrl</span><span class="o">(</span><span class="n">objectKey</span><span class="o">);</span>
+    <span class="o">}</span>
+
+<span class="o">}</span>
+</code></pre></div></div>
+
+<ol>
+  <li>Created one end point for this presigned service, this will run on <code class="language-plaintext highlighter-rouge">localhost:8080/aws</code> once SpringBoot run</li>
+  <li>Created two end points, one for <strong>uploading file</strong>, one for <strong>downloading file</strong>.</li>
+  <li><code class="language-plaintext highlighter-rouge">@CrossOrigin</code> annotation is important for this to work, otherwise, you will run into CORS issue.</li>
+</ol>
+
+<h3 id="step-3b-code-for-service">Step 3.b: Code for service</h3>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nd">@Service</span>
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">AWSPresignService</span> <span class="o">{</span>
+
+    <span class="nd">@Autowired</span>
+    <span class="nc">AWSConfig</span> <span class="n">awsConfig</span><span class="o">;</span>
+
+    <span class="kd">private</span> <span class="nc">Regions</span> <span class="n">clientRegion</span> <span class="o">=</span> <span class="nc">Regions</span><span class="o">.</span><span class="na">AP_SOUTHEAST_2</span><span class="o">;</span>
+
+    <span class="c1">// This Subfolder can be changed, but we will fix it for now:</span>
+    <span class="kd">private</span> <span class="nc">String</span> <span class="n">bucketName</span> <span class="o">=</span> <span class="s">"presigned-s3-demo"</span><span class="o">;</span>
+    <span class="kd">private</span> <span class="nc">String</span> <span class="n">objectKeySubFolder</span> <span class="o">=</span> <span class="s">"assignment/"</span><span class="o">;</span>
+
+    <span class="kd">public</span> <span class="nc">AWSPutResponseDto</span> <span class="nf">preSignedUploadUrl</span><span class="o">(</span><span class="nc">AWSPutRequestDto</span> <span class="n">request</span><span class="o">)</span> <span class="kd">throws</span> <span class="nc">SdkClientException</span> <span class="o">{</span>
+
+        <span class="c1">// Set up credential for validation.</span>
+        <span class="nc">BasicAWSCredentials</span> <span class="n">awsCredentials</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">BasicAWSCredentials</span><span class="o">(</span> <span class="n">awsConfig</span><span class="o">.</span><span class="na">getAccessKey</span><span class="o">(),</span><span class="n">awsConfig</span><span class="o">.</span><span class="na">getSecretKey</span><span class="o">());</span>
+
+        <span class="c1">// Forming object key string</span>
+        <span class="nc">String</span> <span class="n">objectKey</span> <span class="o">=</span> <span class="n">objectKeySubFolder</span> <span class="o">+</span> <span class="n">request</span><span class="o">.</span><span class="na">getFileName</span><span class="o">();</span>
+        <span class="nc">AmazonS3</span> <span class="n">s3Client</span> <span class="o">=</span> <span class="nc">AmazonS3ClientBuilder</span><span class="o">.</span><span class="na">standard</span><span class="o">()</span>
+            <span class="o">.</span><span class="na">withCredentials</span><span class="o">(</span><span class="k">new</span> <span class="nc">AWSStaticCredentialsProvider</span><span class="o">(</span><span class="n">awsCredentials</span><span class="o">))</span>
+            <span class="o">.</span><span class="na">withRegion</span><span class="o">(</span><span class="n">clientRegion</span><span class="o">)</span>
+            <span class="o">.</span><span class="na">build</span><span class="o">();</span>
+
+        <span class="c1">// Set the pre-signed URL to expire after 10 mins.</span>
+        <span class="n">java</span><span class="o">.</span><span class="na">util</span><span class="o">.</span><span class="na">Date</span> <span class="n">expiration</span> <span class="o">=</span> <span class="k">new</span> <span class="n">java</span><span class="o">.</span><span class="na">util</span><span class="o">.</span><span class="na">Date</span><span class="o">();</span>
+        <span class="kt">long</span> <span class="n">expTimeMillis</span> <span class="o">=</span> <span class="n">expiration</span><span class="o">.</span><span class="na">getTime</span><span class="o">();</span>
+        <span class="n">expTimeMillis</span> <span class="o">+=</span> <span class="mi">1000</span> <span class="o">*</span> <span class="mi">60</span> <span class="o">*</span> <span class="mi">10</span><span class="o">;</span>
+        <span class="n">expiration</span><span class="o">.</span><span class="na">setTime</span><span class="o">(</span><span class="n">expTimeMillis</span><span class="o">);</span>
+
+        <span class="c1">// Generate the pre-signed URL.</span>
+        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Generating pre-signed URL."</span><span class="o">);</span>
+
+        <span class="nc">GeneratePresignedUrlRequest</span> <span class="n">generatePresignedUrlRequest</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">GeneratePresignedUrlRequest</span><span class="o">(</span>
+            <span class="n">bucketName</span><span class="o">,</span> <span class="n">objectKey</span><span class="o">)</span>
+            <span class="o">.</span><span class="na">withMethod</span><span class="o">(</span><span class="nc">HttpMethod</span><span class="o">.</span><span class="na">PUT</span><span class="o">)</span>
+            <span class="o">.</span><span class="na">withExpiration</span><span class="o">(</span><span class="n">expiration</span><span class="o">);</span>
+        <span class="no">URL</span> <span class="n">url</span> <span class="o">=</span> <span class="n">s3Client</span><span class="o">.</span><span class="na">generatePresignedUrl</span><span class="o">(</span><span class="n">generatePresignedUrlRequest</span><span class="o">);</span>
+
+        <span class="c1">// Returning the url</span>
+        <span class="nc">AWSPutResponseDto</span> <span class="n">awsPutResponse</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">AWSPutResponseDto</span><span class="o">();</span>
+        <span class="n">awsPutResponse</span><span class="o">.</span><span class="na">setObjectKey</span><span class="o">(</span><span class="n">objectKey</span><span class="o">);</span>
+        <span class="n">awsPutResponse</span><span class="o">.</span><span class="na">setPreSignedUrl</span><span class="o">(</span><span class="n">url</span><span class="o">.</span><span class="na">toString</span><span class="o">());</span>
+        <span class="k">return</span> <span class="n">awsPutResponse</span><span class="o">;</span>
+    <span class="o">}</span>
+
+    <span class="kd">public</span> <span class="nc">AWSGetResponseDto</span> <span class="nf">preSignedGetUrl</span><span class="o">(</span><span class="nc">String</span> <span class="n">objectKey</span><span class="o">)</span> <span class="kd">throws</span> <span class="nc">SdkClientException</span><span class="o">{</span>
+
+        <span class="c1">// Set up credential for validation.</span>
+        <span class="nc">BasicAWSCredentials</span> <span class="n">awsCredentials</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">BasicAWSCredentials</span><span class="o">(</span> <span class="n">awsConfig</span><span class="o">.</span><span class="na">getAccessKey</span><span class="o">(),</span><span class="n">awsConfig</span><span class="o">.</span><span class="na">getSecretKey</span><span class="o">());</span>
+
+        <span class="nc">AmazonS3</span> <span class="n">s3Client</span> <span class="o">=</span> <span class="nc">AmazonS3ClientBuilder</span><span class="o">.</span><span class="na">standard</span><span class="o">()</span>
+            <span class="o">.</span><span class="na">withRegion</span><span class="o">(</span><span class="n">clientRegion</span><span class="o">)</span>
+            <span class="o">.</span><span class="na">withCredentials</span><span class="o">(</span><span class="k">new</span> <span class="nc">AWSStaticCredentialsProvider</span><span class="o">(</span><span class="n">awsCredentials</span><span class="o">))</span>
+            <span class="o">.</span><span class="na">build</span><span class="o">();</span>
+
+        <span class="c1">// Set the presigned URL to expire after one hour.</span>
+        <span class="n">java</span><span class="o">.</span><span class="na">util</span><span class="o">.</span><span class="na">Date</span> <span class="n">expiration</span> <span class="o">=</span> <span class="k">new</span> <span class="n">java</span><span class="o">.</span><span class="na">util</span><span class="o">.</span><span class="na">Date</span><span class="o">();</span>
+        <span class="kt">long</span> <span class="n">expTimeMillis</span> <span class="o">=</span> <span class="n">expiration</span><span class="o">.</span><span class="na">getTime</span><span class="o">();</span>
+        <span class="n">expTimeMillis</span> <span class="o">+=</span> <span class="mi">1000</span> <span class="o">*</span> <span class="mi">60</span> <span class="o">*</span> <span class="mi">10</span><span class="o">;</span>
+        <span class="n">expiration</span><span class="o">.</span><span class="na">setTime</span><span class="o">(</span><span class="n">expTimeMillis</span><span class="o">);</span>
+
+        <span class="c1">// Generate the presigned URL.</span>
+        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Generating pre-signed URL."</span><span class="o">);</span>
+        <span class="nc">GeneratePresignedUrlRequest</span> <span class="n">generatePresignedUrlRequest</span> <span class="o">=</span>
+            <span class="k">new</span> <span class="nf">GeneratePresignedUrlRequest</span><span class="o">(</span><span class="n">bucketName</span><span class="o">,</span> <span class="n">objectKey</span><span class="o">)</span>
+                <span class="o">.</span><span class="na">withMethod</span><span class="o">(</span><span class="nc">HttpMethod</span><span class="o">.</span><span class="na">GET</span><span class="o">)</span>
+                <span class="o">.</span><span class="na">withExpiration</span><span class="o">(</span><span class="n">expiration</span><span class="o">);</span>
+        <span class="no">URL</span> <span class="n">url</span> <span class="o">=</span> <span class="n">s3Client</span><span class="o">.</span><span class="na">generatePresignedUrl</span><span class="o">(</span><span class="n">generatePresignedUrlRequest</span><span class="o">);</span>
+        <span class="nc">AWSGetResponseDto</span> <span class="n">awsGetResponse</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">AWSGetResponseDto</span><span class="o">();</span>
+        <span class="n">awsGetResponse</span><span class="o">.</span><span class="na">setPreSignedUrl</span><span class="o">(</span><span class="n">url</span><span class="o">.</span><span class="na">toString</span><span class="o">());</span>
+        <span class="n">awsGetResponse</span><span class="o">.</span><span class="na">setObjectKey</span><span class="o">(</span><span class="n">objectKey</span><span class="o">);</span>
+        <span class="k">return</span> <span class="n">awsGetResponse</span><span class="o">;</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+
+</code></pre></div></div>
+
+<ol>
+  <li>Follow the tutorial on <a href="https://docs.aws.amazon.com/AmazonS3/latest/dev/PresignedUrlUploadObjectJavaSDK.html">AWS documentation</a></li>
+  <li>Adjustment to the tutorial is the credential establishment, I injected both <code class="language-plaintext highlighter-rouge">secretKey</code> and <code class="language-plaintext highlighter-rouge">accessKey</code> that’s set up inside <code class="language-plaintext highlighter-rouge">AWSconfig</code>, for security, this should <strong>never be hard coded</strong>. Or AWS will send you notification once you accidently push it to github. Trust me, this happens when you first work with AWS Credential, the most overlook detail is to not push your key to any public accessible platform.</li>
+</ol>
+
+<h3 id="step-3c-code-for-config-and-awsproperties">Step 3.c: Code for config and <code class="language-plaintext highlighter-rouge">aws.properties</code></h3>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+<span class="c1">//@PropertySource(ignoreResourceNotFound = true, value = {</span>
+<span class="c1">//    "classpath:awsBackup.properties",</span>
+<span class="c1">//    "classpath:aws.properties"})</span>
+
+
+<span class="nd">@PropertySource</span><span class="o">(</span><span class="n">ignoreResourceNotFound</span> <span class="o">=</span> <span class="kc">true</span><span class="o">,</span> <span class="n">value</span> <span class="o">=</span> <span class="s">"classpath:aws.properties"</span><span class="o">)</span>
+<span class="nd">@ConfigurationProperties</span><span class="o">(</span><span class="n">prefix</span><span class="o">=</span><span class="s">"s3"</span><span class="o">)</span>
+<span class="nd">@Data</span>
+<span class="nd">@Component</span>
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">AWSConfig</span> <span class="o">{</span>
+    <span class="kd">private</span> <span class="nc">String</span> <span class="n">secretKey</span><span class="o">;</span>
+    <span class="kd">private</span> <span class="nc">String</span> <span class="n">accessKey</span><span class="o">;</span>
+<span class="o">}</span>
+
+</code></pre></div></div>
+
+<ol>
+  <li>Keys are read from customised <code class="language-plaintext highlighter-rouge">aws.properties</code> file</li>
+  <li>Notice the commented code above, <code class="language-plaintext highlighter-rouge">"classpath:aws.properties"</code> will takes priority, if <code class="language-plaintext highlighter-rouge">s3.secretKey</code> and <code class="language-plaintext highlighter-rouge">s3.accessKey</code> exist in both files. Using this idea, we can have a local copy where aws key exist, forexample,</li>
+</ol>
+
+<p>Under <code class="language-plaintext highlighter-rouge">/resources/aws.properties</code></p>
+
+<div class="language-conf highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">#aws credentials
+</span><span class="n">s3</span>.<span class="n">accessKey</span> = <span class="n">AKIAZVPGVNCTC6FC3IP4</span>
+<span class="n">s3</span>.<span class="n">secretKey</span> = +<span class="m">0</span><span class="n">npucE8IL0th15C4GjyJ6dM40yS7GDtZWPAV1nO</span>
+</code></pre></div></div>
+
+<p>We can also included a <strong>mock file</strong>. This <code class="language-plaintext highlighter-rouge">awsBackup.properties</code> file ensures aws service works fine even without actual AWS credential information. Important when you collaborate with others in a team project, you don’t want your code to break in other machine when you exclude some files that you don’t want to commit to the git and push to github.</p>
+
+<p>Under <code class="language-plaintext highlighter-rouge">/resources/awsBackup.properties</code></p>
+
+<div class="language-conf highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">#aws credentials template
+</span><span class="n">s3</span>.<span class="n">accessKey</span> = &lt;<span class="n">Enter</span> <span class="n">your</span> <span class="n">access</span> <span class="n">key</span>&gt;
+<span class="n">s3</span>.<span class="n">secretKey</span> = &lt;<span class="n">Enter</span> <span class="n">your</span> <span class="n">secret</span> <span class="n">key</span>&gt;
+</code></pre></div></div>
+
+<p>Overall this folder structure will look like this.</p>
+
+<p><img src="/assets/images/2020-07-25/img/spring-resources.png" alt="spring-resources" /></p>
+
+<ol>
+  <li>Adding <code class="language-plaintext highlighter-rouge">aws.properties</code> where your real credential is stored, to the <code class="language-plaintext highlighter-rouge">.gitignore</code>, so that you won’t accidently push it onto public platform.</li>
+</ol>
+
+<p><img src="/assets/images/2020-07-25/img/spring-gitignore.png" alt="spring-gitignore" /></p>
+
+<h3 id="step-3d-code-for-data-transfer-object-dto">Step 3.d: Code for data transfer object (dto)</h3>
+
+<p>These Dtos are for data transferring.</p>
+
+<ol>
+  <li>AWSGetResponseDto</li>
+</ol>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nd">@Data</span>
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">AWSGetResponseDto</span> <span class="o">{</span>
+    <span class="kd">private</span> <span class="nc">String</span> <span class="n">objectKey</span><span class="o">;</span>
+    <span class="kd">private</span> <span class="nc">String</span> <span class="n">preSignedUrl</span><span class="o">;</span>
+<span class="o">}</span>
+</code></pre></div></div>
+
+<ol>
+  <li>AWSPutRequestDto</li>
+</ol>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nd">@Data</span>
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">AWSPutRequestDto</span> <span class="o">{</span>
+    <span class="kd">private</span> <span class="nc">String</span> <span class="n">fileName</span><span class="o">;</span>
+<span class="o">}</span>
+</code></pre></div></div>
+
+<ol>
+  <li>AWSPutResponseDto
+```java
+@Data
+public class AWSPutResponseDto {
+ private String objectKey;
+ private String preSignedUrl;
+}</li>
+</ol>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+### Step 4: Test for AWS config set up
+
+We can check has our AWS configuration been successfully set up by writing printing them inside `test`.
+
+![spring-test](/assets/images/2020-07-25/img/spring-test.png)
+
+```java
+
+@SpringBootTest
+public class AWSConfigTest {
+    @Autowired
+    AWSConfig awsConfig;
+
+    @Test
+    public void contextLoads(){
+
+        System.out.println(awsConfig);
+
+    }
+
+}
+
+</code></pre></div></div>
+
+<ol>
+  <li>Result when <code class="language-plaintext highlighter-rouge">resources/aws.properties</code> present.</li>
+</ol>
+
+<p><img src="/assets/images/2020-07-25/img/spring-config-with-result.png" alt="spring-config-with-result" /></p>
+
+<ol>
+  <li>Result when <code class="language-plaintext highlighter-rouge">resources/aws.properties</code> <strong>is not</strong> present.</li>
+</ol>
+
+<p><img src="/assets/images/2020-07-25/img/spring-config-without-result.png" alt="spring-config-without-result" /></p>
+
+<p>Notice that the <code class="language-plaintext highlighter-rouge">accessKey</code> and <code class="language-plaintext highlighter-rouge">secretKey</code> value fall back to the template code inside <code class="language-plaintext highlighter-rouge">awsBackup.properties</code>,aws sdk doesn’t care what key you signed url with. aws s3 service will only return <code class="language-plaintext highlighter-rouge">403</code> at the front end when you try to <strong>upload/download</strong> with url that signed using these invalid keys.</p>
+
+<p>This is good, because everything can work at the at the backend as normal without the file that contains our real credentials, without worrying exposure of credentials.</p>
+
+<p>Once completed this step, run your SpringBoot application on <code class="language-plaintext highlighter-rouge">localhost:8080</code>. Then we can move on to the frontend.</p>
+
+<h2 id="set-up-frontend-bootstrap--axios">Set up Frontend (BootStrap &amp; Axios)</h2>
+
+<p>For quick demostration, I used <a href="https://getbootstrap.com/">BootStrap</a> and <a href="https://github.com/axios/axios">Axios</a>.</p>
+
+<h3 id="step-1-set-up-html-and-style-including-cdn-for-bootstrap-and-axios">Step 1: Set up HTML and style (including CDN for BootStrap and Axios)</h3>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">"en"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;head&gt;</span>
+  <span class="nt">&lt;meta</span> <span class="na">charset=</span><span class="s">"UTF-8"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">"viewport"</span> <span class="na">content=</span><span class="s">"width=device-width, initial-scale=1.0"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;title&gt;</span>S3 Upload<span class="nt">&lt;/title&gt;</span>
+
+  <span class="c">&lt;!-- CSS only --&gt;</span>
+  <span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">href=</span><span class="s">"https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"</span> <span class="na">integrity=</span><span class="s">"sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"</span> <span class="na">crossorigin=</span><span class="s">"anonymous"</span><span class="nt">&gt;</span>
+
+  <span class="c">&lt;!-- Axios library --&gt;</span>
+  <span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"https://unpkg.com/axios/dist/axios.min.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
+
+<span class="nt">&lt;/head&gt;</span>
+
+
+<span class="nt">&lt;style&gt;</span>
+  <span class="nt">body</span><span class="p">{</span>
+    <span class="nl">display</span><span class="p">:</span> <span class="n">flex</span><span class="p">;</span>
+    <span class="nl">justify-content</span><span class="p">:</span> <span class="nb">center</span><span class="p">;</span>
+    <span class="nl">align-items</span><span class="p">:</span> <span class="nb">center</span><span class="p">;</span>
+    <span class="nl">flex-direction</span><span class="p">:</span> <span class="n">column</span><span class="p">;</span>
+    <span class="nl">height</span><span class="p">:</span><span class="m">100vh</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="nc">.card-text</span> <span class="p">{</span>
+    <span class="nl">display</span><span class="p">:</span><span class="nb">block</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="nt">a</span> <span class="p">{</span>
+    <span class="nl">cursor</span><span class="p">:</span> <span class="nb">pointer</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="nt">&lt;/style&gt;</span>
+<span class="nt">&lt;body&gt;</span>
+    <span class="nt">&lt;form</span> <span class="na">class=</span><span class="s">"wrap"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-group mb-3"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-group-prepend"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"submitBtn btn btn-outline-secondary"</span> <span class="na">id=</span><span class="s">"inputGroupFileAddon03"</span><span class="nt">&gt;</span>Submit<span class="nt">&lt;/button&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"custom-file"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"file"</span> <span class="na">class=</span><span class="s">"custom-file-input"</span> <span class="na">id=</span><span class="s">"inputGroupFile03"</span> <span class="na">aria-describedby=</span><span class="s">"inputGroupFileAddon03"</span> <span class="na">onchange=</span><span class="s">"changeDisplayName()"</span><span class="nt">/&gt;</span>
+            <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"custom-file-label"</span> <span class="na">for=</span><span class="s">"inputGroupFile03"</span> <span class="nt">&gt;</span>Choose file<span class="nt">&lt;/label&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/form&gt;</span>  
+    <span class="nt">&lt;ol</span> <span class="na">class=</span><span class="s">"card-text bg-light"</span> <span class="na">style=</span><span class="s">"transform: rotate(0);"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;/ol&gt;</span>
+<span class="nt">&lt;/body&gt;</span>
+<span class="c">&lt;!-- JS, Popper.js, and jQuery --&gt;</span>
+  <span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"https://code.jquery.com/jquery-3.5.1.slim.min.js"</span> <span class="na">integrity=</span><span class="s">"sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"</span> <span class="na">crossorigin=</span><span class="s">"anonymous"</span><span class="nt">&gt;&lt;/script&gt;</span>
+  <span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"</span> <span class="na">integrity=</span><span class="s">"sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"</span> <span class="na">crossorigin=</span><span class="s">"anonymous"</span><span class="nt">&gt;&lt;/script&gt;</span>
+  <span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"</span> <span class="na">integrity=</span><span class="s">"sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"</span> <span class="na">crossorigin=</span><span class="s">"anonymous"</span><span class="nt">&gt;&lt;/script&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+</code></pre></div></div>
+
+<ol>
+  <li>
+    <p>For demo, all scripts and styles are written inside one html file.</p>
+  </li>
+  <li>
+    <p>UI will look like this</p>
+  </li>
+</ol>
+
+<p><img src="/assets/images/2020-07-25/img/frontend-UI.png" alt="UI" /></p>
+
+<h3 id="step-2-enable-file-name-display-change">Step 2: Enable file name display change</h3>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="c1">// For file</span>
+  <span class="kd">let</span> <span class="nx">fileName</span><span class="p">;</span>
+  <span class="kd">let</span> <span class="nx">currentObjectKey</span><span class="p">;</span>
+
+
+<span class="p">...</span>
+
+
+<span class="c1">// For file name</span>
+  <span class="kd">function</span> <span class="nx">changeDisplayName</span><span class="p">(){</span>
+    <span class="kd">let</span> <span class="nx">file</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="dl">"</span><span class="s2">.custom-file-input</span><span class="dl">"</span><span class="p">).</span><span class="nx">files</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+    <span class="kd">const</span> <span class="nx">name</span> <span class="o">=</span> <span class="nx">file</span> <span class="p">?</span> <span class="nx">file</span><span class="p">.</span><span class="nx">name</span><span class="p">:</span><span class="dl">"</span><span class="s2">Choose file</span><span class="dl">"</span><span class="p">;</span>
+    <span class="kd">const</span> <span class="nx">label</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="dl">"</span><span class="s2">.custom-file-label</span><span class="dl">"</span><span class="p">);</span>
+    <span class="nx">fileName</span> <span class="o">=</span> <span class="nx">name</span><span class="p">;</span>
+    <span class="nx">submitBtn</span><span class="p">.</span><span class="nx">disabled</span> <span class="o">=</span> <span class="o">!!!</span><span class="nx">file</span><span class="p">;</span>
+    <span class="nx">label</span><span class="p">.</span><span class="nx">innerHTML</span> <span class="o">=</span> <span class="nx">trimName</span><span class="p">(</span><span class="nx">name</span><span class="p">);</span>
+  <span class="p">}</span>
+
+  <span class="kd">function</span> <span class="nx">trimName</span><span class="p">(</span><span class="nx">name</span><span class="p">){</span>
+    <span class="kd">let</span> <span class="nx">fileSuffixIndex</span> <span class="o">=</span> <span class="nx">name</span><span class="p">.</span><span class="nx">lastIndexOf</span><span class="p">(</span><span class="dl">"</span><span class="s2">.</span><span class="dl">"</span><span class="p">)</span>
+    <span class="kd">let</span> <span class="nx">fileSuffix</span> <span class="o">=</span> <span class="nx">name</span><span class="p">.</span><span class="nx">slice</span><span class="p">(</span><span class="nx">fileSuffixIndex</span> <span class="o">-</span> <span class="mi">1</span><span class="p">,</span> <span class="nx">name</span><span class="p">.</span><span class="nx">length</span><span class="p">);</span>
+    <span class="k">return</span> <span class="nx">name</span><span class="p">.</span><span class="nx">length</span> <span class="o">&gt;</span> <span class="mi">24</span>
+      <span class="p">?</span> <span class="nx">name</span><span class="p">.</span><span class="nx">slice</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span> <span class="o">+</span>
+        <span class="dl">"</span><span class="s2">...</span><span class="dl">"</span> <span class="o">+</span>
+        <span class="nx">name</span><span class="p">.</span><span class="nx">slice</span><span class="p">(</span><span class="nx">fileSuffixIndex</span> <span class="o">-</span> <span class="mi">4</span><span class="p">,</span> <span class="nx">fileSuffixIndex</span><span class="p">)</span> <span class="o">+</span>
+        <span class="nx">fileSuffix</span> <span class="p">:</span> <span class="nx">name</span><span class="p">;</span>
+  <span class="p">}</span>
+</code></pre></div></div>
+
+<ol>
+  <li>This <code class="language-plaintext highlighter-rouge">changeDisplayName</code> is called when a file is selected. Notice that if you click cancel, file name will be changed back to “Choose file”</li>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">trimName</code> shorten the file name when it is too long.</p>
+  </li>
+  <li>
+    <p>UI for file display.</p>
+  </li>
+  <li><code class="language-plaintext highlighter-rouge">submitBtn.disabled = !!!file;</code> This code disable the submit button when there is no file exist.</li>
+</ol>
+
+<p><img src="/assets/images/2020-07-25/img/frontend-filename.png" alt="frontend-filename" />
+<img src="/assets/images/2020-07-25/img/frontend-filename-trim.png" alt="frontend-filename" /></p>
+
+<h3 id="step-3-modify-the-submit-button">Step 3: Modify the submit button</h3>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  
+<span class="p">...</span>  
+  <span class="c1">// For submit button</span>
+  <span class="kd">let</span> <span class="nx">submitBtn</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="dl">"</span><span class="s2">.submitBtn</span><span class="dl">"</span><span class="p">);</span>
+  <span class="nx">submitBtn</span><span class="p">.</span><span class="nx">disabled</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span>
+  <span class="nx">submitBtn</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="dl">"</span><span class="s2">click</span><span class="dl">"</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">event</span><span class="p">){</span>
+    <span class="nx">event</span><span class="p">.</span><span class="nx">preventDefault</span><span class="p">();</span>
+    <span class="nx">uploadFile</span><span class="p">();</span>
+  <span class="p">});</span>
+<span class="p">...</span>
+</code></pre></div></div>
+
+<ol>
+  <li>This prevent submitBtn from submitting the form, which will reload the page.</li>
+  <li>Disable the button when file is not loaded</li>
+</ol>
+
+<h3 id="step-4a-upload-functionality">Step 4.a: Upload functionality</h3>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">...</span>
+
+<span class="c1">// For upload</span>
+  <span class="k">async</span> <span class="kd">function</span> <span class="nx">uploadFile</span><span class="p">(){</span>
+    <span class="kd">const</span> <span class="p">{</span><span class="nx">objectKey</span><span class="p">,</span><span class="nx">preSignedUrl</span><span class="p">}</span> <span class="o">=</span> <span class="k">await</span> <span class="nx">getPreSignedUploadUrl</span><span class="p">();</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">preSignedUrl</span><span class="p">);</span>
+    <span class="nx">currentObjectKey</span> <span class="o">=</span> <span class="nx">objectKey</span><span class="p">;</span>
+    <span class="kd">const</span> <span class="nx">file</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="dl">"</span><span class="s2">.custom-file-input</span><span class="dl">"</span><span class="p">).</span><span class="nx">files</span><span class="p">[</span><span class="mi">0</span><span class="p">];</span>
+    <span class="k">await</span> <span class="nx">axios</span><span class="p">.</span><span class="nx">put</span><span class="p">(</span><span class="nx">preSignedUrl</span><span class="p">,</span><span class="nx">file</span><span class="p">).</span><span class="nx">then</span><span class="p">(</span><span class="nx">res</span> <span class="o">=&gt;</span> <span class="p">{</span>
+      <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">res</span><span class="p">)</span>
+      <span class="nx">createLink</span><span class="p">();</span>
+    <span class="p">}).</span><span class="k">catch</span><span class="p">(</span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">)</span>
+  <span class="p">}</span>
+  
+  <span class="kd">function</span> <span class="nx">getPreSignedUploadUrl</span><span class="p">(){</span>
+    <span class="kd">const</span> <span class="nx">baseUrl</span> <span class="o">=</span> <span class="dl">"</span><span class="s2">http://localhost:8080/</span><span class="dl">"</span>
+    <span class="kd">const</span> <span class="nx">awsUrl</span> <span class="o">=</span> <span class="dl">"</span><span class="s2">aws</span><span class="dl">"</span>
+    <span class="kd">const</span> <span class="nx">putBody</span> <span class="o">=</span> <span class="p">{</span><span class="nx">fileName</span><span class="p">}</span> <span class="p">;</span>
+    <span class="k">return</span> <span class="nx">axios</span><span class="p">.</span><span class="nx">put</span><span class="p">(</span><span class="s2">`</span><span class="p">${</span><span class="nx">baseUrl</span><span class="p">}${</span><span class="nx">awsUrl</span><span class="p">}</span><span class="s2">`</span><span class="p">,</span><span class="nx">putBody</span><span class="p">).</span><span class="nx">then</span><span class="p">(</span><span class="nx">res</span><span class="o">=&gt;</span><span class="nx">res</span><span class="p">.</span><span class="nx">data</span><span class="p">).</span><span class="k">catch</span><span class="p">(</span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">)</span>
+  <span class="p">}</span>
+
+<span class="p">...</span>
+</code></pre></div></div>
+
+<ol>
+  <li>Once submit button is clicked, it triggers <code class="language-plaintext highlighter-rouge">uploadFile()</code>.</li>
+  <li>This will then get the <strong>pre signed put url from the sever that we are running on <code class="language-plaintext highlighter-rouge">localhost:8080</code></strong></li>
+  <li>Then, <code class="language-plaintext highlighter-rouge">axios</code> will upload(via PUT method) the file to the AWS S3.</li>
+  <li>Currently <code class="language-plaintext highlighter-rouge">ObjectKey</code> uses file name, upon obtaining, it will be stored to the global variable <code class="language-plaintext highlighter-rouge">currentObjectKey</code>.</li>
+</ol>
+
+<h3 id="step-4b-testing-for-file-upload">Step 4.b: Testing for file upload</h3>
+
+<ol>
+  <li>Select a file, then click <strong>submit</strong>.</li>
+</ol>
+
+<p><img src="/assets/images/2020-07-25/img/frontend-testfile.png" alt="frontend-testfile" /></p>
+
+<ol>
+  <li>Check the <strong>network</strong>.
+    <ul>
+      <li>We can see a <code class="language-plaintext highlighter-rouge">presigned url</code> is successfully obtained from sever</li>
+      <li>Response from AWS S3 return code <code class="language-plaintext highlighter-rouge">200</code></li>
+    </ul>
+  </li>
+</ol>
+
+<p><img src="/assets/images/2020-07-25/img/frontend-network.png" alt="frontend-network" /></p>
+
+<ol>
+  <li>Check the our aws s3. File is successfully uploaded to AWS S3.</li>
+</ol>
+
+<p><img src="/assets/images/2020-07-25/img/frontend-fileuploaded.png" alt="frontend-fileuploaded" /></p>
+
+<h3 id="step-4c-display-clickable-link-for-download">Step 4.c: Display clickable link for download</h3>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">...</span>
+<span class="c1">// For download link</span>
+  <span class="kd">function</span> <span class="nx">createLink</span><span class="p">(){</span>
+    <span class="kd">let</span> <span class="nx">listContainer</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="dl">"</span><span class="s2">.card-text</span><span class="dl">"</span><span class="p">);</span>
+    <span class="kd">let</span> <span class="nx">li</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">createElement</span><span class="p">(</span><span class="dl">"</span><span class="s2">li</span><span class="dl">"</span><span class="p">);</span>
+    <span class="kd">let</span> <span class="nx">anchor</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">createElement</span><span class="p">(</span><span class="dl">"</span><span class="s2">a</span><span class="dl">"</span><span class="p">);</span>
+    <span class="nx">anchor</span><span class="p">.</span><span class="nx">setAttribute</span><span class="p">(</span><span class="dl">"</span><span class="s2">class</span><span class="dl">"</span><span class="p">,</span><span class="dl">"</span><span class="s2">text-warning</span><span class="dl">"</span><span class="p">);</span>
+    <span class="nx">anchor</span><span class="p">.</span><span class="nx">innerText</span> <span class="o">=</span> <span class="nx">fileName</span><span class="p">;</span>
+    <span class="nx">anchor</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="dl">"</span><span class="s2">click</span><span class="dl">"</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">event</span><span class="p">){</span>
+      <span class="nx">event</span><span class="p">.</span><span class="nx">preventDefault</span><span class="p">();</span>
+      <span class="nx">downloadFile</span><span class="p">(</span><span class="nx">currentObjectKey</span><span class="p">);</span>
+    <span class="p">});</span>
+    <span class="nx">li</span><span class="p">.</span><span class="nx">appendChild</span><span class="p">(</span><span class="nx">anchor</span><span class="p">);</span>
+    <span class="nx">listContainer</span><span class="p">.</span><span class="nx">appendChild</span><span class="p">(</span><span class="nx">li</span><span class="p">);</span>
+  <span class="p">}</span>
+<span class="p">...</span>
+</code></pre></div></div>
+<ol>
+  <li>
+    <p>Once the file is uploaded, a <code class="language-plaintext highlighter-rouge">clickable link</code> will be created</p>
+  </li>
+  <li>
+    <p>This link can be click and triggers the download effect.</p>
+  </li>
+</ol>
+
+<p><img src="/assets/images/2020-07-25/img/frontend-clickable.png" alt="frontend-clickable" /></p>
+
+<h3 id="step-5-downloading-file-from-aws-s3">Step 5: Downloading file from AWS S3</h3>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">...</span>
+  <span class="k">async</span> <span class="kd">function</span> <span class="nx">downloadFile</span><span class="p">(</span><span class="nx">objectKey</span><span class="p">){</span>
+    <span class="kd">const</span> <span class="p">{</span><span class="nx">preSignedUrl</span><span class="p">}</span> <span class="o">=</span> <span class="k">await</span> <span class="nx">getPreSignedGetUrl</span><span class="p">(</span><span class="nx">objectKey</span><span class="p">);</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">preSignedUrl</span><span class="p">);</span>
+    <span class="nx">clickUrl</span><span class="p">(</span><span class="nx">preSignedUrl</span><span class="p">);</span>
+  <span class="p">}</span>
+
+  <span class="kd">function</span> <span class="nx">clickUrl</span><span class="p">(</span><span class="nx">url</span><span class="p">){</span>
+    <span class="kd">let</span> <span class="nx">clickableLink</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">createElement</span><span class="p">(</span><span class="dl">"</span><span class="s2">a</span><span class="dl">"</span><span class="p">);</span>
+      <span class="nx">clickableLink</span><span class="p">.</span><span class="nx">href</span> <span class="o">=</span> <span class="nx">url</span><span class="p">;</span>
+      <span class="nx">clickableLink</span><span class="p">.</span><span class="nx">click</span><span class="p">();</span>
+  <span class="p">}</span>
+
+  <span class="kd">function</span> <span class="nx">getPreSignedGetUrl</span><span class="p">(</span><span class="nx">objectKey</span><span class="p">){</span>
+    <span class="kd">const</span> <span class="nx">baseUrl</span> <span class="o">=</span> <span class="dl">"</span><span class="s2">http://localhost:8080/</span><span class="dl">"</span>
+    <span class="kd">const</span> <span class="nx">awsUrl</span> <span class="o">=</span> <span class="dl">"</span><span class="s2">aws</span><span class="dl">"</span>
+    <span class="kd">const</span> <span class="nx">config</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="na">params</span><span class="p">:{</span><span class="nx">objectKey</span><span class="p">}</span>
+      <span class="p">}</span>
+    <span class="k">return</span> <span class="nx">axios</span><span class="p">.</span><span class="kd">get</span><span class="p">(</span><span class="s2">`</span><span class="p">${</span><span class="nx">baseUrl</span><span class="p">}${</span><span class="nx">awsUrl</span><span class="p">}</span><span class="s2">`</span><span class="p">,</span><span class="nx">config</span><span class="p">).</span><span class="nx">then</span><span class="p">(</span><span class="nx">res</span><span class="o">=&gt;</span><span class="nx">res</span><span class="p">.</span><span class="nx">data</span><span class="p">).</span><span class="k">catch</span><span class="p">(</span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">)</span>
+  <span class="p">}</span>
+
+<span class="p">...</span>
+</code></pre></div></div>
+
+<ol>
+  <li>Once a <code class="language-plaintext highlighter-rouge">clickable link</code> is clicked, it triggers the <code class="language-plaintext highlighter-rouge">downloadFile(objectKey)</code>.</li>
+  <li><code class="language-plaintext highlighter-rouge">objectKey</code> is used to generate a presigned url from the backend.</li>
+  <li>Upon obtaining the presigned url, <code class="language-plaintext highlighter-rouge">clickUrl()</code> function triggers the <strong>download even</strong>.</li>
+</ol>
+
+<p><img src="/assets/images/2020-07-25/img/frontend-download.png" alt="frontend-download" /></p>
+
+<ol>
+  <li>Checking <code class="language-plaintext highlighter-rouge">network</code>
+    <ul>
+      <li>We can see a <code class="language-plaintext highlighter-rouge">presigned url</code> is successfully obtained from sever</li>
+      <li>Response from AWS S3 return code <code class="language-plaintext highlighter-rouge">200</code></li>
+    </ul>
+  </li>
+</ol>
+
+<p><img src="/assets/images/2020-07-25/img/frontend-download-network.png" alt="frontend-download-network" /></p>
+
+<h2 id="conclusion">Conclusion</h2>
+
+<p>This is a simple implementation using pre signed url for file transferring. Backend is always required for protecting credentials, but using presigned url approach can offload backend if file gets relatively large and file transfer frequently.</p>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+
+        
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2020-07-25T00:00:00+10:00">July 25, 2020</time></p>
+
+
+      </footer>
+
+      <section class="page__share">
+  
+    <h4 class="page__share-title">Share on</h4>
+  
+
+  <a href="https://twitter.com/intent/tweet?text=Aws+S3+Presigned+Url%20http%3A%2F%2Flocalhost%3A4000%2Faws-s3-presigned-url%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2Faws-s3-presigned-url%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%3A4000%2Faws-s3-presigned-url%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+</section>
+
+
+      
+  <nav class="pagination">
+    
+      <a href="/learning-git-and-github/" class="pagination--pager" title="Learning Git And Github
+">Previous</a>
+    
+    
+      <a href="/physics-tooling-with-desmo/" class="pagination--pager" title="Physics Tooling With Desmo
+">Next</a>
+    
+  </nav>
+
+    </div>
+
+    
+  </article>
+
+  
+  
+    <div class="page__related">
+      <h4 class="page__related-title">You may also enjoy</h4>
+      <div class="grid__wrapper">
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/physics-tooling-with-desmo/" rel="permalink">Physics Tooling With Desmo
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  less than 1 minute read
+
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">Physics interactive tool with Desmo Graphing Calculator
+
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/learning-git-and-github/" rel="permalink">Learning Git And Github
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  6 minute read
+
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">git-learning
+This doc is for tracking the testing that i have done to solidify my understanding with git and github.
+
+</p>
+  </article>
+</div>
+
+        
+      </div>
+    </div>
+  
+  
+</div>
+
+    </div>
+
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <!-- <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>Follow:</strong></li>
+    
+
+    
+      
+        
+          <li><a href="https://jiajinzheng.com" rel="nofollow noopener noreferrer"><i class="fas fa-link" aria-hidden="true"></i> Personal Website</a></li>
+        
+      
+        
+          <li><a href="https://twitter.com/Jiajin_Zheng" rel="nofollow noopener noreferrer"><i class="fab fa-twitter-square" aria-hidden="true"></i> Twitter</a></li>
+        
+      
+        
+          <li><a href="https://github.com/jackytsheng" rel="nofollow noopener noreferrer"><i class="fab fa-github" aria-hidden="true"></i> GitHub</a></li>
+        
+      
+        
+          <li><a href="https://www.linkedin.com/in/jacky-jiajin-zheng-76a64b164/" rel="nofollow noopener noreferrer"><i class="fab fa-linkedin fa-fw" aria-hidden="true"></i> Linkedin</a></li>
+        
+      
+    
+
+    <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+  </ul>
+</div> -->
+
+<div class="page__footer-copyright">&copy; 2020 Jiajin Zheng Blog. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+  </body>
+</html>

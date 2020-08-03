@@ -1,0 +1,1071 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.7">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-08-04T01:25:15+10:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Jiajin Zheng Blog</title><subtitle>📚 Jiajin Zheng personal blog</subtitle><author><name>Jiajin Zheng</name><email>jackytsheng@gmail.com</email></author><entry><title type="html">Physics Tooling With Desmo</title><link href="http://localhost:4000/physics-tooling-with-desmo/" rel="alternate" type="text/html" title="Physics Tooling With Desmo" /><published>2020-07-29T00:00:00+10:00</published><updated>2020-07-29T00:00:00+10:00</updated><id>http://localhost:4000/physics-tooling-with-desmo</id><content type="html" xml:base="http://localhost:4000/physics-tooling-with-desmo/">&lt;h1 id=&quot;physics-interactive-tool-with-desmo-graphing-calculator&quot;&gt;Physics interactive tool with Desmo Graphing Calculator&lt;/h1&gt;
+
+&lt;h3 id=&quot;content-table&quot;&gt;Content Table&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;#content-table&quot;&gt;Content Table&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#wave-reflection&quot;&gt;Wave Reflection&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#standing-wave&quot;&gt;Standing wave&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#youngs-double-slits-experiment&quot;&gt;Young’s double slits experiment&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;wave-reflection&quot;&gt;Wave Reflection&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.desmos.com/calculator/zuvlio9uem&quot;&gt;Link to the tool&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Demonstrate:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;How wave reflected when hitting fixed end / open end&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;How to use:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Adjust the slider&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/2020-07-29/img/wave-reflection.png&quot; alt=&quot;wave-reflection&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;standing-wave&quot;&gt;Standing wave&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.desmos.com/calculator/guxrl7qzpg&quot;&gt;Link to the tool&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Demonstrate:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;How standing wave is formed&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;How to use:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Adjust the slider&lt;/li&gt;
+  &lt;li&gt;Enable / Disable different sinario&lt;/li&gt;
+  &lt;li&gt;Visualise superposition&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/2020-07-29/img/wave-standing.png&quot; alt=&quot;standing-wave&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;youngs-double-slits-experiment&quot;&gt;Young’s double slits experiment&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.desmos.com/calculator/ckfzjx1oo5&quot;&gt;Link to the tool&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Demonstrate:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;How interference occurs.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;How to use:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Adjust the slider&lt;/li&gt;
+  &lt;li&gt;Visualise fringe spacing&lt;/li&gt;
+  &lt;li&gt;Visualise path difference&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/2020-07-29/img/wave-interference.png&quot; alt=&quot;wave-interference&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;light-refraction&quot;&gt;Light Refraction&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.desmos.com/calculator/6rb6kzeotm&quot;&gt;Link to the tool&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Demonstrate:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Refraction for different &lt;strong&gt;refractive-index&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;How to use:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Adjust the slider for angle and reflective-index&lt;/li&gt;
+  &lt;li&gt;Visualise the change&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/2020-07-29/img/wave-refraction.png&quot; alt=&quot;wave-interference&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;interference-simulation-by-phta&quot;&gt;Interference simulation by Phta&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&quot;/assets/html/wave-interference_en.html&quot;&gt;Link to the tool&lt;/a&gt;&lt;/p&gt;</content><author><name>Jiajin Zheng</name><email>jackytsheng@gmail.com</email></author><summary type="html">Physics interactive tool with Desmo Graphing Calculator</summary></entry><entry><title type="html">Aws S3 Presigned Url</title><link href="http://localhost:4000/aws-s3-presigned-url/" rel="alternate" type="text/html" title="Aws S3 Presigned Url" /><published>2020-07-25T00:00:00+10:00</published><updated>2020-07-25T00:00:00+10:00</updated><id>http://localhost:4000/aws-s3-presigned-url</id><content type="html" xml:base="http://localhost:4000/aws-s3-presigned-url/">&lt;h1 id=&quot;uploadingdownloading-file-with-aws-s3-presigned-url-using-axios-and-springboot&quot;&gt;Uploading/Downloading file with AWS S3 Presigned url using Axios and SpringBoot&lt;/h1&gt;
+
+&lt;h5 id=&quot;tag-aws-s3-iam-springboot-java-javascript-axios&quot;&gt;Tag: #AWS #S3 #IAM #SpringBoot #Java #Javascript #Axios&lt;/h5&gt;
+
+&lt;h2 id=&quot;content-summary&quot;&gt;Content Summary&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;#content-summary&quot;&gt;Content Summary&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#about-this-blog&quot;&gt;About this blog&lt;/a&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#what-is-presigned-url-&quot;&gt;What is presigned URL ?&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#set-up-aws-iam--s3-bucket&quot;&gt;Set up AWS IAM + S3 Bucket&lt;/a&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#step-1-create-an-iam-user&quot;&gt;Step 1: Create an IAM user&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#step-2-create-a-s3-bucket&quot;&gt;Step 2: Create a S3 Bucket&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#set-up-java--spring-boot&quot;&gt;Set up Java + Spring Boot&lt;/a&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#step-1-use-spring-initializr-to-set-up-spring-boot-project&quot;&gt;Step 1: Use Spring initializr to set up spring boot project&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#step-2-add-java-sdk&quot;&gt;Step 2: Add java-sdk&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#step-3-setup-sontroller-service-and-config-structure&quot;&gt;Step 3: Setup sontroller, service and config structure&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#step-3a-code-for-controller&quot;&gt;Step 3.a: Code for controller&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#step-3b-code-for-service&quot;&gt;Step 3.b: Code for service&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#step-3c-code-for-config-and-awsproperties&quot;&gt;Step 3.c: Code for config and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;aws.properties&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#step-3d-code-for-data-transfer-object-dto&quot;&gt;Step 3.d: Code for data transfer object (dto)&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#step-4-test-for-aws-config-set-up&quot;&gt;Step 4: Test for AWS config set up&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#set-up-frontend-bootstrap--axios&quot;&gt;Set up Frontend (BootStrap &amp;amp; Axios)&lt;/a&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#step-1-set-up-html-and-style-including-cdn-for-bootstrap-and-axios&quot;&gt;Step 1: Set up HTML and style (including CDN for BootStrap and Axios)&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#step-2-enable-file-name-display-change&quot;&gt;Step 2: Enable file name display change&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#step-3-modify-the-submit-button&quot;&gt;Step 3: Modify the submit button&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#step-4a-upload-functionality&quot;&gt;Step 4.a: Upload functionality&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#step-4b-testing-for-file-upload&quot;&gt;Step 4.b: Testing for file upload&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#step-4c-display-clickable-link-for-download&quot;&gt;Step 4.c: Display clickable link for download&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#step-5-downloading-file-from-aws-s3&quot;&gt;Step 5: Downloading file from AWS S3&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#conclusion&quot;&gt;Conclusion&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;about-this-blog&quot;&gt;About this blog&lt;/h2&gt;
+&lt;p&gt;This blog is about how to set up &lt;strong&gt;presigned url&lt;/strong&gt; for &lt;strong&gt;getting and uploading to AWS S3&lt;/strong&gt; with Java SpringBoot and Axios.&lt;/p&gt;
+
+&lt;p&gt;I was once working on a school management project where I needed to upload student assignment to AWS S3 for storage, the assignment is then downloaded for marking by the teacher. If you guys are interested, project link is &lt;a href=&quot;&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Front end was built with React and I first implemented of browser uploading, then my Secret key and Access key were exposed (because i uploaded to github, public repository). I received tones of warning from AWS (Phone call &amp;amp; emails) that required me to take action in re-securing my account. So the whole idea of uploading directly from browser doesn’t work because user would have access the Secret/Access key if its store at the client site. But I still don’t want to upload file from the sever, as it just seem very unnecessary. Therefore, I implemented the &lt;a href=&quot;https://docs.aws.amazon.com/AmazonS3/latest/dev/PresignedUrlUploadObject.html&quot;&gt;AWS S3 Presigned URL&lt;/a&gt;. Although this can be achieved in a lots different ways, the project I worked on uses Java &amp;amp; SpringBoot for backend, so I tried to build it with Java. However, I couldn’t find any good resource out there that step through this process clearly. So I decided to write a blog about how to create a presigned URL for uploading to AWS S3 and getting object from AWS S3 using Java &amp;amp; SpringBoot. For the front, this is a simple API calling (put, get), So I am just going to use Axios library.&lt;/p&gt;
+
+&lt;h3 id=&quot;what-is-presigned-url-&quot;&gt;What is presigned URL ?&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/2020-07-25/img/Presigned-Url.png&quot; alt=&quot;presigned imag&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Long story short, instead of&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;Sending the file to the backend from client&lt;/li&gt;
+  &lt;li&gt;then, upload the file to S3 from backend.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;it’s now&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;Request the backend to return a &lt;strong&gt;Pre Signed Url&lt;/strong&gt; to the client&lt;/li&gt;
+  &lt;li&gt;then, upload file directly from client’s browser.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;In theory this could be so much quicker, as file doesn’t have to be transferred as many times.&lt;/p&gt;
+
+&lt;h2 id=&quot;set-up-aws-iam--s3-bucket&quot;&gt;Set up AWS IAM + S3 Bucket&lt;/h2&gt;
+
+&lt;p&gt;In order to upload to AWS S3, we first need to have few thing done with AWS. If you don’t already have an AWS account, you need to sign up first, there are lots of free tier services we can use.&lt;/p&gt;
+
+&lt;h3 id=&quot;step-1-create-an-iam-user&quot;&gt;Step 1: Create an IAM user&lt;/h3&gt;
+
+&lt;h4 id=&quot;1-once-log-in-under-find-services-type-in-iam&quot;&gt;1. Once log in under find services, type in &lt;strong&gt;IAM&lt;/strong&gt;.&lt;/h4&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/2020-07-25/img/IAM.png&quot; alt=&quot;users&quot; /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;2-in-dashboard-click-users-then-add-user&quot;&gt;2. In Dashboard, click users, then add user.&lt;/h4&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/2020-07-25/img/users.png&quot; alt=&quot;users&quot; /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;3-type-the-name-for-user-then-tick-programmatic-access&quot;&gt;3. Type the name for user, then tick &lt;strong&gt;Programmatic access&lt;/strong&gt;.&lt;/h4&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/2020-07-25/img/aws-s3.png&quot; alt=&quot;users&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Here I call my IAM user &lt;strong&gt;aws-s3&lt;/strong&gt; for demo purpose.
+  Note: Programmatic access allow using Access key and Secret key to access AWS without needing to go to AWS website and login. Click &lt;strong&gt;Next Permissions&lt;/strong&gt;.
+  This creates ‘Rule’ for this IAM user, because we want it to access AWS S3 service, so we need to let AWS know that this IAM can access AWS&lt;/p&gt;
+
+&lt;h4 id=&quot;4-full-access-of-aws-s3&quot;&gt;4. Full access of AWS S3.&lt;/h4&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/2020-07-25/img/aws-fullaccess.png&quot; alt=&quot;AWS-FULL-ACCESS&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Click &lt;strong&gt;Attach existing policies directly&lt;/strong&gt; , then type &lt;strong&gt;S3&lt;/strong&gt;. Tick the &lt;strong&gt;AmazonS3FullAccess&lt;/strong&gt;, This uses existing ‘rules’ that AWS has set, Full access means ‘This IAM can access everything about this S3 service’. Once select Click &lt;strong&gt;Next: Tags&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;4a-create-custom-policy&quot;&gt;4.a Create custom policy.&lt;/h4&gt;
+
+&lt;p&gt;If you don’t want to git this IAM too much ‘power’ in accessing your AWS S3, you can limit it by creating &lt;strong&gt;customise policy&lt;/strong&gt;, Click &lt;strong&gt;Create Policy&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;4b-selecting-the-aws-s3-actions-that-our-iam-can-take&quot;&gt;4.b Selecting the AWS S3 actions that our IAM can take.&lt;/h4&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/2020-07-25/img/aws-custom.png&quot; alt=&quot;AWS-CUSTOM&quot; /&gt;
+  Click &lt;strong&gt;choose a service&lt;/strong&gt;, then find &lt;strong&gt;S3&lt;/strong&gt;.
+  Select the action you want your IAM to have access to, Here I simply select &lt;strong&gt;PutObject and GetObject&lt;/strong&gt;
+  As that’s what I only need. You could also further restricted what S3 Bucket your IAM have access to,
+  But because we haven’t have a specific bucket yet, just click &lt;strong&gt;all resources&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/2020-07-25/img/aws-reviewpolicy.png&quot; alt=&quot;aws-reviewpolicy&quot; /&gt;
+  Then click &lt;strong&gt;review policy&lt;/strong&gt; and give it a name. Here I call mine, aws-s3-policy. Click &lt;strong&gt;Create Policy&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Note: you could also type in JSON policy, if that’s what you are more familiar with. After selection JSON policy would also be generated, that looks like this.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-JSON&quot;&gt;  {
+    &quot;Version&quot;: &quot;2012-10-17&quot;,
+    &quot;Statement&quot;: [
+        {
+            &quot;Sid&quot;: &quot;VisualEditor0&quot;,
+            &quot;Effect&quot;: &quot;Allow&quot;,
+            &quot;Action&quot;: [
+                &quot;s3:PutObject&quot;,
+                &quot;s3:GetObject&quot;
+            ],
+            &quot;Resource&quot;: &quot;*&quot;
+        }
+    ]
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h4 id=&quot;4c-choose-customised-policy-for-the-iam&quot;&gt;4.c Choose customised policy for the IAM.&lt;/h4&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/2020-07-25/img/aws-reviewpolicy.png&quot; alt=&quot;aws-selectCustomise&quot; /&gt;
+Navigate back to the &lt;strong&gt;IAM Add User&lt;/strong&gt; page. In the search bar, Type the name that you have created for the customised policy, select that and click &lt;strong&gt;Next: Tags.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;5-create-user-and-save-your-keys-important&quot;&gt;5. Create User and Save your keys (IMPORTANT).&lt;/h4&gt;
+
+&lt;p&gt;Keep clicking &lt;strong&gt;Next&lt;/strong&gt; and at the end click &lt;strong&gt;Create User&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/2020-07-25/img/aws-keys.png&quot; alt=&quot;aws-keys&quot; /&gt;
+Then you can see your &lt;strong&gt;Access key ID&lt;/strong&gt; and &lt;strong&gt;Secret access key&lt;/strong&gt;, these are the keys we need later, save them some where. &lt;strong&gt;This is a very very very important step&lt;/strong&gt;, as if you don’t save your keys now, you can never find it back.&lt;/p&gt;
+
+&lt;p&gt;Note: Notice there is also a link in the success message, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;https://664593066150.signin.aws.amazon.com/console&lt;/code&gt;, this would be the link where this IAM user uses to sign in.&lt;/p&gt;
+
+&lt;h4 id=&quot;6-copy-the-user-arn&quot;&gt;6. Copy the User ARN.&lt;/h4&gt;
+
+&lt;p&gt;Before we move on to create our S3, one more thing we need to do, that is to copy the user ARN that we will later need for the bucket policy.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/2020-07-25/img/aws-userarn.png&quot; alt=&quot;aws-userarn&quot; /&gt;
+Navigate back to the IAM User page, click the IAM user that you have just created, and copy the ARN.&lt;/p&gt;
+
+&lt;h3 id=&quot;step-2-create-a-s3-bucket&quot;&gt;Step 2: Create a S3 Bucket&lt;/h3&gt;
+
+&lt;p&gt;Next we will need to create a S3 bucket where we use to store file at. It’s optional to create the S3 bucket prior to the creation of IAM user.&lt;/p&gt;
+
+&lt;h4 id=&quot;1a-find-aws-s3-and-create-s3&quot;&gt;1.a Find AWS S3 and Create S3.&lt;/h4&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/2020-07-25/img/s3-find.png&quot; alt=&quot;s3-find&quot; /&gt;
+Under the &lt;strong&gt;services&lt;/strong&gt; drop down at the nav bar, type S3. And Click &lt;strong&gt;Create Bucket&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/2020-07-25/img/s3-create.png&quot; alt=&quot;s3-create&quot; /&gt;
+Fill the name,here I call my bucket &lt;strong&gt;presigned-s3-demo&lt;/strong&gt;. If it’s a general name like “demo” or “test”, it is highly likely that these names would already be registered by others.&lt;/p&gt;
+
+&lt;p&gt;Next, select a region that’s close to your geographic location, or client’s location. I choose &lt;strong&gt;Asian pacific(sydney)&lt;/strong&gt; because I live in Australia.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/2020-07-25/img/s3-block.png&quot; alt=&quot;s3-block&quot; /&gt;
+Then, skip the configure options, and make sure the bucket &lt;strong&gt;blocks all public access&lt;/strong&gt;. This is the whole point about this blog right ? If we would like it to be wide open for public, why bother having a key.&lt;/p&gt;
+
+&lt;p&gt;Click &lt;strong&gt;Next&lt;/strong&gt;, then Click Create &lt;strong&gt;bucket&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;1b-create-a-sub-folder-optional&quot;&gt;1.b Create a sub folder (Optional).&lt;/h4&gt;
+
+&lt;p&gt;You may not want to store everything right under the root directory of the bucket right ?&lt;/p&gt;
+
+&lt;p&gt;You could create subfolder. Files inside bucket are called &lt;strong&gt;Objects&lt;/strong&gt;, to operate, it like just like CRUD operation. All you need is the &lt;strong&gt;Object key&lt;/strong&gt;, and its just basically the &lt;strong&gt;sub directory&lt;/strong&gt; (if you have one) + &lt;strong&gt;file name&lt;/strong&gt; , a valid object key could be like this eg: &lt;strong&gt;object key: “assignment/student_assignment1”&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/2020-07-25/img/s3-subfolder.png&quot; alt=&quot;s3-subfolder&quot; /&gt;
+So I am going to create a sub folder now call “&lt;strong&gt;assignment&lt;/strong&gt;”.&lt;/p&gt;
+
+&lt;h4 id=&quot;2-s3-bucket-policy&quot;&gt;2. S3 Bucket Policy&lt;/h4&gt;
+
+&lt;p&gt;Just like IAM policy, S3 Bucket can also have policy.
+Under &lt;strong&gt;Permissions&lt;/strong&gt;, click &lt;strong&gt;Bucket policy&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/2020-07-25/img/s3-bucketpolicy.png&quot; alt=&quot;s3-bucketpolicy&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Below is a policy for reference:&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;You need to paste your own &lt;strong&gt;IAM ARN&lt;/strong&gt; that you just copied before.&lt;/li&gt;
+  &lt;li&gt;Copy your bucket ARN and paste it under the &lt;strong&gt;Resource&lt;/strong&gt;. you can find bucket ARN as highlighted in the img above. 
+Once done, click &lt;strong&gt;save&lt;/strong&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-JSON&quot;&gt;{
+    &quot;Version&quot;: &quot;2012-10-17&quot;,
+    &quot;Statement&quot;: [
+        {
+            &quot;Sid&quot;: &quot;AddCannedAcl&quot;,
+            &quot;Effect&quot;: &quot;Allow&quot;,
+            &quot;Principal&quot;: {
+                &quot;AWS&quot;: &quot;&amp;lt;your IAM user ARN&amp;gt;&quot;
+            },
+            &quot;Action&quot;: &quot;s3:*&quot;,
+            &quot;Resource&quot;: &quot;&amp;lt;your S3 bucket ARN&amp;gt;/*&quot;,
+            &quot;Condition&quot;: {
+                &quot;StringEquals&quot;: {
+                    &quot;s3:x-amz-acl&quot;: &quot;public-read&quot;
+                }
+            }
+        }
+    ]
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Note: for the “Action”:”s3:*” you can be more specific, &lt;a href=&quot;https://docs.aws.amazon.com/IAM/latest/UserGuide/list_amazons3.html&quot;&gt;find out more here.&lt;/a&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;3-cors-configuration&quot;&gt;3. CORS Configuration.&lt;/h4&gt;
+
+&lt;p&gt;Before we go on and build anything, we need to also configure the &lt;strong&gt;CORS&lt;/strong&gt;. Otherwise, it would stop us from visiting from a different domain. CORS is a nightmare that every new web developer will encounter. Click &lt;strong&gt;CORS Configuration&lt;/strong&gt; next to &lt;strong&gt;Bucket Policy&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/2020-07-25/img/s3-cors.png&quot; alt=&quot;s3-cors&quot; /&gt;
+Your configuration should look like above img. Below are the configuration you could refer.&lt;/p&gt;
+
+&lt;div class=&quot;language-xml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;cp&quot;&gt;&amp;lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;CORSConfiguration&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;xmlns=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;http://s3.amazonaws.com/doc/2006-03-01/&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;CORSRule&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;AllowedOrigin&amp;gt;&lt;/span&gt;*&lt;span class=&quot;nt&quot;&gt;&amp;lt;/AllowedOrigin&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;AllowedMethod&amp;gt;&lt;/span&gt;GET&lt;span class=&quot;nt&quot;&gt;&amp;lt;/AllowedMethod&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;AllowedMethod&amp;gt;&lt;/span&gt;PUT&lt;span class=&quot;nt&quot;&gt;&amp;lt;/AllowedMethod&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;MaxAgeSeconds&amp;gt;&lt;/span&gt;9000&lt;span class=&quot;nt&quot;&gt;&amp;lt;/MaxAgeSeconds&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;AllowedHeader&amp;gt;&lt;/span&gt;*&lt;span class=&quot;nt&quot;&gt;&amp;lt;/AllowedHeader&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/CORSRule&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/CORSConfiguration&amp;gt;&lt;/span&gt;
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Note: Here we are just using the &lt;strong&gt;GET and PUT&lt;/strong&gt; method. But you &lt;strong&gt;must&lt;/strong&gt; include what method you will use with &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;AllowedMethod&amp;gt; &amp;lt;/AllowedMethod&amp;gt;&lt;/code&gt; under the CORS Configuration. I spent hour in debugging, and realising that i just forgot to specify the method.&lt;/p&gt;
+
+&lt;h2 id=&quot;set-up-java--spring-boot&quot;&gt;Set up Java + Spring Boot&lt;/h2&gt;
+
+&lt;h3 id=&quot;step-1-use-spring-initializr-to-set-up-spring-boot-project&quot;&gt;Step 1: Use Spring initializr to set up spring boot project&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://start.spring.io/&quot;&gt;Link to Spring initializr.&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/2020-07-25/img/spring-initzr.png&quot; alt=&quot;spring-initzr&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Add &lt;strong&gt;Lombok&lt;/strong&gt; and &lt;strong&gt;Spring Web&lt;/strong&gt; to dependency, it should do for this simple task.&lt;/p&gt;
+
+&lt;h3 id=&quot;step-2-add-java-sdk&quot;&gt;Step 2: Add java-sdk&lt;/h3&gt;
+
+&lt;p&gt;Inside the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;pom.xml&lt;/code&gt; , add the following dependency.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/2020-07-25/img/spring-dependency.png&quot; alt=&quot;spring-dependency&quot; /&gt;&lt;/p&gt;
+
+&lt;div class=&quot;language-xml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;dependency&amp;gt;&lt;/span&gt;
+	&lt;span class=&quot;nt&quot;&gt;&amp;lt;groupId&amp;gt;&lt;/span&gt;com.amazonaws&lt;span class=&quot;nt&quot;&gt;&amp;lt;/groupId&amp;gt;&lt;/span&gt;
+	&lt;span class=&quot;nt&quot;&gt;&amp;lt;artifactId&amp;gt;&lt;/span&gt;aws-java-sdk&lt;span class=&quot;nt&quot;&gt;&amp;lt;/artifactId&amp;gt;&lt;/span&gt;
+	&lt;span class=&quot;nt&quot;&gt;&amp;lt;version&amp;gt;&lt;/span&gt;1.11.163&lt;span class=&quot;nt&quot;&gt;&amp;lt;/version&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/dependency&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;step-3-setup-sontroller-service-and-config-structure&quot;&gt;Step 3: Setup sontroller, service and config structure&lt;/h3&gt;
+
+&lt;p&gt;I created the folder and .java files as followed. For testing purpose, you don’t necessarily.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/2020-07-25/img/spring-structure.png&quot; alt=&quot;spring-structure&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;step-3a-code-for-controller&quot;&gt;Step 3.a: Code for controller&lt;/h3&gt;
+
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+&lt;span class=&quot;nd&quot;&gt;@CrossOrigin&lt;/span&gt;
+&lt;span class=&quot;nd&quot;&gt;@RestController&lt;/span&gt;
+&lt;span class=&quot;nd&quot;&gt;@RequestMapping&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;/aws&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;AWSController&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+
+    &lt;span class=&quot;nd&quot;&gt;@Autowired&lt;/span&gt;
+    &lt;span class=&quot;nc&quot;&gt;AWSPresignService&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;awsPresignService&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+
+    &lt;span class=&quot;nd&quot;&gt;@PutMapping&lt;/span&gt;
+    &lt;span class=&quot;nd&quot;&gt;@ResponseStatus&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;value&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;HttpStatus&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;OK&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;AWSPutResponseDto&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;uploadFile&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nd&quot;&gt;@RequestBody&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;AWSPutRequestDto&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;request&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;){&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;awsPresignService&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;preSignedUploadUrl&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;request&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;nd&quot;&gt;@GetMapping&lt;/span&gt;
+    &lt;span class=&quot;nd&quot;&gt;@ResponseStatus&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;value&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;HttpStatus&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;OK&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;AWSGetResponseDto&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;getFile&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nd&quot;&gt;@RequestParam&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;required&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;objectKey&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;){&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;awsPresignService&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;preSignedGetUrl&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;objectKey&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Created one end point for this presigned service, this will run on &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;localhost:8080/aws&lt;/code&gt; once SpringBoot run&lt;/li&gt;
+  &lt;li&gt;Created two end points, one for &lt;strong&gt;uploading file&lt;/strong&gt;, one for &lt;strong&gt;downloading file&lt;/strong&gt;.&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;@CrossOrigin&lt;/code&gt; annotation is important for this to work, otherwise, you will run into CORS issue.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;step-3b-code-for-service&quot;&gt;Step 3.b: Code for service&lt;/h3&gt;
+
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nd&quot;&gt;@Service&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;AWSPresignService&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+
+    &lt;span class=&quot;nd&quot;&gt;@Autowired&lt;/span&gt;
+    &lt;span class=&quot;nc&quot;&gt;AWSConfig&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;awsConfig&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+
+    &lt;span class=&quot;kd&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Regions&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;clientRegion&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Regions&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;AP_SOUTHEAST_2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+
+    &lt;span class=&quot;c1&quot;&gt;// This Subfolder can be changed, but we will fix it for now:&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;bucketName&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;presigned-s3-demo&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;objectKeySubFolder&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;assignment/&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+
+    &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;AWSPutResponseDto&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;preSignedUploadUrl&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;AWSPutRequestDto&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;request&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;throws&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;SdkClientException&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+
+        &lt;span class=&quot;c1&quot;&gt;// Set up credential for validation.&lt;/span&gt;
+        &lt;span class=&quot;nc&quot;&gt;BasicAWSCredentials&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;awsCredentials&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;BasicAWSCredentials&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;awsConfig&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;getAccessKey&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(),&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;awsConfig&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;getSecretKey&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;());&lt;/span&gt;
+
+        &lt;span class=&quot;c1&quot;&gt;// Forming object key string&lt;/span&gt;
+        &lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;objectKey&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;objectKeySubFolder&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;request&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;getFileName&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
+        &lt;span class=&quot;nc&quot;&gt;AmazonS3&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;s3Client&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;AmazonS3ClientBuilder&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;standard&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt;
+            &lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;withCredentials&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;AWSStaticCredentialsProvider&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;awsCredentials&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;))&lt;/span&gt;
+            &lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;withRegion&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;clientRegion&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+            &lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;build&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
+
+        &lt;span class=&quot;c1&quot;&gt;// Set the pre-signed URL to expire after 10 mins.&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;java&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;util&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;Date&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;expiration&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;java&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;util&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;Date&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
+        &lt;span class=&quot;kt&quot;&gt;long&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;expTimeMillis&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;expiration&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;getTime&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;expTimeMillis&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1000&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;60&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;expiration&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;setTime&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;expTimeMillis&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+
+        &lt;span class=&quot;c1&quot;&gt;// Generate the pre-signed URL.&lt;/span&gt;
+        &lt;span class=&quot;nc&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Generating pre-signed URL.&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+
+        &lt;span class=&quot;nc&quot;&gt;GeneratePresignedUrlRequest&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;generatePresignedUrlRequest&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;GeneratePresignedUrlRequest&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;
+            &lt;span class=&quot;n&quot;&gt;bucketName&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;objectKey&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+            &lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;withMethod&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;HttpMethod&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;PUT&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+            &lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;withExpiration&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;expiration&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+        &lt;span class=&quot;no&quot;&gt;URL&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;url&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;s3Client&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;generatePresignedUrl&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;generatePresignedUrlRequest&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+
+        &lt;span class=&quot;c1&quot;&gt;// Returning the url&lt;/span&gt;
+        &lt;span class=&quot;nc&quot;&gt;AWSPutResponseDto&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;awsPutResponse&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;AWSPutResponseDto&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;awsPutResponse&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;setObjectKey&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;objectKey&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;awsPutResponse&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;setPreSignedUrl&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;url&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;toString&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;());&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;awsPutResponse&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+
+    &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;AWSGetResponseDto&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;preSignedGetUrl&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;objectKey&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;throws&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;SdkClientException&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+
+        &lt;span class=&quot;c1&quot;&gt;// Set up credential for validation.&lt;/span&gt;
+        &lt;span class=&quot;nc&quot;&gt;BasicAWSCredentials&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;awsCredentials&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;BasicAWSCredentials&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;awsConfig&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;getAccessKey&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(),&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;awsConfig&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;getSecretKey&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;());&lt;/span&gt;
+
+        &lt;span class=&quot;nc&quot;&gt;AmazonS3&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;s3Client&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;AmazonS3ClientBuilder&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;standard&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt;
+            &lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;withRegion&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;clientRegion&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+            &lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;withCredentials&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;AWSStaticCredentialsProvider&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;awsCredentials&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;))&lt;/span&gt;
+            &lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;build&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
+
+        &lt;span class=&quot;c1&quot;&gt;// Set the presigned URL to expire after one hour.&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;java&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;util&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;Date&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;expiration&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;java&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;util&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;Date&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
+        &lt;span class=&quot;kt&quot;&gt;long&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;expTimeMillis&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;expiration&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;getTime&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;expTimeMillis&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1000&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;60&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;expiration&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;setTime&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;expTimeMillis&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+
+        &lt;span class=&quot;c1&quot;&gt;// Generate the presigned URL.&lt;/span&gt;
+        &lt;span class=&quot;nc&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Generating pre-signed URL.&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+        &lt;span class=&quot;nc&quot;&gt;GeneratePresignedUrlRequest&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;generatePresignedUrlRequest&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;
+            &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;GeneratePresignedUrlRequest&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;bucketName&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;objectKey&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+                &lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;withMethod&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;HttpMethod&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;GET&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+                &lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;withExpiration&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;expiration&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+        &lt;span class=&quot;no&quot;&gt;URL&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;url&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;s3Client&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;generatePresignedUrl&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;generatePresignedUrlRequest&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+        &lt;span class=&quot;nc&quot;&gt;AWSGetResponseDto&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;awsGetResponse&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;AWSGetResponseDto&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;awsGetResponse&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;setPreSignedUrl&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;url&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;toString&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;());&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;awsGetResponse&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;setObjectKey&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;objectKey&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;awsGetResponse&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Follow the tutorial on &lt;a href=&quot;https://docs.aws.amazon.com/AmazonS3/latest/dev/PresignedUrlUploadObjectJavaSDK.html&quot;&gt;AWS documentation&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Adjustment to the tutorial is the credential establishment, I injected both &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;secretKey&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;accessKey&lt;/code&gt; that’s set up inside &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;AWSconfig&lt;/code&gt;, for security, this should &lt;strong&gt;never be hard coded&lt;/strong&gt;. Or AWS will send you notification once you accidently push it to github. Trust me, this happens when you first work with AWS Credential, the most overlook detail is to not push your key to any public accessible platform.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;step-3c-code-for-config-and-awsproperties&quot;&gt;Step 3.c: Code for config and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;aws.properties&lt;/code&gt;&lt;/h3&gt;
+
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+&lt;span class=&quot;c1&quot;&gt;//@PropertySource(ignoreResourceNotFound = true, value = {&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;//    &quot;classpath:awsBackup.properties&quot;,&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;//    &quot;classpath:aws.properties&quot;})&lt;/span&gt;
+
+
+&lt;span class=&quot;nd&quot;&gt;@PropertySource&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ignoreResourceNotFound&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;value&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;classpath:aws.properties&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;nd&quot;&gt;@ConfigurationProperties&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;prefix&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;s3&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;nd&quot;&gt;@Data&lt;/span&gt;
+&lt;span class=&quot;nd&quot;&gt;@Component&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;AWSConfig&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;secretKey&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;accessKey&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Keys are read from customised &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;aws.properties&lt;/code&gt; file&lt;/li&gt;
+  &lt;li&gt;Notice the commented code above, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&quot;classpath:aws.properties&quot;&lt;/code&gt; will takes priority, if &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;s3.secretKey&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;s3.accessKey&lt;/code&gt; exist in both files. Using this idea, we can have a local copy where aws key exist, forexample,&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Under &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/resources/aws.properties&lt;/code&gt;&lt;/p&gt;
+
+&lt;div class=&quot;language-conf highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;#aws credentials
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;s3&lt;/span&gt;.&lt;span class=&quot;n&quot;&gt;accessKey&lt;/span&gt; = &lt;span class=&quot;n&quot;&gt;AKIAZVPGVNCTC6FC3IP4&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;s3&lt;/span&gt;.&lt;span class=&quot;n&quot;&gt;secretKey&lt;/span&gt; = +&lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;npucE8IL0th15C4GjyJ6dM40yS7GDtZWPAV1nO&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;We can also included a &lt;strong&gt;mock file&lt;/strong&gt;. This &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;awsBackup.properties&lt;/code&gt; file ensures aws service works fine even without actual AWS credential information. Important when you collaborate with others in a team project, you don’t want your code to break in other machine when you exclude some files that you don’t want to commit to the git and push to github.&lt;/p&gt;
+
+&lt;p&gt;Under &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/resources/awsBackup.properties&lt;/code&gt;&lt;/p&gt;
+
+&lt;div class=&quot;language-conf highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;#aws credentials template
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;s3&lt;/span&gt;.&lt;span class=&quot;n&quot;&gt;accessKey&lt;/span&gt; = &amp;lt;&lt;span class=&quot;n&quot;&gt;Enter&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;your&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;access&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;key&lt;/span&gt;&amp;gt;
+&lt;span class=&quot;n&quot;&gt;s3&lt;/span&gt;.&lt;span class=&quot;n&quot;&gt;secretKey&lt;/span&gt; = &amp;lt;&lt;span class=&quot;n&quot;&gt;Enter&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;your&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;secret&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;key&lt;/span&gt;&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Overall this folder structure will look like this.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/2020-07-25/img/spring-resources.png&quot; alt=&quot;spring-resources&quot; /&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Adding &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;aws.properties&lt;/code&gt; where your real credential is stored, to the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.gitignore&lt;/code&gt;, so that you won’t accidently push it onto public platform.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/2020-07-25/img/spring-gitignore.png&quot; alt=&quot;spring-gitignore&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;step-3d-code-for-data-transfer-object-dto&quot;&gt;Step 3.d: Code for data transfer object (dto)&lt;/h3&gt;
+
+&lt;p&gt;These Dtos are for data transferring.&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;AWSGetResponseDto&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nd&quot;&gt;@Data&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;AWSGetResponseDto&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;objectKey&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;preSignedUrl&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;AWSPutRequestDto&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nd&quot;&gt;@Data&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;AWSPutRequestDto&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;fileName&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;AWSPutResponseDto
+```java
+@Data
+public class AWSPutResponseDto {
+ private String objectKey;
+ private String preSignedUrl;
+}&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+### Step 4: Test for AWS config set up
+
+We can check has our AWS configuration been successfully set up by writing printing them inside `test`.
+
+![spring-test](/assets/images/2020-07-25/img/spring-test.png)
+
+```java
+
+@SpringBootTest
+public class AWSConfigTest {
+    @Autowired
+    AWSConfig awsConfig;
+
+    @Test
+    public void contextLoads(){
+
+        System.out.println(awsConfig);
+
+    }
+
+}
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Result when &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;resources/aws.properties&lt;/code&gt; present.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/2020-07-25/img/spring-config-with-result.png&quot; alt=&quot;spring-config-with-result&quot; /&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Result when &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;resources/aws.properties&lt;/code&gt; &lt;strong&gt;is not&lt;/strong&gt; present.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/2020-07-25/img/spring-config-without-result.png&quot; alt=&quot;spring-config-without-result&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Notice that the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;accessKey&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;secretKey&lt;/code&gt; value fall back to the template code inside &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;awsBackup.properties&lt;/code&gt;,aws sdk doesn’t care what key you signed url with. aws s3 service will only return &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;403&lt;/code&gt; at the front end when you try to &lt;strong&gt;upload/download&lt;/strong&gt; with url that signed using these invalid keys.&lt;/p&gt;
+
+&lt;p&gt;This is good, because everything can work at the at the backend as normal without the file that contains our real credentials, without worrying exposure of credentials.&lt;/p&gt;
+
+&lt;p&gt;Once completed this step, run your SpringBoot application on &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;localhost:8080&lt;/code&gt;. Then we can move on to the frontend.&lt;/p&gt;
+
+&lt;h2 id=&quot;set-up-frontend-bootstrap--axios&quot;&gt;Set up Frontend (BootStrap &amp;amp; Axios)&lt;/h2&gt;
+
+&lt;p&gt;For quick demostration, I used &lt;a href=&quot;https://getbootstrap.com/&quot;&gt;BootStrap&lt;/a&gt; and &lt;a href=&quot;https://github.com/axios/axios&quot;&gt;Axios&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h3 id=&quot;step-1-set-up-html-and-style-including-cdn-for-bootstrap-and-axios&quot;&gt;Step 1: Set up HTML and style (including CDN for BootStrap and Axios)&lt;/h3&gt;
+
+&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;cp&quot;&gt;&amp;lt;!DOCTYPE html&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;html&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;lang=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;en&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;head&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;meta&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;charset=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;UTF-8&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;meta&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;name=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;viewport&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;content=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;width=device-width, initial-scale=1.0&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;title&amp;gt;&lt;/span&gt;S3 Upload&lt;span class=&quot;nt&quot;&gt;&amp;lt;/title&amp;gt;&lt;/span&gt;
+
+  &lt;span class=&quot;c&quot;&gt;&amp;lt;!-- CSS only --&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;link&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;rel=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;stylesheet&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;integrity=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;crossorigin=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;anonymous&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+
+  &lt;span class=&quot;c&quot;&gt;&amp;lt;!-- Axios library --&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;script &lt;/span&gt;&lt;span class=&quot;na&quot;&gt;src=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;https://unpkg.com/axios/dist/axios.min.js&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/script&amp;gt;&lt;/span&gt;
+
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/head&amp;gt;&lt;/span&gt;
+
+
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;style&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;body&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;display&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;flex&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;justify-content&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;center&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;align-items&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;center&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;flex-direction&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;column&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;height&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;100vh&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+  &lt;span class=&quot;nc&quot;&gt;.card-text&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;display&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;block&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;cursor&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;pointer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/style&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;body&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;form&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;wrap&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;input-group mb-3&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;input-group-prepend&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+            &lt;span class=&quot;nt&quot;&gt;&amp;lt;button&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;submitBtn btn btn-outline-secondary&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;id=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;inputGroupFileAddon03&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;Submit&lt;span class=&quot;nt&quot;&gt;&amp;lt;/button&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;custom-file&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+            &lt;span class=&quot;nt&quot;&gt;&amp;lt;input&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;type=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;file&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;custom-file-input&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;id=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;inputGroupFile03&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;aria-describedby=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;inputGroupFileAddon03&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;onchange=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;changeDisplayName()&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
+            &lt;span class=&quot;nt&quot;&gt;&amp;lt;label&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;custom-file-label&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;for=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;inputGroupFile03&quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;Choose file&lt;span class=&quot;nt&quot;&gt;&amp;lt;/label&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;/form&amp;gt;&lt;/span&gt;  
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;ol&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;card-text bg-light&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;style=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;transform: rotate(0);&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;/ol&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/body&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;&amp;lt;!-- JS, Popper.js, and jQuery --&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;script &lt;/span&gt;&lt;span class=&quot;na&quot;&gt;src=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;https://code.jquery.com/jquery-3.5.1.slim.min.js&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;integrity=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;crossorigin=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;anonymous&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/script&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;script &lt;/span&gt;&lt;span class=&quot;na&quot;&gt;src=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;integrity=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;crossorigin=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;anonymous&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/script&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;script &lt;/span&gt;&lt;span class=&quot;na&quot;&gt;src=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;integrity=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;crossorigin=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;anonymous&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/script&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/html&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;For demo, all scripts and styles are written inside one html file.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;UI will look like this&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/2020-07-25/img/frontend-UI.png&quot; alt=&quot;UI&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;step-2-enable-file-name-display-change&quot;&gt;Step 2: Enable file name display change&lt;/h3&gt;
+
+&lt;div class=&quot;language-js highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; &lt;span class=&quot;c1&quot;&gt;// For file&lt;/span&gt;
+  &lt;span class=&quot;kd&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;fileName&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;kd&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;currentObjectKey&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+
+
+&lt;span class=&quot;p&quot;&gt;...&lt;/span&gt;
+
+
+&lt;span class=&quot;c1&quot;&gt;// For file name&lt;/span&gt;
+  &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;changeDisplayName&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(){&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;file&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;document&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;querySelector&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;.custom-file-input&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;files&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;name&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;file&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;?&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;file&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;Choose file&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;label&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;document&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;querySelector&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;.custom-file-label&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;fileName&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;submitBtn&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;disabled&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;!!!&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;file&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;label&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;innerHTML&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;trimName&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+  &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;trimName&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;){&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;fileSuffixIndex&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;lastIndexOf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;fileSuffix&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;slice&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;fileSuffixIndex&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;length&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;length&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;24&lt;/span&gt;
+      &lt;span class=&quot;p&quot;&gt;?&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;slice&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;
+        &lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;...&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;
+        &lt;span class=&quot;nx&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;slice&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;fileSuffixIndex&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;fileSuffixIndex&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;
+        &lt;span class=&quot;nx&quot;&gt;fileSuffix&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;This &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;changeDisplayName&lt;/code&gt; is called when a file is selected. Notice that if you click cancel, file name will be changed back to “Choose file”&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;trimName&lt;/code&gt; shorten the file name when it is too long.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;UI for file display.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;submitBtn.disabled = !!!file;&lt;/code&gt; This code disable the submit button when there is no file exist.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/2020-07-25/img/frontend-filename.png&quot; alt=&quot;frontend-filename&quot; /&gt;
+&lt;img src=&quot;/assets/images/2020-07-25/img/frontend-filename-trim.png&quot; alt=&quot;frontend-filename&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;step-3-modify-the-submit-button&quot;&gt;Step 3: Modify the submit button&lt;/h3&gt;
+
+&lt;div class=&quot;language-js highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  
+&lt;span class=&quot;p&quot;&gt;...&lt;/span&gt;  
+  &lt;span class=&quot;c1&quot;&gt;// For submit button&lt;/span&gt;
+  &lt;span class=&quot;kd&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;submitBtn&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;document&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;querySelector&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;.submitBtn&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+  &lt;span class=&quot;nx&quot;&gt;submitBtn&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;disabled&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;nx&quot;&gt;submitBtn&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;addEventListener&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;click&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;event&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;){&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;event&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;preventDefault&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;uploadFile&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;...&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;This prevent submitBtn from submitting the form, which will reload the page.&lt;/li&gt;
+  &lt;li&gt;Disable the button when file is not loaded&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;step-4a-upload-functionality&quot;&gt;Step 4.a: Upload functionality&lt;/h3&gt;
+
+&lt;div class=&quot;language-js highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;p&quot;&gt;...&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;// For upload&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;async&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;uploadFile&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(){&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;objectKey&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;preSignedUrl&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;await&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;getPreSignedUploadUrl&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;preSignedUrl&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;currentObjectKey&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;objectKey&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;file&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;document&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;querySelector&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;.custom-file-input&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;files&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;];&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;await&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;axios&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;put&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;preSignedUrl&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;file&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;then&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;res&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;res&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+      &lt;span class=&quot;nx&quot;&gt;createLink&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}).&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;catch&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+  
+  &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;getPreSignedUploadUrl&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(){&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;baseUrl&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;http://localhost:8080/&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;awsUrl&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;aws&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;putBody&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;fileName&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;axios&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;put&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;`&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;${&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;baseUrl&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}${&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;awsUrl&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;`&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;putBody&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;then&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;res&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;res&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;catch&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;p&quot;&gt;...&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Once submit button is clicked, it triggers &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;uploadFile()&lt;/code&gt;.&lt;/li&gt;
+  &lt;li&gt;This will then get the &lt;strong&gt;pre signed put url from the sever that we are running on &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;localhost:8080&lt;/code&gt;&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;Then, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;axios&lt;/code&gt; will upload(via PUT method) the file to the AWS S3.&lt;/li&gt;
+  &lt;li&gt;Currently &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ObjectKey&lt;/code&gt; uses file name, upon obtaining, it will be stored to the global variable &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;currentObjectKey&lt;/code&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;step-4b-testing-for-file-upload&quot;&gt;Step 4.b: Testing for file upload&lt;/h3&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Select a file, then click &lt;strong&gt;submit&lt;/strong&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/2020-07-25/img/frontend-testfile.png&quot; alt=&quot;frontend-testfile&quot; /&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Check the &lt;strong&gt;network&lt;/strong&gt;.
+    &lt;ul&gt;
+      &lt;li&gt;We can see a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;presigned url&lt;/code&gt; is successfully obtained from sever&lt;/li&gt;
+      &lt;li&gt;Response from AWS S3 return code &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;200&lt;/code&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/2020-07-25/img/frontend-network.png&quot; alt=&quot;frontend-network&quot; /&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Check the our aws s3. File is successfully uploaded to AWS S3.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/2020-07-25/img/frontend-fileuploaded.png&quot; alt=&quot;frontend-fileuploaded&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;step-4c-display-clickable-link-for-download&quot;&gt;Step 4.c: Display clickable link for download&lt;/h3&gt;
+
+&lt;div class=&quot;language-js highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;p&quot;&gt;...&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;// For download link&lt;/span&gt;
+  &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;createLink&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(){&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;listContainer&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;document&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;querySelector&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;.card-text&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;li&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;document&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;createElement&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;li&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;anchor&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;document&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;createElement&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;anchor&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;setAttribute&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;class&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;text-warning&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;anchor&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;innerText&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;fileName&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;anchor&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;addEventListener&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;click&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;event&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;){&lt;/span&gt;
+      &lt;span class=&quot;nx&quot;&gt;event&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;preventDefault&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
+      &lt;span class=&quot;nx&quot;&gt;downloadFile&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;currentObjectKey&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;li&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;appendChild&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;anchor&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;listContainer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;appendChild&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;li&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;...&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;Once the file is uploaded, a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;clickable link&lt;/code&gt; will be created&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;This link can be click and triggers the download effect.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/2020-07-25/img/frontend-clickable.png&quot; alt=&quot;frontend-clickable&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;step-5-downloading-file-from-aws-s3&quot;&gt;Step 5: Downloading file from AWS S3&lt;/h3&gt;
+
+&lt;div class=&quot;language-js highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;p&quot;&gt;...&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;async&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;downloadFile&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;objectKey&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;){&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;preSignedUrl&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;await&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;getPreSignedGetUrl&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;objectKey&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;preSignedUrl&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;clickUrl&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;preSignedUrl&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+  &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;clickUrl&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;url&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;){&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;clickableLink&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;document&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;createElement&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+      &lt;span class=&quot;nx&quot;&gt;clickableLink&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;href&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;url&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+      &lt;span class=&quot;nx&quot;&gt;clickableLink&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;click&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+  &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;getPreSignedGetUrl&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;objectKey&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;){&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;baseUrl&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;http://localhost:8080/&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;awsUrl&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;aws&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;config&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;na&quot;&gt;params&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:{&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;objectKey&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+      &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;axios&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;kd&quot;&gt;get&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;`&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;${&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;baseUrl&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}${&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;awsUrl&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;`&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;config&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;then&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;res&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;res&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;catch&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;p&quot;&gt;...&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Once a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;clickable link&lt;/code&gt; is clicked, it triggers the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;downloadFile(objectKey)&lt;/code&gt;.&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;objectKey&lt;/code&gt; is used to generate a presigned url from the backend.&lt;/li&gt;
+  &lt;li&gt;Upon obtaining the presigned url, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;clickUrl()&lt;/code&gt; function triggers the &lt;strong&gt;download even&lt;/strong&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/2020-07-25/img/frontend-download.png&quot; alt=&quot;frontend-download&quot; /&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Checking &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;network&lt;/code&gt;
+    &lt;ul&gt;
+      &lt;li&gt;We can see a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;presigned url&lt;/code&gt; is successfully obtained from sever&lt;/li&gt;
+      &lt;li&gt;Response from AWS S3 return code &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;200&lt;/code&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/2020-07-25/img/frontend-download-network.png&quot; alt=&quot;frontend-download-network&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
+
+&lt;p&gt;This is a simple implementation using pre signed url for file transferring. Backend is always required for protecting credentials, but using presigned url approach can offload backend if file gets relatively large and file transfer frequently.&lt;/p&gt;</content><author><name>Jiajin Zheng</name><email>jackytsheng@gmail.com</email></author><summary type="html">Uploading/Downloading file with AWS S3 Presigned url using Axios and SpringBoot</summary></entry><entry><title type="html">Learning Git And Github</title><link href="http://localhost:4000/learning-git-and-github/" rel="alternate" type="text/html" title="Learning Git And Github" /><published>2020-04-17T00:00:00+10:00</published><updated>2020-04-17T00:00:00+10:00</updated><id>http://localhost:4000/learning-git-and-github</id><content type="html" xml:base="http://localhost:4000/learning-git-and-github/">&lt;h1 id=&quot;git-learning&quot;&gt;git-learning&lt;/h1&gt;
+&lt;p&gt;This doc is for tracking the testing that i have done to solidify my understanding with git and github.&lt;/p&gt;
+
+&lt;h2 id=&quot;git-basic&quot;&gt;Git basic&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://res.cloudinary.com/practicaldev/image/fetch/s--Si7ksd-d--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://cdn-images-1.medium.com/max/800/1%2AdiRLm1S5hkVoh5qeArND0Q.png&quot; alt=&quot;Schematic flow showing how git works&quot; /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;git-init&quot;&gt;git Init&lt;/h4&gt;
+&lt;p&gt;The following command initialises a git repository&lt;/p&gt;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;git init
+
+&lt;span class=&quot;c&quot;&gt;# This message will show, once sucess &quot;Initialized empty Git repository&quot;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h4 id=&quot;git-add&quot;&gt;git add&lt;/h4&gt;
+&lt;p&gt;The following command add changes to the staging.&lt;/p&gt;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;# &quot; . &quot; means all changes, or a particular file&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;# Only added change would be placed into staging area&lt;/span&gt;
+&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;git add &lt;span class=&quot;nb&quot;&gt;.&lt;/span&gt; 
+&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;git add &amp;lt;file&amp;gt; 
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h4 id=&quot;git-commit&quot;&gt;git commit&lt;/h4&gt;
+&lt;p&gt;This command commit changes to the repository.&lt;/p&gt;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;git commit &lt;span class=&quot;nt&quot;&gt;-m&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;commit message&quot;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h4 id=&quot;gitignore&quot;&gt;.gitignore&lt;/h4&gt;
+
+&lt;p&gt;This command creates a &lt;em&gt;.gitignore&lt;/em&gt; file.&lt;/p&gt;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; &lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;touch&lt;/span&gt; .gitignore
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;my-thought-when-play-around-the-git-comman&quot;&gt;My thought when play around the git comman.&lt;/h2&gt;
+
+&lt;h4 id=&quot;if-there-exisits-git-already-what-happens-if-i--git-init-agian-&quot;&gt;If there exisits git already, what happens if I &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;$ git init&lt;/code&gt; agian ?&lt;/h4&gt;
+&lt;p&gt;It’s fine, it won’t harm. The following command was run &lt;em&gt;after&lt;/em&gt; i have already initilaised a git repository.&lt;/p&gt;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;git init
+&lt;span class=&quot;c&quot;&gt;# This message will show: &quot;Reinitialized existing Git repository&quot;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;Check more about this on &lt;a href=&quot;https://stackoverflow.com/questions/5149694/does-running-git-init-twice-initialize-a-repository-or-reinitialize-an-existing&quot;&gt;stack overflow&lt;/a&gt; .&lt;/p&gt;
+
+&lt;h4 id=&quot;what-happens-if-i-add-a-change-to-the-staging-area-where-it-already-exits-a-previous-change-&quot;&gt;What happens if I add a change to the staging area where it already exits a previous change ?&lt;/h4&gt;
+
+&lt;p&gt;To test this out, I made a first change on a file. Then I added it to the staging area
+&lt;img src=&quot;/assets/images/2020-04-17/Screenshots/git-add-firstChange.png&quot; alt=&quot;git add firstChange img&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;After that, I made a second change and added it again.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/2020-04-17/Screenshots/git-add-secondChange.png&quot; alt=&quot;git add secondChange img&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Looks like the new added change will overwrite the old change one for the same file.&lt;/p&gt;
+
+&lt;h4 id=&quot;what-happens-if-i-change-file-name-when-the-change-is-already-being-staged-&quot;&gt;What happens if I change file name when the change is already being staged ?&lt;/h4&gt;
+
+&lt;p&gt;To test this out I first made a change.
+&lt;img src=&quot;/assets/images/2020-04-17/Screenshots/git-add-thirdChange.png&quot; alt=&quot;git add thirdChange img&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Then if I run &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;$ git status&lt;/code&gt;, I obtain the following:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/2020-04-17/Screenshots/git-add-thirdChange-status.png&quot; alt=&quot;git add thirdChange status img&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Then I used command:&lt;/p&gt;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; &lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;git &lt;span class=&quot;nb&quot;&gt;mv &lt;/span&gt;index.html index2.html 
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;to change my index.html to index2.html. And this is what showed up when I use &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;$ git status&lt;/code&gt;:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/2020-04-17/Screenshots/git-add-rename.png&quot; alt=&quot;git add rename img&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Looks like git can tell if the change comes from the same file that has just been renamed.&lt;/p&gt;
+
+&lt;p&gt;If I simply just rename it by &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;right clicking &amp;gt; rename&lt;/code&gt;. It will appear to the git as &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;old file&amp;gt;&lt;/code&gt; has been deleted, a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;new file&amp;gt;&lt;/code&gt; is then created.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/2020-04-17/Screenshots/git-rename.png&quot; alt=&quot;git add rename by right clicking&quot; /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;what-happens-if-i-add-file-name-on-gitignore-after-i-add-it-change-to-the-staging-area-&quot;&gt;What happens if I add file name on .gitignore after I add it change to the staging area ?&lt;/h4&gt;
+
+&lt;p&gt;To test this out I simply created a &lt;em&gt;.gitignore&lt;/em&gt; after I already have the &lt;em&gt;.DS_Store&lt;/em&gt; file on the staging area.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/2020-04-17/Screenshots/git-ignore-fileName.png&quot; alt=&quot;file name written on the .gitignore file&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Then If i check the status, I get the following:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/2020-04-17/Screenshots/git-ignore-status.png&quot; alt=&quot;satus after file name added to git ignore&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Looks like it I will have to to remove it mannualy from the staging area, git will stop tracking change the moment after file name is written on .gitignore, not before.&lt;/p&gt;
+
+&lt;h2 id=&quot;github-basic&quot;&gt;Github Basic&lt;/h2&gt;
+&lt;h4 id=&quot;remote&quot;&gt;Remote&lt;/h4&gt;
+
+&lt;p&gt;This command adds a remote repository named as origin. Origin as with master has no particular meaning according to &lt;a href=&quot;https://git-scm.com/docs/git-merge&quot;&gt;git docs&lt;/a&gt;&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;# To add a remote repository&lt;/span&gt;
+git remote add origin git@github.com:jackytsheng/git-learning
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;Using this protocol requires entering of password each time &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;git push&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;git pull&lt;/code&gt;. Whereas using the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;https://&lt;/code&gt; protocol doesn’t&lt;/p&gt;
+
+&lt;h4 id=&quot;push&quot;&gt;Push&lt;/h4&gt;
+
+&lt;p&gt;This command push local repository to remote repository&lt;/p&gt;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;# If push for the first time, setting up-stream is requried&lt;/span&gt;
+&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;git push &lt;span class=&quot;nt&quot;&gt;-u&lt;/span&gt; origin master
+&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;git push
+
+&lt;span class=&quot;c&quot;&gt;# This message will be obtained if there is no upstream branch &quot;fatal: The current branch master has no upstream branch.&quot;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;h3 id=&quot;fetch-and-pull&quot;&gt;Fetch and Pull&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://miro.medium.com/max/602/1*OqKfKe3mqCRbaWT2Y8YDOQ.png&quot; alt=&quot;git fetch and git pull illustration&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;These two commands will help updating the local repository from the commits on github.&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;git fetch 
+&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;git pull
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;$ git pull&lt;/code&gt; is &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;$ git fetch&lt;/code&gt; then &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;$ git merge&lt;/code&gt;.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;$ git fetch&lt;/code&gt; will add the remote master to a deteached Head branch. &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;$ git branch -a&lt;/code&gt; can be use to see this
+&lt;img src=&quot;/assets/images/2020-04-17/Screenshots/git-fetch-detachedHead.png&quot; alt=&quot;this is a detached heads /assets/images/2020-04-17/Screenshot&quot; /&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;$ git status&lt;/code&gt; can also shows a detached &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;HEAD&lt;/code&gt; in red color text.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;merge&quot;&gt;Merge&lt;/h3&gt;
+&lt;p&gt;This command merge remote repository to the locally repository. When merge conflicts may arise.&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;git merge
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;finding&quot;&gt;Finding&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;It’s a good habbit to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;$ git pull&lt;/code&gt; each time before start working locally when collaborating.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Merge command is typed from the receving branch, *make sure to check using &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;$ git branch&lt;/code&gt; and use &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;$ git checkout &lt;/code&gt;to swap branches.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;what-happens-if-pushing-local-repository-for-the-first-time-to-remote-repository-that-already-exists-commits&quot;&gt;What happens if pushing local repository for the first time to remote repository that already exists commits.&lt;/h4&gt;
+
+&lt;p&gt;To test this out, i create this README.md on the repository and edited there, where my index.html is edited locally. After &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;$ git push -u origin master&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Seems like a reject message will be obtained due to different history.
+&lt;img src=&quot;/assets/images/2020-04-17/Screenshots/git-push-fail.png&quot; alt=&quot;git push fail attempt&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Same error shown message when &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;git pull&lt;/code&gt;.&lt;/p&gt;
+
+&lt;h4 id=&quot;resolving-the-previous-problem&quot;&gt;Resolving the previous problem&lt;/h4&gt;
+
+&lt;p&gt;This &lt;a href=&quot;https://www.educative.io/edpresso/the-fatal-refusing-to-merge-unrelated-histories-git-error&quot;&gt;article from edpresson&lt;/a&gt; explain how to resolve this issue. Bascially  after allowing unrelated history merge, using &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;--allow-unrelated-histories&lt;/code&gt;. and Problem resolved.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;But if this is the first time pushing onto the remote repository, setting upstream is still necessary, because last time git push failed&lt;/em&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;switch-branch-during-editingwhat-happens-&quot;&gt;Switch branch during editing,what happens ?&lt;/h4&gt;
+
+&lt;p&gt;I add a line of text under a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;feature branch&lt;/code&gt;, then I added it to the staging area. A warning message will be obtained as following&lt;/p&gt;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Please commit your changes or stash them before you switch branches.
+Aborting
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h4 id=&quot;little-finding&quot;&gt;little finding:&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;During the time which feature branch has evolved, if the master branch has no change then on git history extension, it will be shown as a single line instead of two seperate line.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;After merging back to master, all commit message will be shown linearly
+&lt;img src=&quot;/assets/images/2020-04-17/Screenshots/git-merge-singleLine.png&quot; alt=&quot;git merge single line illustration&quot; /&gt;&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;resolve-conflict&quot;&gt;Resolve conflict&lt;/h4&gt;
+
+&lt;p&gt;To evoke conflicts, I first create a testing file on a master branch &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;$ touch testing.txt&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;and made two commits with commit message “m1” , “m2”.&lt;/p&gt;
+
+&lt;p&gt;Then &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;git checkout feature&lt;/code&gt; , and made 2 more commits with commit  message “f1” ,”f2”. After that, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;git checkout master&lt;/code&gt; and made a third commit “m3”.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;First way to resolve this conflict: merge master onto feature branch, then merge back in master.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://res.cloudinary.com/practicaldev/image/fetch/s--7lvYimJG--/c_imagga_scale,f_auto,fl_progressive,h_500,q_auto,w_1000/https://cl.ly/430Q2w473e2R/Image%25202018-04-30%2520at%25201.07.58%2520PM.png&quot; alt=&quot;git merge diagram&quot; /&gt;
+In this method, I first &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;git merge master&lt;/code&gt;, edit the change I want, make a final commit. Then I &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;git merge feature&lt;/code&gt;, then fast-forward merge occurs.&lt;/p&gt;
+
+&lt;p&gt;If I were to check out the history &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;$ git log&lt;/code&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;I would have got the commit history in this order “m1” , “m2” , “f1” , “f2” , “m3” , “merge message” .&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;Second way to resolve this: use &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;$ git rebase master&lt;/code&gt; on feature branch&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://gcapes.github.io/git-course/fig/git-rebase.svg&quot; alt=&quot;git rebase diagram&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;In this method I &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;git rebase master&lt;/code&gt; edit the change I want, and use &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;$ git rebase --continue&lt;/code&gt; or if to abort the rebase using &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;$ git rebase --abort&lt;/code&gt;. Upon success a message of&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Applying: &amp;lt;your commit message&amp;gt; 
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;will be shown. It is assuming all changes from master were applied in f1. Then I checkout to master and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;$ git rebase feature&lt;/code&gt;.or &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;$ git merge feature&lt;/code&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;I would have got the commit history in this order “m1” , “m2” , “m3”, “f1” , “f2” .&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>Jiajin Zheng</name><email>jackytsheng@gmail.com</email></author><summary type="html">git-learning This doc is for tracking the testing that i have done to solidify my understanding with git and github.</summary></entry></feed>

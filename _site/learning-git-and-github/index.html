@@ -1,0 +1,693 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.19.3 by Michael Rose
+  Copyright 2013-2019 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>Learning Git And Github - Jiajin Zheng Blog</title>
+<meta name="description" content="git-learning This doc is for tracking the testing that i have done to solidify my understanding with git and github.">
+
+
+  <meta name="author" content="Jiajin Zheng">
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_AU">
+<meta property="og:site_name" content="Jiajin Zheng Blog">
+<meta property="og:title" content="Learning Git And Github">
+<meta property="og:url" content="http://localhost:4000/learning-git-and-github/">
+
+
+  <meta property="og:description" content="git-learning This doc is for tracking the testing that i have done to solidify my understanding with git and github.">
+
+
+
+
+
+
+
+  <meta property="article:published_time" content="2020-04-17T00:00:00+10:00">
+
+
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="http://localhost:4000/learning-git-and-github/">
+
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "Person",
+      "name": "Jiajin Zheng Blog",
+      "url": "http://localhost:4000/"
+    
+  }
+</script>
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+<link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Jiajin Zheng Blog Feed">
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css">
+
+<!--[if IE]>
+  <style>
+    /* old IE unsupported flexbox fixes */
+    .greedy-nav .site-title {
+      padding-right: 3em;
+    }
+    .greedy-nav button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+    }
+  </style>
+<![endif]-->
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single">
+    <nav class="skip-links">
+  <h2 class="screen-reader-text">Skip links</h2>
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+        <a class="site-title" href="/">
+          Jiajin Zheng Blog
+          
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="https://jiajinzheng.com">Personal Website</a>
+            </li></ul>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+
+
+<div itemscope itemtype="https://schema.org/Person">
+
+  
+    <div class="author__avatar">
+      
+        <img src="/assets/images/square-profile.png" alt="Jiajin Zheng" itemprop="image">
+      
+    </div>
+  
+
+  <div class="author__content">
+    
+      <h3 class="author__name" itemprop="name">Jiajin Zheng</h3>
+    
+    
+      <div class="author__bio" itemprop="description">
+        <p>Love Cat,Code &amp; Coffee.
+ Passion in Programming, Physics, Piano</p>
+
+      </div>
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Follow</button>
+    <ul class="author__urls social-icons">
+      
+        <li itemprop="homeLocation" itemscope itemtype="https://schema.org/Place">
+          <i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i> <span itemprop="name">Melbourne,Victoria</span>
+        </li>
+      
+
+      
+        
+          
+            <li><a href="https://jiajinzheng.com" rel="nofollow noopener noreferrer"><i class="fas fa-link" aria-hidden="true"></i><span class="label">Personal Website</span></a></li>
+          
+        
+          
+            <li><a href="https://twitter.com/Jiajin_Zheng" rel="nofollow noopener noreferrer"><i class="fab fa-twitter-square" aria-hidden="true"></i><span class="label">Twitter</span></a></li>
+          
+        
+          
+            <li><a href="https://github.com/jackytsheng" rel="nofollow noopener noreferrer"><i class="fab fa-github" aria-hidden="true"></i><span class="label">GitHub</span></a></li>
+          
+        
+          
+            <li><a href="https://www.linkedin.com/in/jacky-jiajin-zheng-76a64b164/" rel="nofollow noopener noreferrer"><i class="fab fa-linkedin " aria-hidden="true"></i><span class="label">Linkedin</span></a></li>
+          
+        
+      
+
+      
+
+      
+        <li>
+          <a href="mailto:jackytsheng@gmail.com">
+            <meta itemprop="email" content="jackytsheng@gmail.com" />
+            <i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i><span class="label">Email</span>
+          </a>
+        </li>
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      <!--
+  <li>
+    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs" rel="nofollow noopener noreferrer">
+      <i class="fas fa-fw" aria-hidden="true"></i> Custom Social Profile Link
+    </a>
+  </li>
+-->
+    </ul>
+  </div>
+</div>
+
+  
+  </div>
+
+
+
+  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Learning Git And Github">
+    <meta itemprop="description" content="git-learningThis doc is for tracking the testing that i have done to solidify my understanding with git and github.">
+    <meta itemprop="datePublished" content="2020-04-17T00:00:00+10:00">
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title" itemprop="headline">Learning Git And Github
+</h1>
+          
+            <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  6 minute read
+
+</p>
+          
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        
+        <h1 id="git-learning">git-learning</h1>
+<p>This doc is for tracking the testing that i have done to solidify my understanding with git and github.</p>
+
+<h2 id="git-basic">Git basic</h2>
+
+<p><img src="https://res.cloudinary.com/practicaldev/image/fetch/s--Si7ksd-d--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://cdn-images-1.medium.com/max/800/1%2AdiRLm1S5hkVoh5qeArND0Q.png" alt="Schematic flow showing how git works" /></p>
+
+<h4 id="git-init">git Init</h4>
+<p>The following command initialises a git repository</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+<span class="nv">$ </span>git init
+
+<span class="c"># This message will show, once sucess "Initialized empty Git repository"</span>
+</code></pre></div></div>
+
+<h4 id="git-add">git add</h4>
+<p>The following command add changes to the staging.</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># " . " means all changes, or a particular file</span>
+<span class="c"># Only added change would be placed into staging area</span>
+<span class="nv">$ </span>git add <span class="nb">.</span> 
+<span class="nv">$ </span>git add &lt;file&gt; 
+</code></pre></div></div>
+
+<h4 id="git-commit">git commit</h4>
+<p>This command commit changes to the repository.</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>git commit <span class="nt">-m</span> <span class="s2">"commit message"</span>
+</code></pre></div></div>
+
+<h4 id="gitignore">.gitignore</h4>
+
+<p>This command creates a <em>.gitignore</em> file.</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="nv">$ </span><span class="nb">touch</span> .gitignore
+</code></pre></div></div>
+
+<h2 id="my-thought-when-play-around-the-git-comman">My thought when play around the git comman.</h2>
+
+<h4 id="if-there-exisits-git-already-what-happens-if-i--git-init-agian-">If there exisits git already, what happens if I <code class="language-plaintext highlighter-rouge">$ git init</code> agian ?</h4>
+<p>It’s fine, it won’t harm. The following command was run <em>after</em> i have already initilaised a git repository.</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>git init
+<span class="c"># This message will show: "Reinitialized existing Git repository"</span>
+</code></pre></div></div>
+<p>Check more about this on <a href="https://stackoverflow.com/questions/5149694/does-running-git-init-twice-initialize-a-repository-or-reinitialize-an-existing">stack overflow</a> .</p>
+
+<h4 id="what-happens-if-i-add-a-change-to-the-staging-area-where-it-already-exits-a-previous-change-">What happens if I add a change to the staging area where it already exits a previous change ?</h4>
+
+<p>To test this out, I made a first change on a file. Then I added it to the staging area
+<img src="/assets/images/2020-04-17/Screenshots/git-add-firstChange.png" alt="git add firstChange img" /></p>
+
+<p>After that, I made a second change and added it again.</p>
+
+<p><img src="/assets/images/2020-04-17/Screenshots/git-add-secondChange.png" alt="git add secondChange img" /></p>
+
+<p>Looks like the new added change will overwrite the old change one for the same file.</p>
+
+<h4 id="what-happens-if-i-change-file-name-when-the-change-is-already-being-staged-">What happens if I change file name when the change is already being staged ?</h4>
+
+<p>To test this out I first made a change.
+<img src="/assets/images/2020-04-17/Screenshots/git-add-thirdChange.png" alt="git add thirdChange img" /></p>
+
+<p>Then if I run <code class="language-plaintext highlighter-rouge">$ git status</code>, I obtain the following:</p>
+
+<p><img src="/assets/images/2020-04-17/Screenshots/git-add-thirdChange-status.png" alt="git add thirdChange status img" /></p>
+
+<p>Then I used command:</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="nv">$ </span>git <span class="nb">mv </span>index.html index2.html 
+</code></pre></div></div>
+<p>to change my index.html to index2.html. And this is what showed up when I use <code class="language-plaintext highlighter-rouge">$ git status</code>:</p>
+
+<p><img src="/assets/images/2020-04-17/Screenshots/git-add-rename.png" alt="git add rename img" /></p>
+
+<p>Looks like git can tell if the change comes from the same file that has just been renamed.</p>
+
+<p>If I simply just rename it by <code class="language-plaintext highlighter-rouge">right clicking &gt; rename</code>. It will appear to the git as <code class="language-plaintext highlighter-rouge">&lt;old file&gt;</code> has been deleted, a <code class="language-plaintext highlighter-rouge">&lt;new file&gt;</code> is then created.</p>
+
+<p><img src="/assets/images/2020-04-17/Screenshots/git-rename.png" alt="git add rename by right clicking" /></p>
+
+<h4 id="what-happens-if-i-add-file-name-on-gitignore-after-i-add-it-change-to-the-staging-area-">What happens if I add file name on .gitignore after I add it change to the staging area ?</h4>
+
+<p>To test this out I simply created a <em>.gitignore</em> after I already have the <em>.DS_Store</em> file on the staging area.</p>
+
+<p><img src="/assets/images/2020-04-17/Screenshots/git-ignore-fileName.png" alt="file name written on the .gitignore file" /></p>
+
+<p>Then If i check the status, I get the following:</p>
+
+<p><img src="/assets/images/2020-04-17/Screenshots/git-ignore-status.png" alt="satus after file name added to git ignore" /></p>
+
+<p>Looks like it I will have to to remove it mannualy from the staging area, git will stop tracking change the moment after file name is written on .gitignore, not before.</p>
+
+<h2 id="github-basic">Github Basic</h2>
+<h4 id="remote">Remote</h4>
+
+<p>This command adds a remote repository named as origin. Origin as with master has no particular meaning according to <a href="https://git-scm.com/docs/git-merge">git docs</a></p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># To add a remote repository</span>
+git remote add origin git@github.com:jackytsheng/git-learning
+
+</code></pre></div></div>
+<p>Using this protocol requires entering of password each time <code class="language-plaintext highlighter-rouge">git push</code> and <code class="language-plaintext highlighter-rouge">git pull</code>. Whereas using the <code class="language-plaintext highlighter-rouge">https://</code> protocol doesn’t</p>
+
+<h4 id="push">Push</h4>
+
+<p>This command push local repository to remote repository</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># If push for the first time, setting up-stream is requried</span>
+<span class="nv">$ </span>git push <span class="nt">-u</span> origin master
+<span class="nv">$ </span>git push
+
+<span class="c"># This message will be obtained if there is no upstream branch "fatal: The current branch master has no upstream branch."</span>
+</code></pre></div></div>
+<h3 id="fetch-and-pull">Fetch and Pull</h3>
+
+<p><img src="https://miro.medium.com/max/602/1*OqKfKe3mqCRbaWT2Y8YDOQ.png" alt="git fetch and git pull illustration" /></p>
+
+<p>These two commands will help updating the local repository from the commits on github.</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>git fetch 
+<span class="nv">$ </span>git pull
+
+</code></pre></div></div>
+<ul>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">$ git pull</code> is <code class="language-plaintext highlighter-rouge">$ git fetch</code> then <code class="language-plaintext highlighter-rouge">$ git merge</code>.</p>
+  </li>
+  <li><code class="language-plaintext highlighter-rouge">$ git fetch</code> will add the remote master to a deteached Head branch. <code class="language-plaintext highlighter-rouge">$ git branch -a</code> can be use to see this
+<img src="/assets/images/2020-04-17/Screenshots/git-fetch-detachedHead.png" alt="this is a detached heads /assets/images/2020-04-17/Screenshot" /></li>
+  <li><code class="language-plaintext highlighter-rouge">$ git status</code> can also shows a detached <code class="language-plaintext highlighter-rouge">HEAD</code> in red color text.</li>
+</ul>
+
+<h3 id="merge">Merge</h3>
+<p>This command merge remote repository to the locally repository. When merge conflicts may arise.</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>git merge
+</code></pre></div></div>
+
+<h3 id="finding">Finding</h3>
+
+<ul>
+  <li>
+    <p>It’s a good habbit to <code class="language-plaintext highlighter-rouge">$ git pull</code> each time before start working locally when collaborating.</p>
+  </li>
+  <li>
+    <p>Merge command is typed from the receving branch, *make sure to check using <code class="language-plaintext highlighter-rouge">$ git branch</code> and use <code class="language-plaintext highlighter-rouge">$ git checkout </code>to swap branches.</p>
+  </li>
+</ul>
+
+<h4 id="what-happens-if-pushing-local-repository-for-the-first-time-to-remote-repository-that-already-exists-commits">What happens if pushing local repository for the first time to remote repository that already exists commits.</h4>
+
+<p>To test this out, i create this README.md on the repository and edited there, where my index.html is edited locally. After <code class="language-plaintext highlighter-rouge">$ git push -u origin master</code></p>
+
+<p>Seems like a reject message will be obtained due to different history.
+<img src="/assets/images/2020-04-17/Screenshots/git-push-fail.png" alt="git push fail attempt" /></p>
+
+<p>Same error shown message when <code class="language-plaintext highlighter-rouge">git pull</code>.</p>
+
+<h4 id="resolving-the-previous-problem">Resolving the previous problem</h4>
+
+<p>This <a href="https://www.educative.io/edpresso/the-fatal-refusing-to-merge-unrelated-histories-git-error">article from edpresson</a> explain how to resolve this issue. Bascially  after allowing unrelated history merge, using <code class="language-plaintext highlighter-rouge">--allow-unrelated-histories</code>. and Problem resolved.</p>
+
+<p><em>But if this is the first time pushing onto the remote repository, setting upstream is still necessary, because last time git push failed</em></p>
+
+<h4 id="switch-branch-during-editingwhat-happens-">Switch branch during editing,what happens ?</h4>
+
+<p>I add a line of text under a <code class="language-plaintext highlighter-rouge">feature branch</code>, then I added it to the staging area. A warning message will be obtained as following</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Please commit your changes or stash them before you switch branches.
+Aborting
+</code></pre></div></div>
+
+<h4 id="little-finding">little finding:</h4>
+<ul>
+  <li>
+    <p>During the time which feature branch has evolved, if the master branch has no change then on git history extension, it will be shown as a single line instead of two seperate line.</p>
+  </li>
+  <li>
+    <p>After merging back to master, all commit message will be shown linearly
+<img src="/assets/images/2020-04-17/Screenshots/git-merge-singleLine.png" alt="git merge single line illustration" /></p>
+  </li>
+</ul>
+
+<h4 id="resolve-conflict">Resolve conflict</h4>
+
+<p>To evoke conflicts, I first create a testing file on a master branch <code class="language-plaintext highlighter-rouge">$ touch testing.txt</code></p>
+
+<p>and made two commits with commit message “m1” , “m2”.</p>
+
+<p>Then <code class="language-plaintext highlighter-rouge">git checkout feature</code> , and made 2 more commits with commit  message “f1” ,”f2”. After that, <code class="language-plaintext highlighter-rouge">git checkout master</code> and made a third commit “m3”.</p>
+
+<hr />
+
+<p>First way to resolve this conflict: merge master onto feature branch, then merge back in master.</p>
+
+<p><img src="https://res.cloudinary.com/practicaldev/image/fetch/s--7lvYimJG--/c_imagga_scale,f_auto,fl_progressive,h_500,q_auto,w_1000/https://cl.ly/430Q2w473e2R/Image%25202018-04-30%2520at%25201.07.58%2520PM.png" alt="git merge diagram" />
+In this method, I first <code class="language-plaintext highlighter-rouge">git merge master</code>, edit the change I want, make a final commit. Then I <code class="language-plaintext highlighter-rouge">git merge feature</code>, then fast-forward merge occurs.</p>
+
+<p>If I were to check out the history <code class="language-plaintext highlighter-rouge">$ git log</code></p>
+
+<ul>
+  <li>I would have got the commit history in this order “m1” , “m2” , “f1” , “f2” , “m3” , “merge message” .</li>
+</ul>
+
+<hr />
+
+<p>Second way to resolve this: use <code class="language-plaintext highlighter-rouge">$ git rebase master</code> on feature branch</p>
+
+<p><img src="https://gcapes.github.io/git-course/fig/git-rebase.svg" alt="git rebase diagram" /></p>
+
+<p>In this method I <code class="language-plaintext highlighter-rouge">git rebase master</code> edit the change I want, and use <code class="language-plaintext highlighter-rouge">$ git rebase --continue</code> or if to abort the rebase using <code class="language-plaintext highlighter-rouge">$ git rebase --abort</code>. Upon success a message of</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Applying: &lt;your commit message&gt; 
+</code></pre></div></div>
+<p>will be shown. It is assuming all changes from master were applied in f1. Then I checkout to master and <code class="language-plaintext highlighter-rouge">$ git rebase feature</code>.or <code class="language-plaintext highlighter-rouge">$ git merge feature</code></p>
+
+<ul>
+  <li>I would have got the commit history in this order “m1” , “m2” , “m3”, “f1” , “f2” .</li>
+</ul>
+
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+
+        
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2020-04-17T00:00:00+10:00">April 17, 2020</time></p>
+
+
+      </footer>
+
+      <section class="page__share">
+  
+    <h4 class="page__share-title">Share on</h4>
+  
+
+  <a href="https://twitter.com/intent/tweet?text=Learning+Git+And+Github%20http%3A%2F%2Flocalhost%3A4000%2Flearning-git-and-github%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2Flearning-git-and-github%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%3A4000%2Flearning-git-and-github%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+</section>
+
+
+      
+  <nav class="pagination">
+    
+      <a href="#" class="pagination--pager disabled">Previous</a>
+    
+    
+      <a href="/aws-s3-presigned-url/" class="pagination--pager" title="Aws S3 Presigned Url
+">Next</a>
+    
+  </nav>
+
+    </div>
+
+    
+  </article>
+
+  
+  
+    <div class="page__related">
+      <h4 class="page__related-title">You may also enjoy</h4>
+      <div class="grid__wrapper">
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/physics-tooling-with-desmo/" rel="permalink">Physics Tooling With Desmo
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  less than 1 minute read
+
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">Physics interactive tool with Desmo Graphing Calculator
+
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/aws-s3-presigned-url/" rel="permalink">Aws S3 Presigned Url
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  19 minute read
+
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">Uploading/Downloading file with AWS S3 Presigned url using Axios and SpringBoot
+
+</p>
+  </article>
+</div>
+
+        
+      </div>
+    </div>
+  
+  
+</div>
+
+    </div>
+
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <!-- <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>Follow:</strong></li>
+    
+
+    
+      
+        
+          <li><a href="https://jiajinzheng.com" rel="nofollow noopener noreferrer"><i class="fas fa-link" aria-hidden="true"></i> Personal Website</a></li>
+        
+      
+        
+          <li><a href="https://twitter.com/Jiajin_Zheng" rel="nofollow noopener noreferrer"><i class="fab fa-twitter-square" aria-hidden="true"></i> Twitter</a></li>
+        
+      
+        
+          <li><a href="https://github.com/jackytsheng" rel="nofollow noopener noreferrer"><i class="fab fa-github" aria-hidden="true"></i> GitHub</a></li>
+        
+      
+        
+          <li><a href="https://www.linkedin.com/in/jacky-jiajin-zheng-76a64b164/" rel="nofollow noopener noreferrer"><i class="fab fa-linkedin fa-fw" aria-hidden="true"></i> Linkedin</a></li>
+        
+      
+    
+
+    <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+  </ul>
+</div> -->
+
+<div class="page__footer-copyright">&copy; 2020 Jiajin Zheng Blog. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+  </body>
+</html>
