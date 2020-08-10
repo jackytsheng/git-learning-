@@ -148,4 +148,4 @@ select * from student;
 
 you should be able to see the following result
 
-![mysql-result](assets/images/2020-08-04/mysql-result.png)
+![mysql-result](/assets/images/2020-08-04/mysql-result.png)
