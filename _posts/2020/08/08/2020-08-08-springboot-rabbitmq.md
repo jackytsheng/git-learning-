@@ -141,13 +141,13 @@ public class RabbitMQConfig {
 
 Here, message is sent if a student has been created.
 
-![message-publish](assets/images/2020-08-08/message-publish.png)
+![message-publish](/assets/images/2020-08-08/message-publish.png)
 
 
 ### Seeing result of the message publishing
 
 Upon hitting the `POST` end point, result of published message can be shown
 
-![message-one](assets/images/2020-08-08/message-one.png)
+![message-one](/assets/images/2020-08-08/message-one.png)
 
-![message-result](assets/images/2020-08-08/message-result.png)
+![message-result](/assets/images/2020-08-08/message-result.png)

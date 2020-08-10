@@ -1,0 +1,680 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.19.3 by Michael Rose
+  Copyright 2013-2019 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>Connect SpringBoot with RabbitMQ - Jiajin Zheng Blog</title>
+<meta name="description" content="Related This blog used a simple RESTful Api student backend project">
+
+
+  <meta name="author" content="Jiajin Zheng">
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_AU">
+<meta property="og:site_name" content="Jiajin Zheng Blog">
+<meta property="og:title" content="Connect SpringBoot with RabbitMQ">
+<meta property="og:url" content="http://localhost:4000/springboot-rabbitmq/">
+
+
+  <meta property="og:description" content="Related This blog used a simple RESTful Api student backend project">
+
+
+
+
+
+
+
+  <meta property="article:published_time" content="2020-08-08T00:00:00+10:00">
+
+
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="http://localhost:4000/springboot-rabbitmq/">
+
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "Person",
+      "name": "Jiajin Zheng Blog",
+      "url": "http://localhost:4000/"
+    
+  }
+</script>
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+<link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Jiajin Zheng Blog Feed">
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css">
+
+<!--[if IE]>
+  <style>
+    /* old IE unsupported flexbox fixes */
+    .greedy-nav .site-title {
+      padding-right: 3em;
+    }
+    .greedy-nav button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+    }
+  </style>
+<![endif]-->
+
+
+
+    <!-- start custom head snippets -->
+
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png">
+<link rel="manifest" href="/assets/favicon/site.webmanifest">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single">
+    <nav class="skip-links">
+  <h2 class="screen-reader-text">Skip links</h2>
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+        <a class="site-title" href="/">
+          Jiajin Zheng Blog
+          
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="https://jiajinzheng.com">Personal Website</a>
+            </li></ul>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+
+
+<div itemscope itemtype="https://schema.org/Person">
+
+  
+    <div class="author__avatar">
+      
+        <img src="/assets/images/square-profile.png" alt="Jiajin Zheng" itemprop="image">
+      
+    </div>
+  
+
+  <div class="author__content">
+    
+      <h3 class="author__name" itemprop="name">Jiajin Zheng</h3>
+    
+    
+      <div class="author__bio" itemprop="description">
+        <p>Love Cat,Code &amp; Coffee. Passion in Programming, Physics, Piano</p>
+
+      </div>
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Follow</button>
+    <ul class="author__urls social-icons">
+      
+        <li itemprop="homeLocation" itemscope itemtype="https://schema.org/Place">
+          <i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i> <span itemprop="name">Melbourne,Victoria</span>
+        </li>
+      
+
+      
+        
+          
+            <li><a href="https://jiajinzheng.com" rel="nofollow noopener noreferrer"><i class="fas fa-link" aria-hidden="true"></i><span class="label">Personal Website</span></a></li>
+          
+        
+          
+            <li><a href="https://twitter.com/Jiajin_Zheng" rel="nofollow noopener noreferrer"><i class="fab fa-twitter-square" aria-hidden="true"></i><span class="label">Twitter</span></a></li>
+          
+        
+          
+            <li><a href="https://github.com/jackytsheng" rel="nofollow noopener noreferrer"><i class="fab fa-github" aria-hidden="true"></i><span class="label">GitHub</span></a></li>
+          
+        
+          
+            <li><a href="https://www.linkedin.com/in/jacky-jiajin-zheng-76a64b164/" rel="nofollow noopener noreferrer"><i class="fab fa-linkedin" aria-hidden="true"></i><span class="label">Linkedin</span></a></li>
+          
+        
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      <!--
+  <li>
+    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs" rel="nofollow noopener noreferrer">
+      <i class="fas fa-fw" aria-hidden="true"></i> Custom Social Profile Link
+    </a>
+  </li>
+-->
+    </ul>
+  </div>
+</div>
+
+  
+  </div>
+
+
+
+  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Connect SpringBoot with RabbitMQ">
+    <meta itemprop="description" content="RelatedThis blog used a simple RESTful Api student backend project">
+    <meta itemprop="datePublished" content="2020-08-08T00:00:00+10:00">
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title" itemprop="headline">Connect SpringBoot with RabbitMQ
+</h1>
+          
+            <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  2 minute read
+
+</p>
+          
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        
+        <h3 id="related">Related</h3>
+<p>This blog used a simple <a href="https://github.com/jackytsheng/backend-student-demo">RESTful Api student backend project</a></p>
+
+<p>This blog also used another <a href="https://github.com/jackytsheng/node-demo">simple micro service</a> that built with node.js and express stack to subscribe to the message broker.</p>
+
+<h3 id="concept-of-communication-between-microservices-through-message-broker">Concept of communication between microservices through message broker</h3>
+<p><img src="https://miro.medium.com/max/1270/0*wnXnA7zjEmVUXDXh." alt="message-broker" />
+Publisher (Producer) : Sender of message
+Broker: another sever that handle the networking of message (eg: RabbitMQ here)
+Exchange: Need to binds to queue for message to be sent
+Queue: Can be subscribed by consumers
+Listener (Consumer): Could be another micro service</p>
+
+<h3 id="pull-image-from-docker">Pull Image from docker</h3>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>docker pull rabbitmq
+</code></pre></div></div>
+
+<h3 id="create-container-from-the-image">Create container from the image</h3>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>docker run <span class="nt">-d</span> <span class="nt">-p</span> 5672:5672 <span class="nt">--name</span> rabbit-test rabbitmq:latest
+</code></pre></div></div>
+
+<p>Visit the broker using management console.
+Login in as <strong>guest/guest</strong></p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>docker run <span class="nt">-d</span> <span class="nt">--name</span> some-rabbit <span class="nt">-p</span> 15672:15672 rabbitmq:3-management
+</code></pre></div></div>
+
+<p>or combine run</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>docker run <span class="nt">-d</span> <span class="nt">-p</span> 5672:5672 <span class="nt">-p</span> 15672:15672 <span class="nt">--name</span> my-rabbit rabbitmq:3-management
+</code></pre></div></div>
+
+<h3 id="springboot-dependency-gradle">SpringBoot Dependency (Gradle)</h3>
+<div class="language-config highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">dependencies</span> {
+	...
+	// <span class="n">https</span>://<span class="n">mvnrepository</span>.<span class="n">com</span>/<span class="n">artifact</span>/<span class="n">org</span>.<span class="n">springframework</span>.<span class="n">amqp</span>/<span class="n">spring</span>-<span class="n">amqp</span>
+	<span class="n">compile</span> <span class="n">group</span>: <span class="s1">'org.springframework.amqp'</span>, <span class="n">name</span>: <span class="s1">'spring-amqp'</span>, <span class="n">version</span>: <span class="s1">'2.2.9.RELEASE'</span>
+	// <span class="n">https</span>://<span class="n">mvnrepository</span>.<span class="n">com</span>/<span class="n">artifact</span>/<span class="n">com</span>.<span class="n">rabbitmq</span>/<span class="n">amqp</span>-<span class="n">client</span>
+	<span class="n">compile</span> <span class="n">group</span>: <span class="s1">'com.rabbitmq'</span>, <span class="n">name</span>: <span class="s1">'amqp-client'</span>, <span class="n">version</span>: <span class="s1">'5.9.0'</span>
+	// <span class="n">https</span>://<span class="n">mvnrepository</span>.<span class="n">com</span>/<span class="n">artifact</span>/<span class="n">org</span>.<span class="n">springframework</span>.<span class="n">amqp</span>/<span class="n">spring</span>-<span class="n">rabbit</span>
+	<span class="n">compile</span> <span class="n">group</span>: <span class="s1">'org.springframework.amqp'</span>, <span class="n">name</span>: <span class="s1">'spring-rabbit'</span>, <span class="n">version</span>: <span class="s1">'2.2.9.RELEASE'</span>
+	...
+}
+</code></pre></div></div>
+<p>Could also used the dependency provided by <strong>Spring Initializr</strong></p>
+
+<h3 id="message-services-layer">Message services layer</h3>
+
+<p><code class="language-plaintext highlighter-rouge">com.example.demo/service/RabbitMessageService</code></p>
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+<span class="nd">@Service</span>
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">RabbitMessageService</span> <span class="o">{</span>
+  <span class="nd">@Autowired</span>
+  <span class="nc">ConnectionFactory</span> <span class="n">connectionFactory</span><span class="o">;</span>
+
+  <span class="nd">@Autowired</span>
+  <span class="kd">private</span> <span class="nc">ObjectMapper</span> <span class="n">objectMapper</span><span class="o">;</span>
+
+  <span class="kd">public</span> <span class="kt">void</span> <span class="nf">sendMessage</span><span class="o">(</span><span class="nc">String</span> <span class="n">messageName</span><span class="o">,</span> <span class="nc">String</span> <span class="n">messageDescription</span><span class="o">)</span> <span class="kd">throws</span> <span class="nc">Exception</span><span class="o">{</span>
+    <span class="nc">RabbitTemplate</span> <span class="n">rabbitTemplate</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">RabbitTemplate</span><span class="o">(</span><span class="n">connectionFactory</span><span class="o">);</span>
+
+    <span class="nc">SimpleMessageDto</span> <span class="n">simpleMessage</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">SimpleMessageDto</span><span class="o">();</span>
+    <span class="n">simpleMessage</span><span class="o">.</span><span class="na">setName</span><span class="o">(</span><span class="n">messageName</span><span class="o">);</span>
+    <span class="n">simpleMessage</span><span class="o">.</span><span class="na">setDescription</span><span class="o">(</span><span class="n">messageDescription</span><span class="o">);</span>
+    <span class="nc">String</span> <span class="n">jsonStr</span> <span class="o">=</span> <span class="n">objectMapper</span><span class="o">.</span><span class="na">writeValueAsString</span><span class="o">(</span><span class="n">simpleMessage</span><span class="o">);</span>
+    <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">jsonStr</span><span class="o">);</span>
+    <span class="n">rabbitTemplate</span><span class="o">.</span><span class="na">convertAndSend</span><span class="o">(</span><span class="no">STUDENT_EXCHANGE</span><span class="o">,</span><span class="no">STUDENT_ROUTING_KEY</span><span class="o">,</span><span class="n">jsonStr</span><span class="o">);</span>
+  <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div></div>
+
+<h3 id="configuration-for-rabbitmq">Configuration for RabbitMQ</h3>
+<p><code class="language-plaintext highlighter-rouge">com.example.demo/config/RabbitMQConfig</code></p>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+<span class="nd">@SpringBootApplication</span>
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">RabbitMQConfig</span> <span class="o">{</span>
+
+	<span class="c1">// These code created the following if not already existed in the broker.</span>
+  <span class="kd">public</span> <span class="kd">static</span> <span class="kd">final</span> <span class="nc">String</span> <span class="no">STUDENT_QUEUE</span> <span class="o">=</span> <span class="s">"StudentQueue"</span><span class="o">;</span>
+  <span class="kd">public</span> <span class="kd">static</span> <span class="kd">final</span> <span class="nc">String</span> <span class="no">STUDENT_EXCHANGE</span> <span class="o">=</span> <span class="s">"StudentExchange"</span><span class="o">;</span>
+  <span class="kd">public</span> <span class="kd">static</span> <span class="kd">final</span> <span class="nc">String</span> <span class="no">STUDENT_ROUTING_KEY</span> <span class="o">=</span> <span class="s">"StudentRouting"</span><span class="o">;</span>
+  
+	<span class="c1">// A bean for string mapping in the message service(this has a lot alternative).</span>
+	<span class="nd">@Bean</span>
+  <span class="nc">ObjectMapper</span> <span class="nf">getObjectMapper</span><span class="o">(){</span>
+    <span class="k">return</span> <span class="k">new</span> <span class="nf">ObjectMapper</span><span class="o">();</span>
+  <span class="o">}</span>
+	
+	<span class="c1">// Configuration for Exchange and Queue</span>
+  <span class="nd">@Bean</span>
+  <span class="nc">Queue</span> <span class="nf">myQueue</span><span class="o">(){</span>
+    <span class="k">return</span> <span class="k">new</span> <span class="nf">Queue</span><span class="o">(</span><span class="no">STUDENT_QUEUE</span><span class="o">,</span><span class="kc">true</span><span class="o">);</span>
+  <span class="o">}</span>
+  <span class="nd">@Bean</span>
+  <span class="nc">Exchange</span> <span class="nf">myExchange</span><span class="o">(){</span>
+    <span class="k">return</span> <span class="nc">ExchangeBuilder</span><span class="o">.</span><span class="na">directExchange</span><span class="o">(</span><span class="no">STUDENT_EXCHANGE</span><span class="o">).</span><span class="na">durable</span><span class="o">(</span><span class="kc">true</span><span class="o">).</span><span class="na">build</span><span class="o">();</span>
+  <span class="o">}</span>
+	
+	<span class="c1">// Binding Exchange to Queue with the Routing Key.</span>
+  <span class="nd">@Bean</span>
+  <span class="nc">Binding</span> <span class="nf">binding</span><span class="o">(){</span>
+    <span class="k">return</span> <span class="nc">BindingBuilder</span>
+      <span class="o">.</span><span class="na">bind</span><span class="o">(</span><span class="n">myQueue</span><span class="o">())</span>
+      <span class="o">.</span><span class="na">to</span><span class="o">(</span><span class="n">myExchange</span><span class="o">())</span>
+      <span class="o">.</span><span class="na">with</span><span class="o">(</span><span class="no">STUDENT_ROUTING_KEY</span><span class="o">)</span>
+      <span class="o">.</span><span class="na">noargs</span><span class="o">();</span>
+  <span class="o">}</span>
+
+	<span class="c1">// Configuration for factory</span>
+  <span class="nd">@Bean</span>
+  <span class="nc">ConnectionFactory</span> <span class="nf">connectionFactory</span><span class="o">(){</span>
+    <span class="nc">ConnectionFactory</span> <span class="n">factory</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">ConnectionFactory</span><span class="o">();</span>
+    <span class="n">factory</span><span class="o">.</span><span class="na">setHost</span><span class="o">(</span><span class="s">"localhost"</span><span class="o">);</span>
+    <span class="n">factory</span><span class="o">.</span><span class="na">setPort</span><span class="o">(</span><span class="mi">5672</span><span class="o">);</span>
+    <span class="n">factory</span><span class="o">.</span><span class="na">setVirtualHost</span><span class="o">(</span><span class="s">"/"</span><span class="o">);</span>
+    <span class="n">factory</span><span class="o">.</span><span class="na">setUsername</span><span class="o">(</span><span class="s">"guest"</span><span class="o">);</span>
+    <span class="n">factory</span><span class="o">.</span><span class="na">setPassword</span><span class="o">(</span><span class="s">"guest"</span><span class="o">);</span>
+    <span class="k">return</span> <span class="n">factory</span><span class="o">;</span>
+  <span class="o">}</span>
+<span class="o">}</span>
+
+</code></pre></div></div>
+
+<h3 id="trigger-message-publishing-event">Trigger message publishing event</h3>
+
+<p>Here, message is sent if a student has been created.</p>
+
+<p><img src="/assets/images/2020-08-08/message-publish.png" alt="message-publish" /></p>
+
+<h3 id="seeing-result-of-the-message-publishing">Seeing result of the message publishing</h3>
+
+<p>Upon hitting the <code class="language-plaintext highlighter-rouge">POST</code> end point, result of published message can be shown</p>
+
+<p><img src="/assets/images/2020-08-08/message-one.png" alt="message-one" /></p>
+
+<p><img src="/assets/images/2020-08-08/message-result.png" alt="message-result" /></p>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+
+        
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2020-08-08T00:00:00+10:00">August 8, 2020</time></p>
+
+
+      </footer>
+
+      <section class="page__share">
+  
+    <h4 class="page__share-title">Share on</h4>
+  
+
+  <a href="https://twitter.com/intent/tweet?text=Connect+SpringBoot+with+RabbitMQ%20http%3A%2F%2Flocalhost%3A4000%2Fspringboot-rabbitmq%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2Fspringboot-rabbitmq%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%3A4000%2Fspringboot-rabbitmq%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+</section>
+
+
+      
+  <nav class="pagination">
+    
+      <a href="/sudo-solver/" class="pagination--pager" title="Sudo Solver
+">Previous</a>
+    
+    
+      <a href="#" class="pagination--pager disabled">Next</a>
+    
+  </nav>
+
+    </div>
+
+    
+  </article>
+
+  
+  
+    <div class="page__related">
+      <h4 class="page__related-title">You may also enjoy</h4>
+      <div class="grid__wrapper">
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/sudo-solver/" rel="permalink">Sudo Solver
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  less than 1 minute read
+
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">
+
+
+title:  “Sudoku solver”
+tags: [Algorithm:recursion,JavaScript]
+
+
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/springboot-mysql-docker-image/" rel="permalink">Connect SpringBoot with Docker MySql
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  1 minute read
+
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">Related
+This blog used a simple RESTful Api student backend project
+
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/node-microservice/" rel="permalink">Building Simple Node Micro service and consume message from RabbitMQ
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  3 minute read
+
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">Related
+
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/physics-interactive-tool-with-desmo/" rel="permalink">Physics Interactive Tool With Desmo
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  less than 1 minute read
+
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">
+Content Table
+
+</p>
+  </article>
+</div>
+
+        
+      </div>
+    </div>
+  
+  
+</div>
+
+    </div>
+
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <!-- <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>Follow:</strong></li>
+    
+
+    
+      
+        
+          <li><a href="https://jiajinzheng.com" rel="nofollow noopener noreferrer"><i class="fas fa-link" aria-hidden="true"></i> Personal Website</a></li>
+        
+      
+        
+          <li><a href="https://twitter.com/Jiajin_Zheng" rel="nofollow noopener noreferrer"><i class="fab fa-twitter-square" aria-hidden="true"></i> Twitter</a></li>
+        
+      
+        
+          <li><a href="https://github.com/jackytsheng" rel="nofollow noopener noreferrer"><i class="fab fa-github" aria-hidden="true"></i> GitHub</a></li>
+        
+      
+        
+          <li><a href="https://www.linkedin.com/in/jacky-jiajin-zheng-76a64b164/" rel="nofollow noopener noreferrer"><i class="fab fa-linkedin" aria-hidden="true"></i> Linkedin</a></li>
+        
+      
+    
+
+    <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+  </ul>
+</div> -->
+
+<div class="page__footer-copyright">&copy; 2020 Jiajin Zheng Blog. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+  </body>
+</html>

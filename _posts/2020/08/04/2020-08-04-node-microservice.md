@@ -198,7 +198,7 @@ const q = "StudentQueue";
 module.exports = () =>
   amqp.connect("amqp://localhost")
   .then(conn => conn.createChannel())
-  .then(ch => ch.assertQueue(q).then(()=>{
+  .then(ch => ch./assertQueue(q).then(()=>{
     ch.consume(q,
       (msg) => {
         if (msg.content) {
@@ -226,4 +226,4 @@ message();
 
 upon publishing from other micro service
 
-![message-receive](assets/images/2020-08-04/message-receive.png)
+![message-receive](/assets/images/2020-08-04/message-receive.png)
