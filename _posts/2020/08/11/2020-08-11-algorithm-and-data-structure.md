@@ -1,6 +1,13 @@
+<<<<<<< HEAD
 ---
 title:  "Top Algorithms and Data Structures"
 # tags: [Python,DataStructure,Algorithm] 
+=======
+
+---
+title:  "Top Algorithms and Data Structures"
+# tags: [Python,DataStructure,Algorithm]
+>>>>>>> d61b1d17da6a8713c17ad1092e450c8f9967e39f
 ---
 
 ## Linked list related:
