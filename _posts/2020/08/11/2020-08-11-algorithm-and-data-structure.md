@@ -91,5 +91,18 @@ Thought: temporarily stores the previous node once assign the next node to anoth
 tree is just special graph
 Tree is not linear.
 Traversal -> breadth-first and depth-first search
+
 ### Breadth-first (level order):
 visiting children before visiting grand children
+
+FIFO queue
+```py
+
+
+```
+
+### Depth-first 
+visiting a complete sub-tree :
+Pre-order (DLR)
+In-order (LDR)
+Post-order (LRD)
