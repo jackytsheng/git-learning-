@@ -92,6 +92,45 @@ tree is just special graph
 Tree is not linear.
 Traversal -> breadth-first and depth-first search
 
+
+
+### Invert binary tree:
+[LeetCode 226. Invert Binary Tree](https://leetcode.com/problems/invert-binary-tree/submissions/)
+
+```py
+class Solution(object):
+    def invertTree(self, root):
+        if root != None:
+            if root.left !=None:
+                self.invertTree(root.left)
+            if root.right != None:
+                self.invertTree(root.right)
+
+            temp = root.left;
+            root.left = root.right;
+            root.right = temp;
+        
+            return root;
+```
+### Checking value of a binary tree:
+[LeetCode 965. Univalued Binary Tree](https://leetcode.com/problems/univalued-binary-tree/)
+
+```py
+class Solution:
+    def isUnivalTree(self, root: TreeNode) -> bool:
+        # end node reached
+        if root.left  == None and root.right == None:
+            return True
+
+        # only exist one node 
+        elif root.left != None and root.right == None:
+            return root.left.val == root.val and self.isUnivalTree(root.left)
+        elif root.right != None and root.left == None:
+            return root.right.val == root.val and self.isUnivalTree(root.right)
+        else:
+            # both node exist
+            return root.val == root.right.val and root.val == root.left.val and self.isUnivalTree(root.left) and self.isUnivalTree(root.right)
+```
 ### Breadth-first (level order):
 visiting children before visiting grand children
 
