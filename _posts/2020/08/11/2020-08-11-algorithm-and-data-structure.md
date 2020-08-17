@@ -112,6 +112,26 @@ class Solution(object):
         
             return root;
 ```
+
+### Symmetry binary tree:
+[LeetCode 101. Symmetric Tree](https://leetcode.com/problems/invert-binary-tree/submissions/)
+
+```py
+ def isSymmetric(self, root: TreeNode) -> bool:
+        if root == None:
+            return True
+        
+        def isMirrorTree(leftTree,rightTree):
+            if leftTree != None and rightTree != None:
+                return isMirrorTree(leftTree.left,rightTree.right) and isMirrorTree(leftTree.right,rightTree.left) and leftTree.val == rightTree.val
+
+            elif leftTree == None and rightTree == None:
+                return True
+            else:
+                return False;
+        return isMirrorTree(root.left,root.right)
+ 
+```
 ### Checking value of a binary tree:
 [LeetCode 965. Univalued Binary Tree](https://leetcode.com/problems/univalued-binary-tree/)
 
