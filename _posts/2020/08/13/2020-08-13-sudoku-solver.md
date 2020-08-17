@@ -101,7 +101,7 @@ solve()
 
 ```
 Result expected:
-![sudoku-result](/assets/images/2020-08-13/soduku-result.png)
+![sudoku-result](/assets/images/2020-08-13/sudoku-result.png)
 
 
 This algorithm return ALL possible solutions, some time it could be more than one. And due to the recursive nature, we don't want it to run for solving grid that has too much freedom (i.e too less of numbers provided), because that would have taken too many memory and runtime. We could set it at the front end, which we could implement it in the front end.
