@@ -4,6 +4,8 @@ title:  "Sudoku solver with AWS lambda "
 ---
 
 [Sudoku Solver](https://gaget.jiajinzheng.com/sudokusolver)
+
+
 [Github Repository](https://github.com/jackytsheng/gaget)
 
 Thanks to the Professor Thorsten Altenkirch (University of Nottingham) on this recursive Sudoku solver.
@@ -229,7 +231,7 @@ When working with API Key, often 4XX result will be obtained.
 When the algorithm break (may be due to Runtime error), 5XX result will be obtained. 
 If CORS is not enabled these will result in CORS issues.
 
- ![api-cors](/assets/images/2020-08-13/cors.png)
+ ![api-cors](/assets/images/2020-08-13/api-cors.png)
 
 6. Deploy the api, give it a `stage` if not already exist one.`
 7. Create an API Key add it to the api stage deployed above.
