@@ -49,8 +49,29 @@ def insertNodeAtHead(llist, data):
     return new_node
 ```
 
-Thought: Instantiate a new node and point it's next pointer to the new head.
+Thought: In
 
+
+
+
+stantiate a new node and point it's next pointer to the new head.
+
+
+### Print data in a linked list with reverse order 
+
+[HackerRank: Print in Reverse](https://www.hackerrank.com/challenges/print-the-elements-of-a-linked-list-in-reverse/problem)
+
+```py
+def reversePrint(head):
+    print_list = [head.data];
+    cur = head
+    while cur.next != None:
+        cur = cur.next
+        print_list.append(cur.data)
+    for e in print_list[::-1]:
+        print(e)
+```
+Thought : Could be print then reverse or reverse the linked list then print. Based on it's difficulty being easy. I don't really want to put in all the effort in reversing it first.
 ### Print data in the linked list
 
 [HackerRank: Print the elements of a linked list](https://www.hackerrank.com/challenges/print-the-elements-of-a-linked-list/problem)
@@ -111,6 +132,20 @@ class Solution(object):
             root.right = temp;
         
             return root;
+```
+
+### Same Tree:
+[LeetCode 100. Same Tree](https://leetcode.com/problems/same-tree/)
+
+```py
+class Solution:
+    def isSameTree(self, p: TreeNode, q: TreeNode) -> bool:
+        if p == None and q == None:
+            return True;
+        elif p != None and q != None:
+            return p.val == q.val and self.isSameTree(p.left,q.left) and self.isSameTree(q.right,p.right)
+        else:
+            return False;
 ```
 
 ### Symmetry binary tree:
