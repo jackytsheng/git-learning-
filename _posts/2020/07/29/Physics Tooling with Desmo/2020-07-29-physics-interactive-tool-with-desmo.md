@@ -6,7 +6,7 @@
 - [Standing wave](#standing-wave)
 - [Young's double slits experiment](#youngs-double-slits-experiment)
 - [Light Refraction](#light-refraction)
-- [Interference simulation by Phta](#interference-simulation-by-phta)
+- [Interference Simulation by Phta](#interference-simulation-by-phta)
 
 ### Wave Reflection
 [Link to the tool](https://www.desmos.com/calculator/zuvlio9uem)
@@ -60,7 +60,8 @@ How to use:
 
 ![wave-interference](/assets/images/2020-07-29/img/wave-refraction.png)
 
-### Interference simulation by Phta
+### Interference Simulation by Phta
 
 [Link to the tool](/assets/html/wave-interference_en.html)
 
+![Phta-UI](/assets/images/2020-07-29/img/Phta-UI.png)

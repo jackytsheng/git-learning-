@@ -107,6 +107,44 @@ Tree is not linear.
 Traversal -> breadth-first and depth-first search
 
 
+### Maximum Binary Tree
+[LeetCode 654. Maximum Binary Tree](https://leetcode.com/problems/maximum-binary-tree/)
+
+```py
+class Solution:
+    def constructMaximumBinaryTree(self, nums: List[int]) -> TreeNode:
+        root = TreeNode();
+        
+        def constructTree(nums,treeNode):
+        
+            max_num = max(nums);
+            treeNode.val = max_num;
+            left_Array = nums[0:nums.index(max_num) ]
+            right_Array = nums[nums.index(max_num) + 1::]
+            
+            if len(left_Array) != 0:
+                leftNode = TreeNode();
+                treeNode.left = leftNode;
+                constructTree(left_Array,leftNode)    
+      
+                
+            if len(right_Array) != 0:
+                rightNode = TreeNode();
+                treeNode.right = rightNode;
+                constructTree(right_Array,rightNode)
+      
+        
+        constructTree(nums,root);
+        
+        return root;
+        
+        
+```
+
+
+
+
+
 
 ### Invert binary tree:
 [LeetCode 226. Invert Binary Tree](https://leetcode.com/problems/invert-binary-tree/submissions/)
