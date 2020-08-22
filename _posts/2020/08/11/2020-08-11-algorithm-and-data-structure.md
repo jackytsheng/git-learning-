@@ -106,6 +106,40 @@ tree is just special graph
 Tree is not linear.
 Traversal -> breadth-first and depth-first search
 
+
+
+
+### Sum of Nodes with Even-Valued Grandparent
+[LeetCode 1315. Sum of Nodes with Even-Valued Grandparent](https://leetcode.com/problems/sum-of-nodes-with-even-valued-grandparent/submissions/)
+
+```py
+class Solution:
+  def sumEvenGrandparent(self, root: TreeNode) -> int:
+
+
+    def SumNode(node):
+      tempSum = 0;
+      if node != None:
+          if node.left != None:
+              tempSum += node.left.val
+          if node.right != None:
+              tempSum += node.right.val
+      return tempSum
+
+    def CheckNode(node):
+      sum = 0;
+      if node != None:
+          if node.val %2 == 0:
+              sum += SumNode(node.left)
+              sum += SumNode(node.right)
+
+          sum += CheckNode(node.left)
+          sum += CheckNode(node.right)
+      return sum;
+    
+    return CheckNode(root)
+```
+
 ### Minimum Height Tree
 [LeetCode 310. Minimum height tree](https://leetcode.com/problems/minimum-height-trees/)
 
