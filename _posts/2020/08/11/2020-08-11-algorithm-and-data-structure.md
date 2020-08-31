@@ -107,7 +107,158 @@ Tree is not linear.
 Traversal -> breadth-first and depth-first search
 
 
+### Basic Tree Operation:
 
+### Constructing Tree Data Structure
+
+```py
+
+# Defining the Node Class
+class Node:
+  def __init__(self,value):
+    self.value = value;
+    self.left = None;
+    self.right =None;
+
+# Defining the Tree Class
+class BinaryTree:
+  def __init__(self,root):
+    self.root = Node(root);
+  
+  # Helper function for printing
+  def printTree(self,method):
+    if method == "preOrder":
+      print(self.preOrderDFS(self.root,""));
+    elif method == "inOrder":
+      print(self.inOrderDFS(self.root,""));
+    elif method == "postOrder":
+      print(self.postOrderDFS(self.root,""));
+    elif method == "BFS":
+      print(self.bfs(self.root,""));
+
+```
+
+
+### Populating a sample Tree
+
+```py
+
+# Tree structure
+#       1
+#     /   \
+#    2     3
+#   / \   / \
+#  4   5 6   7
+
+rootVal = 1;
+tree = BinaryTree(rootVal);
+
+tree.root.left = Node(2);
+tree.root.right = Node(3);
+
+tree.root.left.left = Node(4);
+tree.root.left.right = Node(5);
+
+tree.root.right.left = Node(6);
+tree.root.right.right = Node(7);
+
+```
+
+
+### Depth-first-search Traversal (Pre order)
+
+```py
+...
+  # Traversal 
+  # DFS 
+  # Pre-Order (root, left, right)
+  def preOrderDFS(self,node,TraversalStr):
+    if node == None :
+      return TraversalStr
+    
+    TraversalStr += str(node.value);
+    TraversalStr = self.preOrderDFS(node.left,TraversalStr);
+    TraversalStr = self.preOrderDFS(node.right,TraversalStr);
+
+    return TraversalStr;
+
+...
+  # 1245367
+  tree.printTree("preOrder");
+```
+### Depth-first-search Traversal (In order)
+
+```py
+...
+  # Traversal 
+  # DFS 
+  # In-Order (left, root, right)
+  def inOrderDFS(self,node,TraversalStr):
+    if node == None :
+      return TraversalStr
+    
+    TraversalStr = self.inOrderDFS(node.left,TraversalStr);
+    TraversalStr += str(node.value);
+    TraversalStr = self.inOrderDFS(node.right,TraversalStr);
+
+    return TraversalStr;
+
+...
+  # 4251637
+  tree.printTree("inOrder");
+```
+### Depth-first-search Traversal (Post order)
+
+```py
+...
+  # Traversal 
+  # DFS 
+  # Post-Order (left,right, root)
+  def postOrderDFS(self,node,TraversalStr):
+    if node == None :
+      return TraversalStr
+    
+    TraversalStr = self.postOrderDFS(node.left,TraversalStr);
+    TraversalStr = self.postOrderDFS(node.right,TraversalStr);
+    TraversalStr += str(node.value);
+
+    return TraversalStr;
+
+
+...
+  # 4526731
+  tree.printTree("postOrder");
+```
+### Breadth-first-search Traversal (BFS)
+
+```py
+...
+  
+  # Traversal 
+  # BFS 
+  def bfs(self,node,TraversalStr):
+    queue = [node];
+
+    def bfsFun(node):
+        
+      if node.left != None:
+        queue.append(node.left);
+      if node.right != None:
+        queue.append(node.right);
+
+    while queue:
+      dequeueNode = queue[0];
+      queue = queue[1::]
+      TraversalStr += str(dequeueNode.value);
+      bfsFun(dequeueNode);
+    
+    return TraversalStr
+...
+  # 1234567
+  tree.printTree("BFS");
+```
+
+## Coding Challenge Solution:
 
 ### Sum of Nodes with Even-Valued Grandparent
 [LeetCode 1315. Sum of Nodes with Even-Valued Grandparent](https://leetcode.com/problems/sum-of-nodes-with-even-valued-grandparent/submissions/)
@@ -115,7 +266,6 @@ Traversal -> breadth-first and depth-first search
 ```py
 class Solution:
   def sumEvenGrandparent(self, root: TreeNode) -> int:
-
 
     def SumNode(node):
       tempSum = 0;
@@ -222,10 +372,6 @@ class Solution:
 ```
 
 
-
-
-
-
 ### Invert binary tree:
 [LeetCode 226. Invert Binary Tree](https://leetcode.com/problems/invert-binary-tree/submissions/)
 
@@ -297,17 +443,3 @@ class Solution:
       # both node exist
       return root.val == root.right.val and root.val == root.left.val and self.isUnivalTree(root.left) and self.isUnivalTree(root.right)
 ```
-### Breadth-first (level order):
-visiting children before visiting grand children
-
-FIFO queue
-```py
-
-
-```
-
-### Depth-first 
-visiting a complete sub-tree :
-Pre-order (DLR)
-In-order (LDR)
-Post-order (LRD)
