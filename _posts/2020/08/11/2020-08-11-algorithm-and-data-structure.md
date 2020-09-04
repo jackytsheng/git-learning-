@@ -256,7 +256,6 @@ tree.root.right.right = Node(7);
 ...
   # 1234567
   tree.printTree("BFS");
-  
 ```
 
 ## Coding Challenge Solution:
