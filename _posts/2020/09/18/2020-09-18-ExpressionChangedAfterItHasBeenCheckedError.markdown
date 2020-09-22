@@ -108,7 +108,7 @@ According to document about [AfterViewInit](https://angular.io/api/core/AfterVie
 
 1. to avoid change inside ngAfterViewInit, and initialise variable inside ngOnInit(){}
 
-2. to add at wrap a `setTimeout()` around. As this would **'defer'** the task inside the `ngAfterViewInit()` call back by setting it **async**.
+2. wrap a `setTimeout()` around it. As this would **'defer'** the task inside the `ngAfterViewInit()` callback by setting it **async**.
 
 
 ```ts
