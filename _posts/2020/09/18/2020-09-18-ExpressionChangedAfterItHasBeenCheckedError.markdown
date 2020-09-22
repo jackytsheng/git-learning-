@@ -7,7 +7,7 @@ I Was working on a project and encountered this error.
 
 `ExpressionChangedAfterItHasBeenCheckedError`
 
-Other good resources in explaining this issues:
+Other good resources in explaining this issue:
 
 1. [Blog by Ali Kamalizade](https://medium.com/better-programming/expressionchangedafterithasbeencheckederror-in-angular-what-why-and-how-to-fix-it-c6bdc0b22787)
 2. [Youtube Part 1 by Angular University](https://www.youtube.com/watch?v=l3jZDGOZBEs&t=286s)
@@ -102,7 +102,7 @@ Lots of application may require calling API inside `ngAfterViewInit()`, so this 
 
 ## Ideas:
 
-According to document about [AfterViewInit](https://angular.io/api/core/AfterViewInit), its a callback **after** view has fully initialised, because the initially when view is about to show, Angular takes `this.value` to be `"hello world"` as it's the value got assigned to `this.value` after `ngOnInit`. Once `"hello world"` is shown on the view it then immediately triggers the `ngAfterViewInit` callback, but it then triggers the change to the view **again**. So it throw this error out.
+According to document about [AfterViewInit](https://angular.io/api/core/AfterViewInit), its a callback function **after** view has fully initialised. Because the initially when view is about to show, Angular takes `this.value` to be `"hello world"` as it's the value got assigned to `this.value` after `ngOnInit`. Once `"hello world"` is shown on the view it then immediately triggers the `ngAfterViewInit` callback, but it then triggers the change to the view **again**. So it throw this error out.
 
 ## Solution:
 
