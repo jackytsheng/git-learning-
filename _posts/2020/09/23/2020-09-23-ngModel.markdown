@@ -1,0 +1,190 @@
+---
+title:  "Angular playground for [(ngModel)]"
+# tags: [Angular] 
+---
+
+Playground for [(ngModel)] two way binding, I was working on my internship. There is such usage of [(ngModel)] that I'm not familiar with. So I document my thought and finding.
+
+## use [value]
+
+this will display `hello world` initally both inside the text field.
+
+Upon typing, this won't change the `value`
+
+```ts
+
+@Component({
+  selector: 'app-root',
+  template: `
+    <input type = "text" [value] = "value">
+    {{value}}
+  `,
+  styleUrls: ['./app.component.sass']
+})
+export class AppComponent implements OnInit{
+
+  value:String = "hello world";
+  
+  ngOnInit(){
+  }
+}
+```
+
+## log the `value` upon changing
+
+now try to `console.log()` the value that has been typed.
+
+```ts
+
+@Component({
+  selector: 'app-root',
+  template: `
+    <input type="text" [value]="value" (change)="logValue($event)" />
+    {{ value }}
+  `,
+  styleUrls: ['./app.component.sass'],
+})
+export class AppComponent implements OnInit {
+  value: String = 'hello world';
+
+  ngOnInit() {}
+
+  logValue($event){
+    console.log($event.target.value);
+  }
+}
+```
+
+this will result a `$event`, if `$event.target.value`. However this won't effect the `this.value` inside the component.
+
+
+## test on `value` upon keyup
+
+Create Two Input fields, and trigger value change upon `keyup`, 
+
+all three `value` changed simultaneously.
+
+```ts
+@Component({
+  selector: 'app-root',
+  template: `
+    <input type="text" [value]="value" (keyup)="logValue($event)" />
+
+    <input type="text" [value]="value" (keyup)="logValue($event)" />
+    {{ value }}
+  `,
+  styleUrls: ['./app.component.sass'],
+})
+export class AppComponent implements OnInit {
+  value: String = 'hello world';
+
+  ngOnInit() {}
+
+  logValue($event) {
+    this.value = $event.target.value;
+  }
+}
+
+```
+
+
+## two way binding [(ngModel)]
+
+Import the FormModule at the `app.module.ts` to enable [(ngModel))]
+Work pretty similar to `keydown` and binds the `$event.target.value` to an attribute, and doesn't requires `[value]="value"` to display value inside the text field. 
+
+```ts
+@Component({
+  selector: 'app-root',
+  template: `
+    <input type="text" [(ngModel)]="value" />
+
+    <input type="text" [value]="value" (keyup)="logValue($event)" />
+    {{ value }}
+  `,
+  styleUrls: ['./app.component.sass'],
+})
+export class AppComponent implements OnInit {
+  value: String = 'hello world';
+
+  ngOnInit() {}
+
+  logValue($event) {
+    this.value = $event.target.value;
+  }
+}
+```
+
+## conflicting between [(ngModel)] and [value]
+
+enable both [value] and [(ngModel)] to see what happens. Create a second `value2` and bind it to [(ngModel)], meanwhile allowing
+
+```ts
+@Component({
+  selector: 'app-root',
+  template: `
+    <input type="text" [value]="value" [(ngModel)]="value2" />
+
+    <input type="text" [value]="value" (keyup)="logValue($event)" />
+
+    <input type="text" [value]="value2" (keyup)="logValue2($event)" />
+
+    <div>{{ value }}</div>
+    <div>{{ value2 }}</div>
+    
+  `,
+  styleUrls: ['./app.component.sass'],
+})
+export class AppComponent implements OnInit {
+  value: String = 'hello world';
+  value2: String = 'hello world 2';
+
+  ngOnInit() {}
+
+  logValue($event) {
+    this.value = $event.target.value;
+  }
+  logValue2($event) {
+    this.value2 = $event.target.value;
+  }
+```
+Both `value` and `value 2` will result changes in the `<input>` field with both [(ngModel)] and [value] on it.
+
+## [(ngModel)] binding to an attribute
+
+enable both [value] and [(ngModel)] to see what happens. Create a second `value2` and bind it to [(ngModel)], meanwhile allowing
+
+```ts
+@Component({
+  selector: 'app-root',
+  template: `
+    <input type="text" [value]="value" [(ngModel)]="value2" />
+
+    <input type="text" [value]="value" (keyup)="logValue($event)" />
+
+    <input type="text" [value]="value2" (keyup)="logValue2($event)" />
+
+    <div>{{ value }}</div>
+    <div>{{ value2 }}</div>
+    
+  `,
+  styleUrls: ['./app.component.sass'],
+})
+export class AppComponent implements OnInit {
+  value: String = 'hello world';
+  value2: String = 'hello world 2';
+
+  ngOnInit() {}
+
+  logValue($event) {
+    this.value = $event.target.value;
+  }
+  logValue2($event) {
+    this.value2 = $event.target.value;
+  }
+```
+## Conclusion
+
+1. value only effect what to display to the text input field. Initially it will assigned the initial assigned `value`.
+2. with [(ngModel)], we don't need to include [value].
+3. for initial display, [(ngModel)] takes priority of [value]. However, it will response to both chagnes
