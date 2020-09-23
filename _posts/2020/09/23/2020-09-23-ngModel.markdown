@@ -158,33 +158,102 @@ enable both [value] and [(ngModel)] to see what happens. Create a second `value2
 @Component({
   selector: 'app-root',
   template: `
-    <input type="text" [value]="value" [(ngModel)]="value2" />
+    <input type="text" [(ngModel)]="object.key" [value]="value" />
 
     <input type="text" [value]="value" (keyup)="logValue($event)" />
 
-    <input type="text" [value]="value2" (keyup)="logValue2($event)" />
-
     <div>{{ value }}</div>
-    <div>{{ value2 }}</div>
-    
+
+    <div>{{ object.key }}</div>
   `,
   styleUrls: ['./app.component.sass'],
 })
 export class AppComponent implements OnInit {
   value: String = 'hello world';
-  value2: String = 'hello world 2';
+  object = { key: 'hello world from object' };
 
   ngOnInit() {}
 
   logValue($event) {
     this.value = $event.target.value;
   }
-  logValue2($event) {
-    this.value2 = $event.target.value;
+
+}
+```
+
+[(ngModel)] can be bind to key of an object.
+
+
+## [(ngModel)] effect on radio
+
+```ts
+@Component({
+  selector: 'app-root',
+  template: `
+    <input type="radio" [(ngModel)]="selected" [value]="value" />
+
+    <input type="text" [value]="value" (keyup)="logValue($event)" />
+
+    <div>{{ value }}</div>
+
+    <div>{{ selected }}</div>
+  `,
+  styleUrls: ['./app.component.sass'],
+})
+export class AppComponent implements OnInit {
+  value: String = 'hello world';
+  selected = "selected";
+
+  ngOnInit() {}
+
+  logValue($event) {
+    this.value = $event.target.value;
   }
 ```
+
+[(ngModel)] will assign `value` of input to the `selected`.
+
+
+Note: 
+1. if there isn't a `value` attribute in a `type='radio'` input, upon selected will assign `value` to null.
+   
+2. Interestingly, initially [(ngModel)] will be mapped against the `[value]`.If both value equal, radio button is **selected** by default. If `[value]` doesn't exist, it's considered as `undefined`, if [(ngModel)] binding to a variable that also has value of `undefined`, radio button will still be selected by default.
+3. Re clicking selected button can't really unselected it. However, dynamically modify [(ngModel)] can toggle selection (button will be selected when matching the `value` else `unselected`). However, dynamically changing `[value]` to match [(ngModel)] will have no effect on the selection of radio button
+
+## [(ngModel)] effect on checkbox
+```ts
+@Component({
+  selector: 'app-root',
+  template: `
+    <input type="checkbox" [(ngModel)]="selected" [value]="value" />
+
+    <input type="text" [value]="value" (keyup)="logValue($event)" />
+
+    <div>{{ value }}</div>
+
+    <div>{{ selected }}</div>
+  `,
+  styleUrls: ['./app.component.sass'],
+})
+export class AppComponent implements OnInit {
+  value: String = 'hello world';
+  selected = "true";
+
+  ngOnInit() {}
+
+  logValue($event) {
+    this.value = $event.target.value;
+  }
+```
+
+[(ngModel)] will evaluate `selected` here. If it's `true`, checked box will be selected initially. Whereas setting `value = "true"` or `[value]=selected` won't have any effect to the checked status
+
 ## Conclusion
 
 1. value only effect what to display to the text input field. Initially it will assigned the initial assigned `value`.
 2. with [(ngModel)], we don't need to include [value].
-3. for initial display, [(ngModel)] takes priority of [value]. However, it will response to both chagnes
+3. for initial display, [(ngModel)] takes priority of [value]. However, it will response to both changes.
+4. [(ngModel)] can bind to key of an object.
+5. if [(ngModel)] is on a `type = 'radio'` input. upon selected will assign current `[value]` to the variable, if there isn't. Assign `undefined`.
+6. if both `[value]`  and [(ngModel)] have the same value (including the case when both are `undefined`). Radio button will be selected by default
+7. Dynamically modify [(ngModel)] can toggle selection
