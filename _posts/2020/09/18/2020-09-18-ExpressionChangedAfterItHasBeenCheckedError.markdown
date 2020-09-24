@@ -67,7 +67,7 @@ export class AppComponent implements OnInit, AfterViewInit{
 if `this.title` is changed inside ngOnInit which in this case set to `"hello world in OnInit"`, it replaces what was initially set `"hello world"`. And only `"hello world in OnInit"` is rendered.
 
 
-![onInit](/assets/images/2020-18-09/onInit.png)
+![onInit](/assets/images/2020-09-18/onInit.png)
 
 
 4. Now modify `this.title` in `ngAfterViewInit`
@@ -94,7 +94,7 @@ export class AppComponent implements OnInit, AfterViewInit{
 }
 
 ```
-![ngAfterViewInit](/assets/images/2020-18-09/ngAfterViewInit.png)
+![ngAfterViewInit](/assets/images/2020-09-18/ngAfterViewInit.png)
 
 `ExpressionChangedAfterItHasBeenCheckedError` is thrown. And both `this.title` values are printed inside console.
 
@@ -120,7 +120,7 @@ According to document about [AfterViewInit](https://angular.io/api/core/AfterVie
   }
 
 ```
-![after-setTimeout](/assets/images/2020-18-09/after-setTimeout.png)
+![after-setTimeout](/assets/images/2020-09-18/after-setTimeout.png)
 
 This will make the actual change to the `this.title` happens after the angular component lifecycle.
 

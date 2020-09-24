@@ -3,13 +3,11 @@ title:  "Angular playground for [(ngModel)]"
 # tags: [Angular] 
 ---
 
-Playground for [(ngModel)] two way binding, I was working on my internship. There is such usage of [(ngModel)] that I'm not familiar with. So I document my thought and finding.
+Playground for [(ngModel)] two way binding, I was working on my internship project. There is such usage of [(ngModel)] that I'm not familiar with. So I document my thought and finding.
 
-## use [value]
+## [value] for value binding
 
-this will display `hello world` initally both inside the text field.
-
-Upon typing, this won't change the `value`
+Implement the following
 
 ```ts
 
@@ -29,8 +27,14 @@ export class AppComponent implements OnInit{
   }
 }
 ```
+This will display `hello world` initially both inside the text field.
 
-## log the `value` upon changing
+Upon typing, this won't change the `value`
+
+![pic1](/assets/images/2020-09-23/pic1.png)
+
+
+## Log the `value` upon changing
 
 now try to `console.log()` the value that has been typed.
 
@@ -55,10 +59,11 @@ export class AppComponent implements OnInit {
 }
 ```
 
-this will result a `$event`, if `$event.target.value`. However this won't effect the `this.value` inside the component.
+This will result a `$event`, if `$event.target.value`. However this won't effect the `this.value` inside the component.
 
+![pic2](/assets/images/2020-09-23/pic2.png)
 
-## test on `value` upon keyup
+## Test on `value` upon keyup
 
 Create Two Input fields, and trigger value change upon `keyup`, 
 
@@ -86,12 +91,12 @@ export class AppComponent implements OnInit {
 }
 
 ```
-
+![pic3](/assets/images/2020-09-23/pic3.png)
 
 ## two way binding [(ngModel)]
 
-Import the FormModule at the `app.module.ts` to enable [(ngModel))]
-Work pretty similar to `keydown` and binds the `$event.target.value` to an attribute, and doesn't requires `[value]="value"` to display value inside the text field. 
+Import the `FormModule` inside the `app.module.ts` to enable `[(ngModel)]`
+Work pretty similar to `keydown` and binds the `$event.target.value` to the `value`, and it doesn't requires `[value]="value"` to display value inside the text field.
 
 ```ts
 @Component({
@@ -114,10 +119,11 @@ export class AppComponent implements OnInit {
   }
 }
 ```
+![pic4](/assets/images/2020-09-23/pic4.png)
 
 ## conflicting between [(ngModel)] and [value]
 
-enable both [value] and [(ngModel)] to see what happens. Create a second `value2` and bind it to [(ngModel)], meanwhile allowing
+Enable both [value] and [(ngModel)] to see what happens. Create a second `value2` and bind it to [(ngModel)], meanwhile allowing
 
 ```ts
 @Component({
@@ -150,9 +156,11 @@ export class AppComponent implements OnInit {
 ```
 Both `value` and `value 2` will result changes in the `<input>` field with both [(ngModel)] and [value] on it.
 
-## [(ngModel)] binding to an attribute
+![pic5](/assets/images/2020-09-23/pic5.png)
 
-enable both [value] and [(ngModel)] to see what happens. Create a second `value2` and bind it to [(ngModel)], meanwhile allowing
+## [(ngModel)] binding to object 
+
+Enable see what happens if `[(ngModel)]` binds to a key of an object.
 
 ```ts
 @Component({
@@ -181,10 +189,14 @@ export class AppComponent implements OnInit {
 }
 ```
 
-[(ngModel)] can be bind to key of an object.
+[(ngModel)] can be bind to key of an object. and change value of a certain key
 
+![pic6](/assets/images/2020-09-23/pic6.png)
 
 ## [(ngModel)] effect on radio
+
+Check what effect does [(ngModel)] has on `radio` input
+
 
 ```ts
 @Component({
@@ -214,11 +226,12 @@ export class AppComponent implements OnInit {
 [(ngModel)] will assign `value` of input to the `selected`.
 
 
-Note: 
-1. if there isn't a `value` attribute in a `type='radio'` input, upon selected will assign `value` to null.
+Finding Note: 
+1. If there isn't a `value` attribute in a `type='radio'` input, upon selected, [(ngModel)] will assign `value` to null.
    
 2. Interestingly, initially [(ngModel)] will be mapped against the `[value]`.If both value equal, radio button is **selected** by default. If `[value]` doesn't exist, it's considered as `undefined`, if [(ngModel)] binding to a variable that also has value of `undefined`, radio button will still be selected by default.
-3. Re clicking selected button can't really unselected it. However, dynamically modify [(ngModel)] can toggle selection (button will be selected when matching the `value` else `unselected`). However, dynamically changing `[value]` to match [(ngModel)] will have no effect on the selection of radio button
+   
+3. Reclicking selected button can't really unselected it. However, dynamically modify [(ngModel)] can toggle selection (button will be selected when matching the `value` else `unselected`). However, dynamically changing `[value]` to match [(ngModel)] will have no effect on the selection of radio button
 
 ## [(ngModel)] effect on checkbox
 ```ts
@@ -252,8 +265,9 @@ export class AppComponent implements OnInit {
 
 1. value only effect what to display to the text input field. Initially it will assigned the initial assigned `value`.
 2. with [(ngModel)], we don't need to include [value].
-3. for initial display, [(ngModel)] takes priority of [value]. However, it will response to both changes.
+3. for initial display, [(ngModel)] takes priority than [value]. However, both binding will have effect on display.
 4. [(ngModel)] can bind to key of an object.
-5. if [(ngModel)] is on a `type = 'radio'` input. upon selected will assign current `[value]` to the variable, if there isn't. Assign `undefined`.
-6. if both `[value]`  and [(ngModel)] have the same value (including the case when both are `undefined`). Radio button will be selected by default
-7. Dynamically modify [(ngModel)] can toggle selection
+5. if [(ngModel)] is assigned to a `type = 'radio'` input. upon selected will assign current `[value]` to the variable, if there isn't. Assign `undefined`.
+6. if both `[value]`  and [(ngModel)] have the same value (including the case when both are `undefined`). Radio button will be selected by default.
+7. Dynamically modify [(ngModel)] can toggle selection. Dynamically modify [value] won't have effect on selection.
+8. [(ngModel)] can be modify to be `true` of `false` for the initial state of `checkbox` type input. No effect on initial state if only [value] is set.
