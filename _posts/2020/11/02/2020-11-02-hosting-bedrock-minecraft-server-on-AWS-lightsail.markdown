@@ -20,6 +20,7 @@ Note:
 `$ LD_LIBRARY_PATH=. ./bedrock_server`
 
 and then detach while server is starting, enter  `CTRL A + CTRL D`
+Note that you must have another window before you can detach from it. 
 
 Or alternatively, as mentioned in the tutorial:
 
@@ -27,7 +28,9 @@ write the command in a starting script:
 1. `$ vi run.sh `
 2. paste `LD_LIBRARY_PATH=. ./bedrock_server`
 3. press `ESC` and `:x`
-4. then detach the screen using `screen -d xxx` if you want to do something else
+4. then detach the screen using `screen -d xxx` if you want to do something else.
+
+
    
 You can always check witch screen you are on using `screen -ls`, and restore the screen using `screen -r xxx`
 
