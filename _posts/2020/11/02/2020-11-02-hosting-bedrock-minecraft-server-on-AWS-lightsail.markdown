@@ -40,7 +40,6 @@ You can always check witch screen you are on using `screen -ls`, and restore the
 I did that through using `AWS S3`
 
 
-
 #### First set up aws-cli for **AWS Lightsail** and set up s3 bucket
 1. inside `AWS Lightsail` install aws on the instance `$ sudo apt install awscli`
 2. Set up [IAM user](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_users_create.html) give it admin access to `s3`  policy, copy both **ACCESS KEY** and **SECRET KEY**. 
@@ -78,4 +77,8 @@ Happy crafting !!
 
 
 
-Note: that currently the minecraft server would automatically shut down if left unattended. So a manual reboot may be necessarily
+Note: 
+
+- That currently the minecraft server would automatically shut down if left unattended. So a manual reboot may be necessarily. 
+
+- When Relaunching instance, make sure the new network port is configured `UDP` with range 19132 - 19133
