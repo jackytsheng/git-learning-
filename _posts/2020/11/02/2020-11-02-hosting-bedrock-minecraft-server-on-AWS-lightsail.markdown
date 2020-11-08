@@ -1,5 +1,5 @@
 ---
-title:  "Hosting Minecraft Bedrock Server on AWS lightsail"
+title:  "Hosting Minecraft Bedrock Server on AWS Lightsail"
 # tags: [Angular] 
 ---
 
