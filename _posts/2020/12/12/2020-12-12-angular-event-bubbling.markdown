@@ -3,7 +3,7 @@ title:  "Angular Event Bubbling (Propagation) & Click outside Directive"
 # tags: [Python] 
 ---
 
-I am was working on my Internship project. There was a requirement about **clicking outside to disable popup**. Due to intensive use of libraries they were a huge deck of events being executed at once (due to a giant DOM). So this time I am about to investigate how event propagate and when will directive be executed
+I am was working on my Internship project. There was a requirement about **clicking outside to disable popup**. Due to intensive use of libraries, there were a huge deck of events being executed at once (due to a giant DOM). So this time I am about to investigate how event propagate and when will directive be executed
 
 
 ### Set up three `div` in DOM
@@ -50,7 +50,7 @@ Scss:
 
 ```
 
-![three-rectangles]("/assets/images/2020-12-12/three-rectangles.png")
+![three-rectangles](/assets/images/2020-12-12/three-rectangles.png)
 
 ### Give it a (click) event handler
 
@@ -77,7 +77,7 @@ export class AppComponent {
 ```
 
 Then Click the Green(inner) Rect:
-![click-three-rectangles]("/assets/images/2020-12-12/click-three-rectangles.png")
+![click-three-rectangles](/assets/images/2020-12-12/click-three-rectangles.png)
 
 
 ### Event Bubbling
@@ -95,7 +95,7 @@ To stop that Event Penetrate all three box, angular has built in method call `st
 ```
 If Now `Rect3` div is clicked.
 
-![stop-propagation]("/assets/images/2020-12-12/stop-propagation.png")
+![stop-propagation](/assets/images/2020-12-12/stop-propagation.png)
 
 Event will stop **Penetrating through all rectangles**
 
@@ -167,7 +167,7 @@ If clicked on the red rectangle (Outer) expected results are logging
 - Outside of `Rect2`
 
 This is exactly as shown below, looks like the click outside event got execute in the same order as "From the most inner DOM Out"
-![click-outside]("/assets/images/2020-12-12/click-outside.png")
+![click-outside](/assets/images/2020-12-12/click-outside.png)
 
 ### Adding stopPropagation() when clickOutside Directive is in used
 
@@ -190,7 +190,7 @@ Now add another method onClickRectOne to the most outer Rect and test:
 ```
 
 Result Are as expected.
-![blocking-event]("/assets/images/2020-12-12/blocking-event.png")
+![blocking-event](/assets/images/2020-12-12/blocking-event.png)
 
 ### Conclusion
 
