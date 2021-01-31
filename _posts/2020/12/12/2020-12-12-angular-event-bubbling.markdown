@@ -93,11 +93,7 @@ To stop that Event Penetrate all three box, angular has built in method call `st
   }
   ...
 ```
-If Now `Rect3` div is clicked.
-
-![stop-propagation](/assets/images/2020-12-12/stop-propagation.png)
-
-Event will stop **Penetrating through all rectangles**
+If Now `Rect3` div is clicked. Event will stop **Penetrating through all rectangles**
 
 ### Now add a directive to listen for clicking outside of the element
 
