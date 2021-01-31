@@ -275,3 +275,6 @@ defaults:
       comments: # true
       share: true
       related: true
+
+collections:
+  - staff_members
