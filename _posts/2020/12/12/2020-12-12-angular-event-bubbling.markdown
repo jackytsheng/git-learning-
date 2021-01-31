@@ -1,5 +1,6 @@
 ---
 title:  "Angular Event Bubbling (Propagation) & Click outside Directive"
+last_modified_at: 2021-01-31T17:48:00+10:00
 tags: [Angular] 
 ---
 
