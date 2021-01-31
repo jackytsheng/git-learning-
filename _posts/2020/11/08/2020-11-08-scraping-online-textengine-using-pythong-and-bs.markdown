@@ -1,6 +1,6 @@
 ---
 title:  "Scraping Online Test Engine Using Python and BeautifulSoup"
-# tags: [Python] 
+tags: [Python] 
 ---
 
 I am recently preparing for AWS Solution Architect Associate exam, as i have finished course on Udemy, i was on a hunt of revision material and exam dumps. After comparison,  [skillcertpro](https://skillcertpro.com/) seems to offer the product with best value. So I purchased their product. However, because of copyright, there are no option for download as PDF. As a person who use to study on paper rather than any form of electronic device, having only the website access gave me a headache.

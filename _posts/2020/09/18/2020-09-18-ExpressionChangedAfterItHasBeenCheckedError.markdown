@@ -1,6 +1,6 @@
 ---
 title:  "Angular ExpressionChangedAfterItHasBeenCheckedError"
-# tags: [Angular] 
+tags: [Angular] 
 ---
 
 I Was working on a project and encountered this error.

@@ -1,9 +1,9 @@
 ---
 title:  "Angular Event Bubbling (Propagation) & Click outside Directive"
-# tags: [Python] 
+tags: [Angular] 
 ---
 
-I am was working on my Internship project. There was a requirement about **clicking outside to disable popup**. Due to intensive use of libraries, there were a huge deck of events being executed at once (due to a giant DOM). So this time I am about to investigate how event propagate and when will directive be executed
+I was working on my Internship project. There was a requirement about **clicking outside to disable popup**. Due to intensive use of libraries, there were a huge deck of events being executed at once (due to a giant DOM). So this time I am about to investigate how event propagate and when will directive be executed
 
 
 ### Set up three `div` in DOM

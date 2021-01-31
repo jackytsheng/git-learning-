@@ -1,6 +1,6 @@
 ---
 title:  "Building Simple Node Micro service and consume message from RabbitMQ"
-# tags: [SpringBoot,Java,MySql,Configure]
+tags: [Node,Javascript,RabbitMQ,Express]
 ---
 ### Related
 

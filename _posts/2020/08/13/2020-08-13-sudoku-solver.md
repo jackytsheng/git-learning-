@@ -1,6 +1,6 @@
 ---
 title:  "Sudoku solver with AWS lambda "
-# tags: [Algorithm:recursion,Python]
+tags: [Algorithm,Python,AWS,AWS Lambda]
 ---
 
 [Sudoku Solver](https://gaget.jiajinzheng.com/sudokusolver)

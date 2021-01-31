@@ -1,6 +1,6 @@
 ---
 title:  "Deploying Docker Application onto EC2"
-# tags: [AWS EC2,Docker] 
+tags: [AWS EC2,Docker] 
 ---
 
 ### Instantiate EC2 instance

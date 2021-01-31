@@ -1,6 +1,6 @@
 ---
 title:  "Angular playground for [(ngModel)]"
-# tags: [Angular] 
+tags: [Angular] 
 ---
 
 Playground for [(ngModel)] two way binding, I was working on my internship project. There is such usage of [(ngModel)] that I'm not familiar with. So I document my thought and finding.

@@ -1,6 +1,6 @@
 ---
 title:  "Hosting Minecraft Bedrock Server on AWS Lightsail"
-# tags: [Angular] 
+tags: [AWS Lightsail] 
 ---
 
 
@@ -76,9 +76,10 @@ then start the server, your world should be good to go.
 Happy crafting !!
 
 
-
 Note: 
 
 - That currently the minecraft server would automatically shut down if left unattended. So a manual reboot may be necessarily. 
 
-- When Relaunching instance, make sure the new network port is configured `UDP` with range 19132 - 19133
+- When Relaunching instance, make sure the new network port is configured `UDP` with range 19132 - 19133.
+
+- It's likely that performance is not sufficient when the world gets large. In that case switch to EC2 performance optimsed instance may help. (but I'd rather rent a server if can't be bother to manage all the infrastructure XD)
