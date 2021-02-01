@@ -1,6 +1,7 @@
 ---
-title:  "Sudoku solver with AWS lambda "
+title:  "Sudoku solver with AWS lambda"
 tags: [Algorithm,Python,AWS,AWS Lambda]
+categories: [Cloud Tech,Programming]
 ---
 
 [Sudoku Solver](https://gaget.jiajinzheng.com/sudokusolver)

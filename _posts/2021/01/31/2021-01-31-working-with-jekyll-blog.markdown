@@ -112,3 +112,8 @@ Both Post and url can be customised, url needs to match the `permalink` specifie
 
 4. Detail implementation with Collection check the [Minimal-mistake Docs](https://mmistakes.github.io/minimal-mistakes/docs/collections/)
 
+
+### Add Search
+
+![search](assets/images/2021-01-31/search.png)
+[Incorporate search for the website](https://mmistakes.github.io/minimal-mistakes/docs/configuration/)

@@ -1,6 +1,7 @@
 ---
 title:  "Building Simple Node Micro service and consume message from RabbitMQ"
 tags: [Node,Javascript,RabbitMQ,Express]
+categories: [Programming]
 ---
 ### Related
 

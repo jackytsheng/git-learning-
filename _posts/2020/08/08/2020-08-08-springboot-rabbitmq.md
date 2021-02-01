@@ -1,6 +1,7 @@
 ---
 title:  "Connect SpringBoot with RabbitMQ"
 tags: [SpringBoot,Java,MySql,Configure,RabbitMQ]
+categories: [Programming]
 ---
 ### Related
 This blog used a simple [RESTful Api student backend project](https://github.com/jackytsheng/backend-student-demo)

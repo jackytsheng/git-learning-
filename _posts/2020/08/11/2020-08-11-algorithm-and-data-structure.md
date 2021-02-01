@@ -1,6 +1,7 @@
 ---
 title:  "Top Algorithms and Data Structures"
 tags: [Python,Data Structure,Algorithm] 
+categories: [Algorithm & Data Structure]
 ---
 
 ## Linked list related:
