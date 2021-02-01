@@ -34,8 +34,8 @@ author_profile: true
 
 3. Tags and tags page should show as follow:
  
- ![tag](assets/images/2021-01-31/tag.png)
- ![tag archive page](assets/images/2021-01-31/tag-archive.png)
+ ![tag](/assets/images/2021-01-31/tag.png)
+ ![tag archive page](/assets/images/2021-01-31/tag-archive.png)
  
 
 
@@ -113,7 +113,20 @@ Both Post and url can be customised, url needs to match the `permalink` specifie
 4. Detail implementation with Collection check the [Minimal-mistake Docs](https://mmistakes.github.io/minimal-mistakes/docs/collections/)
 
 
-### Add Search
+### Add Search To the Site
 
-![search](assets/images/2021-01-31/search.png)
+![search](/assets/images/2021-01-31/search.png)
 [Incorporate search for the website](https://mmistakes.github.io/minimal-mistakes/docs/configuration/)
+
+### Add Comment Functionality
+To add comment we need a provider, I choosed [**Disqus**](https://disqus.com/profile/login/). 
+1. Set up an account with disqus
+2. Upon setting up account select basic plan
+3. under `_config.yml` change setting as the following:
+
+```yml
+comments:
+  provider: 'disqus' 
+  disqus:
+    shortname: #your short name
+```
