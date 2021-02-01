@@ -18,7 +18,7 @@ minimal_mistakes_skin: "dark" # "air", "aqua", "contrast", "dark", "dirt", "neon
 locale: "en-AU"
 title: "Jiajin Zheng Blog"
 title_separator: "-"
-subtitle: # site tagline that appears below site title in masthead
+subtitle: "A Software Craftsman Apprentice" # site tagline that appears below site title in masthead
 name: "Jiajin Zheng Blog"
 description: "📚 Jiajin Zheng personal blog"
 url: "https://blog.jiajinzheng.com"
@@ -114,7 +114,7 @@ author:
     #   icon: "fab fa-facebook-square"
     #   url: "https://www.facebook.com/jacky.tsheng/"
     - label: "GitHub"
-      icon: "fab fa-github"
+      icon: "fab fa-github-alt"
       url: "https://github.com/jackytsheng"
     - label: "Linkedin"
       icon: "fab fa-linkedin"
