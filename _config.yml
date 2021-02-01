@@ -114,7 +114,7 @@ author:
     #   icon: "fab fa-facebook-square"
     #   url: "https://www.facebook.com/jacky.tsheng/"
     - label: "GitHub"
-      icon: "fab fa-github-alt"
+      icon: "fab fa-github-square"
       url: "https://github.com/jackytsheng"
     - label: "Linkedin"
       icon: "fab fa-linkedin"
