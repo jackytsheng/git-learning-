@@ -6,9 +6,3 @@
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
-
-.social-icons .fa-github,
-.social-icons .fa-github-alt,
-.social-icons .fa-github-square {
-  color: #eaeaea;
-}

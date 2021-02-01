@@ -26,3 +26,9 @@ $navicon-link-color-hover: mix(#000, $background-color, 30%) !default;
 .ais-search-box .ais-search-box--input {
   background-color: $form-background-color;
 }
+
+.social-icons .fa-github,
+.social-icons .fa-github-alt,
+.social-icons .fa-github-square {
+  color: #eaeaea;
+}
