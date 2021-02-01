@@ -4,7 +4,6 @@ tags: [AWS Lightsail]
 categories: [Cloud Tech,Programming]
 ---
 
-
 ### Tutorial for setting server on AWS Lightsail.
 Here is a [AWS Tutorial](https://aws.amazon.com/getting-started/hands-on/run-your-own-minecraft-server/) on how to set up a Minecraft server using **AWS Lightsail**. But this is with Java edition
 
@@ -75,7 +74,6 @@ then start the server, your world should be good to go.
 
 
 Happy crafting !!
-
 
 Note: 
 

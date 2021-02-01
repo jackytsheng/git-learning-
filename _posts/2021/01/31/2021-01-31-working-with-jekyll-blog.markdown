@@ -10,7 +10,7 @@ toc_icon: "list-ul"  # corresponding Font Awesome icon name (without fa prefix)
 
 My Jekyll blog is using Minimal-mistake theme, but currently comment, Tags, Collection aren't implemented yet. So in this blog, I will documented how to implement them. [Set up the theme and Jekyll](https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/)
 
-## Implement Jekyll Tags
+### Add Tags
 
 According to [Minimal-mistakes Layout](https://mmistakes.github.io/minimal-mistakes/docs/layouts/#archive-layout), there are a couple steps we need to do in order to implement Tags.
 
