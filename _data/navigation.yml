@@ -2,13 +2,15 @@
 main:
   - title: "Personal Website"
     url: https://jiajinzheng.com
-  - title: "Gagets"
-    url: https://gaget.jiajinzheng.com
+  # - title: "Gagets"
+  #   url: https://gaget.jiajinzheng.com
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
-  # - title: "Sample Posts"
-  #   url: /year-archive/
-  # - title: "Sample Collections"
-  #   url: /collection-archive/
+  - title: "Posts"
+    url: /year-archive/
+  - title: "Collections"
+    url: /collection-archive/
+  - title: "Categories"
+    url: /categories/
   # - title: "Sitemap"
   #   url: /sitemap/
