@@ -108,7 +108,7 @@ author:
       icon: "fas fa-gamepad"
       url: "https://gaget.jiajinzheng.com"
     - label: "GitHub"
-      icon: "fab fa-github-square"
+      icon: "fab fa-github-alt"
       url: "https://github.com/jackytsheng"
     - label: "Twitter"
       icon: "fab fa-twitter-square"
