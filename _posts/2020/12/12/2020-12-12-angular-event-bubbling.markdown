@@ -2,6 +2,7 @@
 title:  "Angular Event Bubbling (Propagation) & Click outside Directive"
 last_modified_at: 2021-01-31T17:48:00+10:00
 tags: [Angular] 
+categories: [Programming]
 ---
 
 I was working on my Internship project. There was a requirement about **clicking outside to disable popup**. Due to intensive use of libraries, there were a huge deck of events being executed at once (due to a giant DOM). So this time I am about to investigate how event propagate and when will directive be executed

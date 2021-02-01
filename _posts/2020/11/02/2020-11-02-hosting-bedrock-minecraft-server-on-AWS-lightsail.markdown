@@ -1,6 +1,7 @@
 ---
 title:  "Hosting Minecraft Bedrock Server on AWS Lightsail"
 tags: [AWS Lightsail] 
+categories: [Cloud Tech,Programming]
 ---
 
 

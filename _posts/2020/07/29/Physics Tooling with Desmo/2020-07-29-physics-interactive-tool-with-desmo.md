@@ -1,6 +1,7 @@
 ---
 title:  "Physics Interactive Tools"
 tags: [Desmo,Math,Physics,Modeling]
+categories: [Education]
 ---
 
 ### Content Table

@@ -108,3 +108,7 @@ main:
     url: /categories/
 ```
 Both Post and url can be customised, url needs to match the `permalink` specified above.
+
+
+4. Detail implementation with Collection check the [Minimal-mistake Docs](https://mmistakes.github.io/minimal-mistakes/docs/collections/)
+

@@ -1,6 +1,7 @@
 ---
 title:  "Deploying Docker Application onto EC2"
 tags: [AWS EC2,Docker] 
+categories: [Cloud Tech,Programming]
 ---
 
 ### Instantiate EC2 instance

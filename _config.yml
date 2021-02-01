@@ -94,7 +94,7 @@ analytics:
 author:
   name: "Jiajin Zheng"
   avatar: "/assets/images/square-profile.png"
-  bio: "Love Cat,Code & Coffee. Passion in Programming, Physics, Piano"
+  bio: "Love Cat,Code & Coffee."
   location: "Melbourne,Victoria"
   email: # "jackytsheng@gmail.com"
   links:
@@ -105,7 +105,7 @@ author:
       icon: "fas fa-link"
       url: "https://jiajinzheng.com"
     - label: "Jiajin's Gagets"
-      icon: "fas fa-link"
+      icon: "fas fa-gamepad"
       url: "https://gaget.jiajinzheng.com"
     - label: "Twitter"
       icon: "fab fa-twitter-square"
@@ -275,6 +275,7 @@ defaults:
       comments: # true
       share: true
       related: true
-
-collections:
-  - staff_members
+# collections:
+#   posts:
+#     output: true
+#     permalink: /:collection/:path/

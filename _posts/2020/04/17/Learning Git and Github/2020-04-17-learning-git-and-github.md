@@ -1,6 +1,7 @@
 ---
 title:  "Github basic & Experiment With Git & github"
 tags: [Git,Github]
+categories: [Programming]
 ---
 
 This doc is for tracking the testing that i have done to solidify my understanding with git and github.
