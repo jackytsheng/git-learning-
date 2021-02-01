@@ -1,8 +1,12 @@
 ---
-title:  "Implement Tags,Collections,Modified Time & Comment with Jekyll Minimal-mistake theme"
+title:  "Implement Advance Features with Jekyll Minimal-mistake theme"
 tags: [Jekyll]
 categories: [Programming]
+toc: true
+toc_label: "Table of content"
+toc_icon: "list-ul"  # corresponding Font Awesome icon name (without fa prefix)
 ---
+
 
 My Jekyll blog is using Minimal-mistake theme, but currently comment, Tags, Collection aren't implemented yet. So in this blog, I will documented how to implement them. [Set up the theme and Jekyll](https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/)
 
@@ -38,7 +42,12 @@ author_profile: true
  ![tag archive page](/assets/images/2021-01-31/tag-archive.png)
  
 
-
+4. Inside `_config.yml` add the following:
+```yml
+tag_archive:
+  type: liquid
+  path: /tags/
+```
 ### Add modified time
 
  To record *update time* include the following meta tag
@@ -112,7 +121,13 @@ Both Post and url can be customised, url needs to match the `permalink` specifie
 
 4. Detail implementation with Collection check the [Minimal-mistake Docs](https://mmistakes.github.io/minimal-mistakes/docs/collections/)
 
+5. Inside `_config.yml` add the following for category to work
 
+```yml
+category_archive:
+  type: liquid
+  path: /categories/
+```
 ### Add Search To the Site
 
 ![search](/assets/images/2021-01-31/search.png)
@@ -129,4 +144,16 @@ comments:
   provider: 'disqus' 
   disqus:
     shortname: #your short name
+```
+
+### Add table of content
+
+inside post add the following
+
+```md
+---
+toc: true
+toc_label: "Unique Title"
+toc_icon: "heart"  # corresponding Font Awesome icon name (without fa prefix)
+---
 ```
