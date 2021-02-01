@@ -10,7 +10,7 @@ toc_icon: "list-ul"  # corresponding Font Awesome icon name (without fa prefix)
 
 My Jekyll blog is using Minimal-mistake theme, but currently comment, Tags, Collection aren't implemented yet. So in this blog, I will documented how to implement them. [Set up the theme and Jekyll](https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/)
 
-### Add Tags
+### Add tags
 
 According to [Minimal-mistakes Layout](https://mmistakes.github.io/minimal-mistakes/docs/layouts/#archive-layout), there are a couple steps we need to do in order to implement Tags.
 
@@ -61,7 +61,7 @@ last_modified_at: 2021-01-31T17:48:00+10:00
 ```
 Format as  `yyyy-mm-ddThh:mm:ss(time zone)` I am based in melbourne, so mine is UTC `+10:00`
 
-### Add Category and Collection
+### Add category and collection
 
 Under `_pages` include both `/category-archive.md` and `/collection-archive.html`
 
@@ -128,12 +128,12 @@ category_archive:
   type: liquid
   path: /categories/
 ```
-### Add Search To the Site
+### Add search
 
 ![search](/assets/images/2021-01-31/search.png)
 [Incorporate search for the website](https://mmistakes.github.io/minimal-mistakes/docs/configuration/)
 
-### Add Comment Functionality
+### Add comment
 To add comment we need a provider, I choosed [**Disqus**](https://disqus.com/profile/login/). 
 1. Set up an account with disqus
 2. Upon setting up account select basic plan
