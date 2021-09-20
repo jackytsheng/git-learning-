@@ -12,27 +12,27 @@
 
 # theme                  : "minimal-mistakes-jekyll"
 # remote_theme           : "mmistakes/minimal-mistakes"
-minimal_mistakes_skin: "dark" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin: 'dark' # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
-locale: "en-AU"
-title: "Jiajin Zheng Blog"
-title_separator: "-"
-subtitle: "A Software Craftsman Apprentice" # site tagline that appears below site title in masthead
-name: "Jiajin Zheng Blog"
-description: "📚 Jiajin Zheng personal blog"
-url: "https://blog.jiajinzheng.com"
+locale: 'en-AU'
+title: 'Jiajin Zheng Blog'
+title_separator: '-'
+subtitle: 'A Software Craftsman Apprentice' # site tagline that appears below site title in masthead
+name: 'Jiajin Zheng Blog'
+description: '📚 Jiajin Zheng personal blog'
+url: 'https://blog.jiajinzheng.com'
 baseurl: # the subpath of your site, e.g. "/blog"
-repository: "jackytsheng.github.io/personal-blog"
+repository: 'jackytsheng.github.io/personal-blog'
 teaser: # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo: # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 masthead_title: # overrides the website title displayed in the masthead, use " " for no title
 # breadcrumbs            : false # true, false (default)
 words_per_minute: 160
 comments:
-  provider: "disqus" # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "custom"
+  provider: 'disqus' # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "custom"
   disqus:
-    shortname: "blog-jiajinzheng-com" # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
+    shortname: 'blog-jiajinzheng-com' # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
   discourse:
     server: # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org
   facebook:
@@ -92,34 +92,34 @@ analytics:
 
 # Site Author
 author:
-  name: "Jiajin Zheng"
-  avatar: "/assets/images/square-profile.png"
-  bio: "Love Cat,Code & Coffee."
-  location: "Melbourne,Victoria"
+  name: 'Jiajin Zheng'
+  avatar: '/assets/images/square-profile.png'
+  bio: 'Love Cat,Code & Coffee.'
+  location: 'Melbourne,Victoria'
   email: # "jackytsheng@gmail.com"
   links:
     # - label: "Email"
     #   icon: "fas fa-envelope-square"
     #   url: "mailto:jackytsheng@gmail.com"
-    - label: "Personal Website"
-      icon: "fas fa-link"
-      url: "https://jiajinzheng.com"
-    - label: "Jiajin's Gagets"
-      icon: "fas fa-gamepad"
-      url: "https://gaget.jiajinzheng.com"
-    - label: "GitHub"
-      icon: "fab fa-github-alt"
-      url: "https://github.com/jackytsheng"
-    - label: "Twitter"
-      icon: "fab fa-twitter-square"
-      url: "https://twitter.com/Jiajin_Zheng"
+    - label: 'Personal Website'
+      icon: 'fas fa-link'
+      url: 'https://jiajinzheng.com'
+    - label: "Jiajin's Gadgets"
+      icon: 'fas fa-gamepad'
+      url: 'https://gadget.jiajinzheng.com'
+    - label: 'GitHub'
+      icon: 'fab fa-github-alt'
+      url: 'https://github.com/jackytsheng'
+    - label: 'Twitter'
+      icon: 'fab fa-twitter-square'
+      url: 'https://twitter.com/Jiajin_Zheng'
     # - label: "Facebook"
     #   icon: "fab fa-facebook-square"
     #   url: "https://www.facebook.com/jacky.tsheng/"
 
-    - label: "Linkedin"
-      icon: "fab fa-linkedin"
-      url: "https://www.linkedin.com/in/jacky-jiajin-zheng-76a64b164/"
+    - label: 'LinkedIn'
+      icon: 'fab fa-linkedin'
+      url: 'https://www.linkedin.com/in/jacky-jiajin-zheng-76a64b164/'
     # - label: "Instagram"
     #   icon: "fab fa-instagram"
     #   url: "https://instagram.com/"
@@ -130,29 +130,29 @@ footer:
     # - label: "Email"
     #   icon: "fas fa-envelope-square"
     #   url: "mailto:jackytsheng@gmail.com"
-    - label: "Personal Website"
-      icon: "fas fa-link"
-      url: "https://jiajinzheng.com"
-    - label: "Twitter"
-      icon: "fab fa-twitter-square"
-      url: "https://twitter.com/Jiajin_Zheng"
+    - label: 'Personal Website'
+      icon: 'fas fa-link'
+      url: 'https://jiajinzheng.com'
+    - label: 'Twitter'
+      icon: 'fab fa-twitter-square'
+      url: 'https://twitter.com/Jiajin_Zheng'
     # - label: "Facebook"
     #   icon: "fab fa-facebook-square"
     #   url: "https://www.facebook.com/jacky.tsheng/"
-    - label: "GitHub"
-      icon: "fab fa-github"
-      url: "https://github.com/jackytsheng"
-    - label: "Linkedin"
-      icon: "fab fa-linkedin"
-      url: "https://www.linkedin.com/in/jacky-jiajin-zheng-76a64b164/"
+    - label: 'GitHub'
+      icon: 'fab fa-github'
+      url: 'https://github.com/jackytsheng'
+    - label: 'Linkedin'
+      icon: 'fab fa-linkedin'
+      url: 'https://www.linkedin.com/in/jacky-jiajin-zheng-76a64b164/'
 
 # Reading Files
 include:
   - .htaccess
   - _pages
 exclude:
-  - "*.sublime-project"
-  - "*.sublime-workspace"
+  - '*.sublime-project'
+  - '*.sublime-workspace'
   - vendor
   - .asset-cache
   - .bundle
@@ -180,8 +180,8 @@ exclude:
 keep_files:
   - .git
   - .svn
-encoding: "utf-8"
-markdown_ext: "markdown,mkdown,mkdn,mkd,md"
+encoding: 'utf-8'
+markdown_ext: 'markdown,mkdown,mkdn,mkd,md'
 
 # Conversion
 markdown: kramdown
@@ -267,7 +267,7 @@ compress_html:
 defaults:
   # _posts
   - scope:
-      path: ""
+      path: ''
       type: posts
     values:
       layout: single

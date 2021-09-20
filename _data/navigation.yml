@@ -1,16 +1,16 @@
 # main links
 main:
-  - title: "Personal Website"
+  - title: 'Personal Website'
     url: https://jiajinzheng.com
-  # - title: "Gagets"
-  #   url: https://gaget.jiajinzheng.com
+  # - title: "Gadgets"
+  #   url: https://gadget.jiajinzheng.com
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
-  - title: "Posts"
+  - title: 'Posts'
     url: /year-archive/
   # - title: "Collections"
   #   url: /collection-archive/
-  - title: "Categories"
+  - title: 'Categories'
     url: /categories/
   # - title: "Sitemap"
   #   url: /sitemap/
