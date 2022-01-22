@@ -17,7 +17,7 @@ Disclaimer: This article is to give an idea on how to implement the logic. Don't
 
 ## Architecture Summary
 
-![architecture](/assets/images/2021-11-05/architecture.jpg)
+![architecture](/assets/images/2021-11-05/architecture.png)
 
 To achieve this we need a few thing
 
