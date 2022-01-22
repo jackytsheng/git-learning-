@@ -121,7 +121,7 @@ After lambda code is uploaded, it can be added to trigger of SES receiving rule
 
 ![Trigger Lambda](/assets/images/2021-11-05/trigger-event.png)
 
-Parsed Lambda can be found here [lambda parser](http://sss)
+Parsed Lambda can be found here [lambda parser](https://github.com/jackytsheng/app-email-communication-demo/tree/master/app-lambda)
 
 In my demo parsed json is found in the new bucket named `message.json` ready for my app to fetch it
 ![Reply payload](/assets/images/2021-11-05/reply-payload.png)
